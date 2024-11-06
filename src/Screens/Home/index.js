@@ -699,6 +699,46 @@ function Home() {
           <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
         </div>
       </div>
+      <div className="d-flex gap-3 mb-3">
+        <div className="contact-item p-3 rounded bg-white">
+          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
+          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
+        </div>
+        <div className="contact-item p-3 rounded bg-white">
+          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
+          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
+        </div>
+      </div>
+      <div className="d-flex gap-3 mb-3">
+        <div className="contact-item p-3 rounded bg-white">
+          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
+          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
+        </div>
+        <div className="contact-item p-3 rounded bg-white">
+          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
+          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
+        </div>
+      </div>
+      <div className="d-flex gap-3 mb-3">
+        <div className="contact-item p-3 rounded bg-white">
+          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
+          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
+        </div>
+        <div className="contact-item p-3 rounded bg-white">
+          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
+          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
+        </div>
+      </div>
+      <div className="d-flex gap-3 mb-3">
+        <div className="contact-item p-3 rounded bg-white">
+          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
+          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
+        </div>
+        <div className="contact-item p-3 rounded bg-white">
+          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
+          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
+        </div>
+      </div>
       {/* Additional rows as needed */}
     </div>
   </div>
