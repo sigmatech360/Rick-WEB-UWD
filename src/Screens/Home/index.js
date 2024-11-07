@@ -7,12 +7,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import footerlogo from "../../Assets/images/footerlogo.svg";
-import logo from "../../Assets/images/logo.png";
-import bottomfooterlogo1 from "../../Assets/images/bottomlogo1.png";
-import bottomfooterlogo2 from "../../Assets/images/bottomfooterlogo2.png";
+
 import contantunderline from '../../Assets/images/contantunderline.png'
-import bottomfooterlogo3 from "../../Assets/images/bottomfooterlogo3.png";
+ 
 import donateicon from "../../Assets/images/donateicon.png";
 import availabletagline from '../../Assets/images/availabletagline.png'
 import apartunderline from '../../Assets/images/apartunderline.png'
@@ -21,7 +18,7 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css";
 import tagline from "../../Assets/images/tagline.png";
-import { Link } from "react-router-dom";
+ 
  import   programunderline from '../../Assets/images/programunderline.svg'
 import announcement1 from "../../Assets/images/announcement1.png";
 import announcement2 from "../../Assets/images/announcement2.png";
@@ -35,6 +32,9 @@ import eventcard2 from "../../Assets/images/eventcard2.png";
 import eventcard3 from "../../Assets/images/eventcard3.png";
 // import  {  Autoplay } from 'swiper';
 import housingcard1 from "../../Assets/images/housingcard1.png";
+import Layout from "../../components/layout";
+import Contact from "../../components/contact";
+import Sponsor from "../../components/sponsor";
 function Home() {
   const eventsData = [
     {
@@ -119,197 +119,8 @@ const NextArrow = (props) => {
 
   return (
     <>
-      <section className="header-section">
-        <div className="container  py-2">
-          <div className="d-flex flex-wrap justify-content-between align-items-center text-white">
-            <div className="header-item d-flex align-items-center">
-              <i className="bi bi-geo-alt-fill me-2"></i>
-              PO Box 1293, Placentia, CA 92871
-            </div>
-
-            <div class="separator d-none d-md-block"></div>
-            <div className="header-item d-flex align-items-center">
-              <i className="bi bi-clock me-2"></i>
-              Mon – Thu 9AM – 5PM, Fri 9AM – 4PM
-            </div>
-            <div class="separator d-none d-md-block"></div>
-            <div className="header-item d-flex align-items-center">
-              <i className="bi bi-telephone-fill me-2"></i>
-              (714) 993-5774
-            </div>
-
-            <div class="separator d-none d-md-block"></div>
-            <div className="header-item d-flex align-items-center">
-              <i className="bi bi-envelope me-2"></i>
-              info@his-oc.org
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
-          <div className="container">
-            {/* First logo: visible only in responsive mode */}
-            <Link
-              className="navbar-brand d-flex align-items-center d-lg-none"
-              href="/"
-            >
-              <img src={logo} alt="Logo" style={{ height: "40px" }} />
-            </Link>
-
-            {/* Navbar Toggler */}
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div
-              className="collapse navbar-collapse justify-content-between"
-              id="navbarNav"
-            >
-              {/* Navigation Links */}
-              <div>
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item dropdown">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      About
-                    </Link>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link className="dropdown-item">Action</Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          Another action
-                        </Link>
-                      </li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          Something else here
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Our Works
-                    </Link>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          Action
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          Another action
-                        </Link>
-                      </li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          Something else here
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/">
-                      Get Help
-                    </Link>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Donate
-                    </Link>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          Action
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          Another action
-                        </Link>
-                      </li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          Something else here
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/">
-                      Contact Us
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Second logo: visible only in full-screen mode */}
-              <div className="d-none d-lg-block">
-                <Link className="navbar-brand" href="/">
-                  <img src={logo} alt="Logo" style={{ height: "40px" }} />
-                </Link>
-              </div>
-
-              {/* Right-aligned buttons and icons */}
-              <div className="d-flex align-items-center">
-                <Link href="/" className="text-dark me-3">
-                  <i className="bi bi-facebook"></i>
-                </Link>
-                <Link href="/" className="text-dark me-3">
-                  <i className="bi bi-x"></i>
-                </Link>
-                <Link href="/" className="text-dark me-3">
-                  <i className="bi bi-instagram"></i>
-                </Link>
-                <button className="nav-event btn   me-2">Events</button>
-                <button className="nav-donate btn btn-warning text-dark">
-                  {" "}
-                  <img src={donateicon} /> Donate
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </section>
-
+   
+<Layout>
       <section className="homeless-intervention">
         <Swiper
           pagination={true}
@@ -684,290 +495,15 @@ const NextArrow = (props) => {
  
 {/* Contact */}
 
-      <section className="contact-us-section py-5">
-        <div className="container text-center text-md-start">
-          <h2 className="fw-bold m-5 text-center">
-            We'd <span className="contant-title position-relative text-warning">Love To Hear <img src={contantunderline} className="contantunderline"/></span> From You
-          </h2>
-          <p className="subtitle w-50 mx-auto text-center mb-4">
-            If you would like to contact HISOC, please fill out the contact form
-            below and one of our team members will be sure to follow up with
-            you.
-          </p>
-          <div className="row gx-0 d-flex align-items-stretch">
-  {/* Left Contact Information Panel */}
-  <div className="col-md-6 mb-4 mb-md-0 d-flex">
-    <div className="contact-info-panel p-4 shadow-sm w-100 rounded-start">
-      {/* Your contact items */}
-      <div className="d-flex gap-3 mb-3">
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-      </div>
-      <div className="d-flex gap-3 mb-3">
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-      </div>
-      <div className="d-flex gap-3 mb-3">
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-      </div>
-      <div className="d-flex gap-3 mb-3">
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-      </div>
-      <div className="d-flex gap-3 mb-3">
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Executive Director Christine Stellino</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-        <div className="contact-item p-3 rounded bg-white">
-          <p className="mb-1 fw-bold">Program Director Alfa Hernandez</p>
-          <a href="mailto:christine@his-oc.org" className="text-muted">christine@his-oc.org</a>
-        </div>
-      </div>
-      {/* Additional rows as needed */}
-    </div>
-  </div>
+  <Contact/>
 
-  {/* Right Contact Form Panel */}
-  <div className="col-md-6 d-flex">
-    <div className="contact-form-panel p-4 shadow-sm w-100 bg-white rounded-end">
-      <h3 className="fw-bold text-black mb-3">Contact Us</h3>
-      <form>
-        <div className="mb-3">
-          <input type="text" className="form-control" placeholder="Name" />
-        </div>
-        <div className="mb-3">
-          <input type="text" className="form-control" placeholder="Phone" />
-        </div>
-        <div className="mb-3">
-          <input type="email" className="form-control" placeholder="Email" />
-        </div>
-        <div className="mb-3">
-          <select className="form-select">
-            <option>General Information</option>
-            <option>Programs</option>
-            <option>Donations</option>
-            <option>Volunteering</option>
-          </select>
-        </div>
-        <div className="mb-3">
-          <textarea className="form-control" rows="4" placeholder="Message"></textarea>
-        </div>
-        <button type="submit" className="btn rounded text-black border-white">Send Message</button>
-      </form>
-    </div>
-  </div>
-</div>
 
-        </div>
-      </section>
+     <Sponsor/>
 
 
 
-      <section className="sponsor-banner d-flex justify-content-center align-items-center">
-        <h2 className=" sponsor-texttitle fw-bold text-white">
-          BE A <span className="text-warning sponsor-text">SPONSOR</span>
-        </h2>
-      </section>
-
-
-
-
-
-
-
-      <section className="footer">
-        <footer className="footer py-4 bg-light">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4 mb-4 mb-md-0">
-                <img src={footerlogo} className="footerlogo  mb-4  " />
-                <p className="title fw-bold mb-2">
-                  Building A Future Without{" "}
-                  <span className="text-primary">Homelessness.</span>
-                </p>
-                <p>
-                  <Link
-                    to="/"
-                    className="hiscolint text-decoration-none text-primary"
-                  >
-                    HISOC
-                  </Link>{" "}
-                  helps people experiencing or at risk of homelessness build new
-                  lives through construction, community engagement, and
-                  education.
-                </p>
-              </div>
-              <div className="col-md-2">
-                <h5>About HomeAid</h5>
-                <ul className="list-unstyled">
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Board & Team
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      News & Announcements
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Become A Volunteer
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-md-2">
-                <h5>Our Impact</h5>
-                <ul className="list-unstyled">
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Projects
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Community
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      HISOC Works
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-md-2">
-                <h5>Get Involved</h5>
-                <ul className="list-unstyled">
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Ways To Give
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Events
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Make A Donation
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Be A Sponsor
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-md-2">
-                <h5>Resources</h5>
-                <ul className="list-unstyled">
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Get Help?
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Financials
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-decoration-none">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-
-        <footer className="footer-bottom bg-dark text-white py-3">
-          <div className="container d-flex flex-wrap justify-content-between align-items-center">
-            {/* Left section with logos */}
-            <div className="d-flex align-items-center    gap-5">
-              <img
-                src={bottomfooterlogo1}
-                alt="501(c)(3)"
-                className="footer-logo me-3"
-              />
-              <img
-                src={bottomfooterlogo2}
-                alt="Nonprofit Central"
-                className="footer-logo1 me-3"
-              />
-              <img
-                src={bottomfooterlogo3}
-                alt="Gold Transparency 2024"
-                className="footer-logo3"
-              />
-            </div>
-            {/* Center section for copyright text */}
-            <div className="text-center">
-              <p className="mb-0">
-                © Copyright 2007-2022, HISOC America. All Rights Reserved.
-                <br />
-                Designed by United Design Group |{" "}
-                <a href="#!" className="text-decoration-none text-white">
-                  Legal
-                </a>{" "}
-                |{" "}
-                <a href="#!" className="text-decoration-none text-white">
-                  Privacy
-                </a>
-              </p>
-            </div>
-            {/* Right section with social icons and donate button */}
-            <div className="socialicon d-flex align-items-center">
-              <Link href="/" className="  text-white  me-3">
-                <i className="bi bi-facebook"></i>
-              </Link>
-
-              <Link href="/" className="text-white me-3">
-                <i className="bi bi-x"></i>
-              </Link>
-              <Link href="/" className="text-white me-3">
-                <i className="bi bi-instagram"></i>
-              </Link>
-            </div>
-          </div>
-        </footer>
-      </section>
+      </Layout>
+ 
     </>
   );
 }

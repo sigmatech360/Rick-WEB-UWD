@@ -1,0 +1,59 @@
+
+
+
+/* sponser */
+
+.sponsor-banner {
+  background-color: #367379; /* Dark teal background color */
+  padding: 50px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.sponsor-text {
+  font-style: italic;
+  position: relative;
+}
+
+.sponsor-text::after {
+  content: "";
+  display: block;
+  width: 60%; /* Adjust underline width */
+  height: 2px;
+  background-color: #ffc107; /* Yellow underline color */
+  position: absolute;
+  bottom: -5px; /* Positioning for underline */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 55px;
+}
+
+.sponsor-texttitle {
+  font-size: 55px;
+}
+
+
+
+.sponsorunderline{
+  
+
+
+
+
+
+  vertical-align: middle;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(5px);
+
+}
+
+
+
+
+
+
+
+

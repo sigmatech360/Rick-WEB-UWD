@@ -1,0 +1,148 @@
+
+.contant-title{
+    font-size: 47px;
+  
+  }
+  
+  .socialicon {
+    color: white;
+  }
+  
+  .footer-bottom {
+    font-size: 0.8rem;
+    border-top: 1px solid #4e4e4e;
+  }
+  
+  .footer-logo {
+    /* width: 81px; */
+    height: 81px; /* Adjust height as needed */
+  }
+  
+  .footer-icon {
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .footer-icon:hover {
+    color: #ccc; /* Change color on hover */
+  }
+  
+  .donate-badge {
+    height: 50px; /* Adjust size as needed */
+  }
+  
+  .donate-button img {
+    border-radius: 50%; /* Round badge */
+  }
+  
+  .footer-logo1 {
+    height: 43px;
+  }
+  .footer-logo3 {
+    height: 58px;
+  }
+  /* .title  .hiscolint{
+      text-decoration: none !important;
+      color: #348f99 !important;
+  } */
+  .footer a {
+    color: #6c757d !important;
+  }
+  
+  .footer .title {
+    font-size: 26px;
+    font-family: "Inter", sans-serif;
+    line-height: 31px;
+  }
+  
+  .footer .title span {
+    font-family: italic normal bold 48px / 59px Test Signifier;
+    font-family: -webkit-body;
+    font-style: italic;
+    color: #348f99 !important;
+    opacity: 1;
+    width: 1920px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* Footer */
+
+.footer {
+    font-size: 0.9rem;
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+  }
+  
+  .footer a {
+    color: #6c757d; /* Grey color for links */
+  }
+  
+  .footer a:hover {
+    color: #0056b3; /* Change color on hover */
+  }
+  
+  /* Footer */
+  
+  .footer {
+    font-size: 0.9rem;
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+  }
+  
+  .footer a {
+    color: #6c757d; /* Grey color for links */
+  }
+  
+  .footer a:hover {
+    color: #0056b3; /* Change color on hover */
+  }
+  
+
+
+  .footerlogo{
+    width: 207px;
+    height: 51px;
+  }

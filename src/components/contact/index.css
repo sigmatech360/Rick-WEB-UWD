@@ -1,0 +1,61 @@
+
+
+/* Contact */
+/* .contact-us-section{
+background-image: url("../../Assets/images/contantbg.png");
+ 
+} */
+
+.contact-info-panel{
+  
+
+  background-color: #348F99;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  }
+  
+  
+  
+  .contact-form-panel{
+    
+  background-color: #348F99;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  }
+  
+  .contact-us-section {
+    padding: 3rem 1rem;
+    background-image: url('../../Assets/images/contantbg.png'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+    color: #fbfbfb;
+  }
+  
+  
+  
+  .contantunderline{
+    vertical-align: middle;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(5px);
+  }
+  
+  
+  .contact-item{
+    color: #333333;
+  }
+  
+  
+  
+  .contant-title{
+    font-size: 47px;
+  
+  }
+  
+  .socialicon {
+    color: white;
+  }
+   

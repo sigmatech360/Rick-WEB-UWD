@@ -1,0 +1,486 @@
+
+.homeless-intervention {
+    overflow: hidden;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  
+  .wedopara {
+    color: #4d4d4f;
+    letter-spacing: 0px;
+  }
+  
+  .how-we-do {
+    left: 0px;
+    /* width: 175px; */
+    /* height: 93px; */
+    color: #333333;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 87px;
+    letter-spacing: 0px;
+  }
+  
+  .hopeunderline {
+    vertical-align: middle;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(5px);
+  }
+  
+  .wedotagline {
+    vertical-align: middle;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(5px);
+  }
+  
+  .text-success {
+    --bs-text-opacity: 1;
+    /* color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important; */
+    color: #fdd22e !important;
+    font-family: text;
+    font-style: italic;
+  }
+  
+  /* Left section background */
+  .left-section {
+    background-image: url("../../Assets/images/wedobg.png");
+    background-size: cover;
+    background-position: center;
+    color: #333333;
+    padding: 83px;
+    min-height: 400px; /* Adjust height as needed */
+ 
+    background-color: #FDFBF8;
+  }
+  
+  /* Right section background */
+  .right-section {
+    background-image: url("../../Assets/images/ourmission.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    min-height: 400px; /* Adjust height as needed */
+  }
+  
+  /* Custom text styling */
+  .highlight-text {
+    color: #0056b3; /* Example color, adjust as needed */
+    font-style: italic;
+    font-weight: bold;
+    color: #348f99;
+    font-style: italic;
+    font-weight: bold;
+    font-family: test Signifier;
+    position: relative;
+  }
+  
+  /* Right section text */
+  .right-section-text {
+    font-size: 2rem; /* Adjust as needed */
+    color: #ffffff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* legacy */
+
+
+.legacy{
+    overflow: hidden;
+}
+  
+.homeless-intervention {
+    overflow: hidden;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  
+  .wedopara {
+    color: #4d4d4f;
+    letter-spacing: 0px;
+  }
+  
+  .how-we-do {
+    left: 0px;
+    /* width: 175px; */
+    /* height: 93px; */
+    color: #333333;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 87px;
+    letter-spacing: 0px;
+  }
+  
+  .hopeunderline {
+    vertical-align: middle;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(5px);
+  }
+  
+  .wedotagline {
+    vertical-align: middle;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(5px);
+  }
+  
+  .text-success {
+    --bs-text-opacity: 1;
+    /* color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important; */
+    color: #fdd22e !important;
+    font-family: text;
+    font-style: italic;
+  }
+  
+  /* Left section background */
+  .left-section {
+    background-image: url("../../Assets/images/wedobg.png");
+    background-size: cover;
+    background-position: center;
+    color: #333333;
+    padding: 83px;
+    min-height: 400px; /* Adjust height as needed */
+ 
+    background-color: #FDFBF8;
+  }
+  
+  /* Right section background */
+  .legacy .right-section {
+    background-image: url("../../Assets/images/legacybg.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    min-height: 400px; /* Adjust height as needed */
+  }
+  
+  /* Custom text styling */
+  .highlight-text {
+    color: #0056b3; /* Example color, adjust as needed */
+    font-style: italic;
+    font-weight: bold;
+    color: #348f99;
+    font-style: italic;
+    font-weight: bold;
+    font-family: test Signifier;
+    position: relative;
+  }
+  
+  /* Right section text */
+  .right-section-text {
+    font-size: 2rem; /* Adjust as needed */
+    color: #ffffff;
+  }
+
+
+  /*  Driving change*/
+.dedicationunderline{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115%;
+    height: auto;
+  
+}
+
+
+.driving-dedication .para{
+ 
+    top: 3144px;
+    left: 347px;
+    width: 1226px;
+    /* height: 87px; */
+    color: var(--unnamed-color-4d4d4f, #4D4D4F);
+    text-align: center;
+    font-weight: 425px !important;
+    font-size: 24px;
+    line-height: 29px;
+    /* font-family: 'Inter', sans-serif; */
+    letter-spacing: 0px;
+    opacity: 1;
+    font-weight: 400;
+}
+
+
+.driving-dedication .dedication{
+ 
+    font-family: test Signifier;
+    color: #348F99;
+    font-style: italic;
+}
+.driving-dedication  .title{
+ 
+    color: #333333;
+    font-size: 20px;
+    color: var(--unnamed-color-333333, #333333);
+    text-align: left;
+    font-weight: bold;
+    font-size: 47px;
+    line-height: 93px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0px;
+  }
+  .card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    background-color: #FEFBEB;
+    text-align: start;
+}
+
+  .driving-dedication{
+    overflow: hidden;
+    background-color: #FDFBF8 ;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: black; /* Customize arrow color */
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+
+
+
+  .driving-dedication .slick-next{
+ 
+ 
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: -12px;
+  }
+
+
+
+  
+  .driving-dedication .slick-prev{
+ 
+ 
+ 
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: -16px;
+  }
+
+
+.driving-dedication  .para {
+    width: 100%; /* Default to full width for flexibility */
+    max-width: 1226px; /* Limit maximum width */
+    height: auto; /* Set height to auto to allow flexibility */
+    color: var(--unnamed-color-4d4d4f, #4D4D4F);
+    text-align: center;
+    font-weight: 500 !important;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0px;
+    opacity: 1;
+  
+    /* Responsive font adjustments */
+    /* Large screens */
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  
+    /* Medium screens */
+    @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  
+    /* Small screens */
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  
+    /* Extra small screens */
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .driving-dedication {
+    position: relative;
+  }
+  
+  .driving-dedication .slick-next,
+  .driving-dedication .slick-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+
+
+  .driving-dedication .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FDD22E;
+    border-radius: 50%;
+    color: black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+
+
+  
+  .driving-dedication .slick-prev {
+    left: -20px;
+  }
+  
+  .driving-dedication .slick-next {
+    right: -20px;
+  }
+  
+  .driving-dedication .slick-prev:before,
+  .driving-dedication .slick-next:before {
+    content: none; /* Removes default slick arrows */
+  }
+  
+  .driving-dedication .slick-dots {
+    bottom: -25px; /* Positioning the dots */
+  }
+  
+  .driving-dedication .slick-dots li button:before {
+    color: #333333;
+  }
+  
+  .driving-dedication .slick-dots .slick-active button:before {
+    color: #348F99;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 992px) {
+    .driving-dedication .slick-prev {
+      left: -15px;
+    }
+  
+    .driving-dedication .slick-next {
+      right: -15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .driving-dedication .slick-prev {
+      left: -10px;
+    }
+  
+    .driving-dedication .slick-next {
+      right: -10px;
+    }
+  }
+  
