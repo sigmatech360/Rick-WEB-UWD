@@ -1,6 +1,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaFacebookF, FaInstagram, FaLink } from "react-icons/fa";
+import announcementunderline from '../../Assets/images/announcementunderline.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,10 +22,10 @@ import "swiper/css/effect-fade";
 import "swiper/css";
 import tagline from "../../Assets/images/tagline.png";
 import { Link } from "react-router-dom";
- 
+ import   programunderline from '../../Assets/images/programunderline.svg'
 import announcement1 from "../../Assets/images/announcement1.png";
 import announcement2 from "../../Assets/images/announcement2.png";
-import eventunderline from '../../Assets/images/eventunderline.png'
+import eventunderline from '../../Assets/images/eventunderlines.svg'
 import eventcard1 from "../../Assets/images/eventcard1.png";
 import changeworld from '../../Assets/images/changeworld.png'
 
@@ -61,32 +62,23 @@ function Home() {
     },
     // Add more events as needed
   ];
-
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
-      <button
-        type="button"
-        className="slick-arrow slick-prev"
-        onClick={onClick}
-      >
-        <span className="arrow-icon">&#8592;</span> {/* Left arrow */}
-      </button>
+        <button type="button" className="slick-arrow slick-prev mb-2 " onClick={onClick}>
+            <span className="arrow-icon">  <i class="fa fa-arrow-left" aria-hidden="true"></i></span>  
+        </button>
     );
-  };
+};
 
-  const NextArrow = (props) => {
+const NextArrow = (props) => {
     const { onClick } = props;
     return (
-      <button
-        type="button"
-        className="slick-arrow slick-next"
-        onClick={onClick}
-      >
-        <span className="arrow-icon">&#8594;</span> {/* Right arrow */}
-      </button>
+        <button type="button" className="slick-arrow slick-next mb-2" onClick={onClick}>
+            <span className="arrow-icon">  <i class="fa fa-arrow-right" aria-hidden="true"></i></span>   
+        </button>
     );
-  };
+};
   const settings = {
     // dots: true,
     infinite: true,
@@ -438,12 +430,12 @@ function Home() {
           <div className="row">
             {/* Left Section */}
             <div className="col-lg-8 col-md-12 left-section d-flex flex-column justify-content-center ">
-              <div className="content">
-                <h2 className="how-we-do mb-3">
+              <div className="content px-4">
+                <h2 className="how-we-do px-4 mb-3">
                   How <span className="highlight-text">We Do <img src={wedotagline}  className="wedotagline"/> </span>
                   It
                 </h2>
-                <p className="wedopara">
+                <p className="wedopara px-4">
                   Homeless Intervention Services of Orange County (HIS-OC)
                   currently runs four programs that assist people who are
                   homeless or at risk of being homeless. Our shelters and
@@ -492,7 +484,7 @@ function Home() {
           <h2 className="helptagline fw-bold mb-3">
             Help is <span className="text-success position-relative">Available    <img className="availabletagline" src={availabletagline}/></span>
           </h2>
-          <p className="mb-4">
+          <p className=" mb-4">
             We've been helping people find their way home since 1989.
           </p>
           <div className="row">
@@ -522,14 +514,14 @@ function Home() {
             {/* Left Card */}
             <div className="transitionalbg  col-md-5 mb-4 mb-md-0">
               <div className=" p-4    ">
-                <h5 className="text-uppercase mb-2  text-white ">
+                <p className="para1 text-uppercase mb-2 px-4  text-white ">
                   Providing Shelter and Reunification for Families
-                </h5>
-                <h2 className="fw-bold text-white">
+                </p>
+                <h2 className="fw-bold text-white  px-4 ">
                   Transitional Housing{" "}
-                  <span className="text-warning">Program</span>
+                  <span className="text-warning position-relative">Program <img className="programunderline" src={programunderline}/></span>
                 </h2>
-                <p>
+                <p className="para px-4 ">
                   We have 54 beds in 3 shelters that provide a safe place to
                   stay for families. Residents can stay for 4 to 6 months, in a
                   home-like environment, while they establish themselves in a
@@ -538,12 +530,12 @@ function Home() {
                   each year in a spirit of dignity and love through our three
                   residences.
                 </p>
-                <button className="btn btn-outline-primary">Learn More</button>
+                <button className="parabtn  btn   px-4 ">Learn More</button>
               </div>
             </div>
 
             {/* Right Card with vertical scrollable content */}
-            <div className="col-md-6">
+            <div className="col-md-5">
               <div className="scrollable-container-y p-2 rounded    ">
                 {/* Individual Cards */}
                 <div className=" p-3 mb-3  rounded  ">
@@ -552,7 +544,7 @@ function Home() {
                     alt="Youth Shelter 1"
                     className="img-fluid rounded mb-2"
                   />
-                  <h5 className="fw-bold">Transitional Aged Youth Shelter</h5>
+                  <h5 className="cardtitle fw-bold">Transitional Aged  <span className="youthshelter">Youth Shelter </span></h5>
                   <p className="small mb-2">
                     Combining Housing Education and Skills for Students. A
                     transitional 12-24 month program for 18-24-year-olds.
@@ -562,7 +554,7 @@ function Home() {
                     the education system. Our case managers help them set
                     personal goals and connect them to appropriate resources..
                   </p>
-                  <button className="btn btn-outline-primary btn-sm">
+                  <button className="cardbtn btn btn-outline-primary btn-sm">
                     Learn More
                   </button>
                 </div>
@@ -572,11 +564,11 @@ function Home() {
                     alt="Youth Shelter 2"
                     className="img-fluid rounded mb-2"
                   />
-                  <h5 className="fw-bold">Youth Shelter 2</h5>
+                  <h5 className=" cardtitle fw-bold">Youth Shelter 2</h5>
                   <p className="small mb-2">
                     Brief description of this youth shelter program.
                   </p>
-                  <button className="btn btn-outline-primary btn-sm">
+                  <button className="cardbtn btn btn-outline-primary btn-sm">
                     Learn More
                   </button>
                 </div>
@@ -588,9 +580,35 @@ function Home() {
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <section className="events-section py-5">
         <div className="container">
-          <h2 className="event text-center position-relative fw-bold mb-5">Events <img className="eventunderline" src={eventunderline}/></h2>
+        {/* <h2 className="event text-center position-relative fw-bold mb-5">
+  Events
+  <img className="event-underline" src={eventunderline} alt="Underline Decoration" />
+</h2> */}
+<div className="event-container text-center">
+  <h2 className="event fw-bold">
+    Events
+    <img className="event-underline"  src={eventunderline} alt="Underline Decoration" />
+  </h2>
+</div>
           <div className="row">
             {eventsData.map((event) => (
               <div key={event.id} className="col-md-4 mb-4">
@@ -598,7 +616,7 @@ function Home() {
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="img-fluid rounded mb-3"
+                    className="img-fluid rounded  "
                   />
                   <div className="event-details p-3">
                     <p className="text-muted mb-1">{event.date}</p>
@@ -617,62 +635,54 @@ function Home() {
         </div>
       </section>
 
-      
-      <section className="news-section py-5">
-        <div className=" ">
-          <div className="row gap-4">
-            {/* Left Static Card */}
-            <div className="newsleftsection col-md-4 mb-4 mb-md-0 announcement-header text-start flex-column d-flex   justify-content-center  ">
-              <div className="text-content">
-                <h3 className="title fw-bold">
-                  News & <span className="text-warning">Announcements</span>
-                </h3>
-                <p className="para">
-                  Last year we helped over 1000 people with our programs and
-                  guided 85% of those in our resident programs to permanent
-                  housing. Since 1989, we have guided over 5000 people out of
-                  homelessness and back into productive and fulfilling lives.
-                </p>
-                <button className="btn btn-outline-light mt-3">
-                  View all Announcements
-                </button>
-              </div>
-            </div>
 
-            {/* Right Carousel Section */}
-            <div className="col-md-7 position-relative">
-              <div className="row">
-                <div className="col-md-12">
-                  <Slider {...settings}>
-                    {newsData.map((news) => (
-                      <div key={news.id} className="p-4 mt-4 ">
-                        <div className="news-card bg-white shadow-sm   ">
-                          <img
-                            src={news.image}
-                            alt={news.title}
-                            className="img-fluid rounded mb-2"
-                          />
-                          <div className="p-3">
-                            <p className="text-muted small mb-1">{news.date}</p>
-                            <h5 className="fw-bold mb-2">{news.title}</h5>
-                            <p className="small mb-3">{news.description}</p>
-                            <button className="btn btn-outline-primary btn-sm">
-                              Learn More
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </Slider>
+
+
+{/* Announcement section */}
+      
+<section className="news-section">
+      <div className="container-fluid">
+        <div className="row gap-4">
+          {/* Left Static Card */}
+          <div className="col-md-4 newsleftsection d-flex flex-column justify-content-center">
+            <div className="text-content">
+              <h3 className="title fw-bold mb-4 px-4">
+                News & <span className="text-warning position-relative">Announcements
+                  <img className="announcementunderline" src={announcementunderline} alt="Underline"/>
+                </span>
+              </h3>
+              <p className="para px-4">
+                Last year we helped over 1000 people with our programs and guided 85% of those in our resident programs to permanent housing. Since 1989, we have guided over 5000 people out of homelessness and back into productive and fulfilling lives.
+              </p>
+              <button className="btn btn-outline-light mt-3">View all Announcements</button>
+            </div>
+          </div>
+
+          {/* Right Carousel Section */}
+          <div className="col-md-7 position-relative">
+            <div className="mt-5">
+            <Slider {...settings}>
+              {newsData.map((news) => (
+                <div key={news.id} className="p-4 mt-4">
+                  <div className="news-card bg-white shadow-sm rounded">
+                    <img src={news.image} alt={news.title} className="img-fluid rounded mb-2" />
+                    <div className="p-3">
+                      <p className="text-muted small mb-1">{news.date}</p>
+                      <h5 className="fw-bold mb-2">{news.title}</h5>
+                      <p className="small mb-3">{news.description}</p>
+                      <button className="btn btn-outline-primary btn-sm">Learn More</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
+            </Slider>
             </div>
           </div>
         </div>
-      </section>
-
+      </div>
+    </section>
  
-
+{/* Contact */}
 
       <section className="contact-us-section py-5">
         <div className="container text-center text-md-start">
