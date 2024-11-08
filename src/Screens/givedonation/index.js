@@ -86,23 +86,27 @@ function Givedonation() {
 
   const teamMembers = [
     {
-      name: "Christine Stellino",
-      title: "Executive Director",
+      name: "Executive Director: Christine Stellino",
+      title: "christine@his-oc.org",
+   
       imgSrc: drivingchangecard1, // replace with actual image paths
     },
     {
-      name: "Libby Shroeder",
-      title: "Chairmen",
+      name: "Program Director: Alfa Hernandez",
+      title: "alfa@his-oc.org",
+      title2: "(714) 582-7981",
       imgSrc: drivingchangecard2,
     },
     {
-      name: "Barbara Buckley",
-      title: "Vice Chairmen",
-      imgSrc: drivingchangecard1,
+      name: "Program Manager: Anthony Trejo",
+      title: "cuca@his-oc.org",
+      title2: "(714) 465-5062",
+       imgSrc: drivingchangecard1,
     },
     {
-      name: "Julie Suchard",
-      title: "Treasurer",
+      name: "TAY Program: Cuca Trejo",
+      title: "cuca@his-oc.org",
+      title2: "(714) 465-5062",
       imgSrc: drivingchangecard2,
     },
   ];
@@ -246,8 +250,8 @@ function Givedonation() {
           </div>
         </section>
 
-        <section className="programs-section container-fluid my-5">
-          <div className="row">
+        <section className="programs-section container-fluid ">
+          <div className="row my-5">
             {/* {programs.map((program, index) => ( */}
             <div className="col-12 col-md-6 mb-4 d-flex align-items-stretch">
               <div
@@ -351,8 +355,8 @@ function Givedonation() {
             </div>
             <Slider {...settings}>
               {teamMembers.map((member, index) => (
-                <div key={index} className="p-2">
-                  <div className="card border-0 shadow-sm text-center">
+                  <div key={index} className="p-2">
+                  <div className="card  p-4 border-0 shadow-sm text-center">
                     <img
                       src={member.imgSrc}
                       className="card-img-top"
@@ -360,8 +364,15 @@ function Givedonation() {
                       style={{ height: "300px", objectFit: "cover" }}
                     />
                     <div className="card-body">
+                      <div className=" gap-2 d-flex">
+                      <p className=" "> HIS OC’s</p>
+                      <div>
                       <h5 className="card-title">{member.name}</h5>
-                      <p className="card-text text-muted">{member.title}</p>
+                      <p className="card-text text-muted mb-0">{member.title}</p>
+                      <p className="card-text text-muted">{member.title2}</p>
+                      </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>

@@ -198,9 +198,6 @@
   height: auto;
 }
 
-.dedicatd-leadership .para {
-}
-
 .dedicatd-leadership .dedication {
   font-family: test Signifier;
   color: #348f99;
@@ -236,6 +233,7 @@
 
 .card {
   border-radius: 10px;
+  background-color: #fefbeb;
 }
 
 .dedicatd-leadership .slick-next {
@@ -812,6 +810,11 @@ max-width: 100%;
   }
 }
 
+
+.programs-section{
+  background-color: #fdfbf8;
+
+}
 /* Additional adjustments for extra small screens */
 @media (max-width: 576px) {
   .programs-section .program-card {
