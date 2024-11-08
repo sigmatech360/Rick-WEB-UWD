@@ -133,7 +133,10 @@
   }
   
   .footer a {
-    color: #6c757d; /* Grey color for links */
+    color: #397177 !important;
+    text-decoration: underline;
+    text-decoration-color: #397177 !important;  
+ 
   }
   
   .footer a:hover {
@@ -142,7 +145,16 @@
   
 
 
+
+
+
+
   .footerlogo{
     width: 207px;
     height: 51px;
   }
+
+
+
+ .socialicon a{    color: white !important;
+ }

@@ -4,6 +4,7 @@
   
   .breadcrumb {
     font-size: 1.2rem;
+    font-weight: 400;
   }
   
 
@@ -15,4 +16,11 @@
     width: 100%;
     height: auto;
     transform: translateY(5px);
+  }
+
+
+
+
+  .hero-section .title{
+    margin-bottom: 126px !important;
   }

@@ -397,6 +397,9 @@
   opacity: 1;
 
 
+
+  
+
 }
 
 .info-text {
@@ -485,11 +488,12 @@
 }
 
 .services-section .para {
+
   color: var(--unnamed-color-6e6e6f, #6e6e6f);
   text-align: center;
   /* font-weight: normal; */
-  font-size: 17px;
-  line-height: 23px;
+  font-size: 13px;
+  line-height: 18px;
   /* font-family: 'Inter', sans-serif; */
   letter-spacing: 0px;
   opacity: 1;
@@ -505,17 +509,63 @@
   transform: translateY(-5px);
 }
 
-.extension {
-  color: #333333;
+ 
+.services-section .createdunderline{
 
-  color: var(--unnamed-color-333333, #333333);
-  text-align: center;
-  font-weight: bold;
-  font-size: 23px;
-  line-height: 39px;
-  font-family: "Inter", sans-serif;
+position: absolute;
+width: 100%;
+bottom: 0px;
+left: 0px;
+transform: translateY(5px);
+}
+
+
+ 
+.services-section .creadetimg{
+  height: 67px;
+  width: 60px;
+
+}
+
+.donate-button:hover {
+  background-color: #348F99;
+  color: #fff;
+  border-radius: 30px;
+  padding: 5px 21px;
+  font-weight: 400;
+ 
+}
+
+
+.donate-button {
+  background-color: #348F99;
+  color: #fff;
+  border-radius: 30px;
+  padding: 5px 21px;
+  font-weight: 400;
+ 
+}
+
+
+
+.services-section .{
+  max-width: 100%;
+  width: 76px;
+}
+
+.services-section .credit{
+  
+  font-family: test;
+  font-style: italic;
+  color: #348F99;
+}
+
+.extension {
+ 
+  color: var(--unnamed-color-333333);
+  text-align: left;
+  font: normal normal bold 18px / 43px Inter, sans-serif;
   letter-spacing: 0px;
-  opacity: 1;
 }
 
 
@@ -636,6 +686,7 @@ max-width: 100%;
   color: #333333;
   text-decoration: none;
 }
+ 
 
 
 
@@ -643,42 +694,48 @@ max-width: 100%;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* programs-section */
+.programs-section{
+  overflow: hidden;
+}
 
 
 .programs-section .program-card {
   position: relative;
   overflow: hidden;
   color: #ffffff;
-  border-radius: 8px;
-  min-height: 400px; /* Ensures all cards have the same minimum height */
+  /* border-radius: 8px; */
+  min-height: 600px; /* Ensures all cards have the same minimum height */
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
+
+.program-title{
+  font: normal normal bold 42px / 50px Inter, sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.program-title span{
+  color: #FDD22E;
+    font-style: italic;
+    font-family: test;
+}
+
+
+.programs-section .matchinggiftunderline{
+  vertical-align: middle;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(5px);
+}
 .program-card .overlay {
   /* background-color: rgba(0, 0, 0, 0.6);   */
   position: absolute;
@@ -694,16 +751,13 @@ max-width: 100%;
   z-index: 2;
 }
 
-.program-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
+ 
 .program-description {
   font-size: 1rem;
   line-height: 1.5;
   color: #d1d1d1;
+  max-width: 118vh;
+
 }
 
 .highlighted-text {
@@ -713,11 +767,64 @@ max-width: 100%;
 }
 
 /* Responsive text sizing */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .program-title {
     font-size: 1.25rem;
   }
   .program-description {
     font-size: 0.9rem;
+  }
+} */
+
+
+ .legacyunderline{
+  vertical-align: middle;
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(5px);
+}
+
+
+ 
+
+
+
+@media (max-width: 768px) {
+  .programs-section .program-card {
+    min-height: 400px;
+    padding: 15px;
+  }
+
+  .program-title {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .program-description {
+    font-size: 0.9rem;
+  }
+
+  .programs-section .matchinggiftunderline {
+    transform: translateY(3px);
+  }
+}
+
+/* Additional adjustments for extra small screens */
+@media (max-width: 576px) {
+  .programs-section .program-card {
+    min-height: 300px;
+    padding: 10px;
+  }
+
+  .program-title {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .program-description {
+    font-size: 0.85rem;
   }
 }

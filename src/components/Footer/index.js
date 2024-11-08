@@ -27,7 +27,7 @@ function Footer() {
                 <p>
                   <Link
                     to="/"
-                    className="hiscolint text-decoration-none text-primary"
+                    className="hiscolint  text-primary"
                   >
                     HISOC
                   </Link>{" "}
@@ -40,22 +40,22 @@ function Footer() {
                 <h5>About HomeAid</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Board & Team
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       News & Announcements
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Become A Volunteer
                     </a>
                   </li>
@@ -65,17 +65,17 @@ function Footer() {
                 <h5>Our Impact</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Projects
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Community
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       HISOC Works
                     </a>
                   </li>
@@ -85,22 +85,22 @@ function Footer() {
                 <h5>Get Involved</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Ways To Give
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Events
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Make A Donation
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Be A Sponsor
                     </a>
                   </li>
@@ -110,17 +110,17 @@ function Footer() {
                 <h5>Resources</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Get Help?
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Financials
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="text-decoration-none">
+                    <a href="#!" className="">
                       Contact Us
                     </a>
                   </li>
@@ -133,7 +133,7 @@ function Footer() {
         <footer className="footer-bottom bg-dark text-white py-3">
           <div className="container d-flex flex-wrap justify-content-between align-items-center">
             {/* Left section with logos */}
-            <div className="d-flex align-items-center    gap-5">
+            <div className="d-flex align-items-center    ">
               <img
                 src={bottomfooterlogo1}
                 alt="501(c)(3)"
@@ -151,32 +151,38 @@ function Footer() {
               />
             </div>
             {/* Center section for copyright text */}
-            <div className="text-center">
+            
+            {/* Right section with social icons and donate button */}
+            <div className="socialicon   text-end align-items-end">
+              <div className='d-flex mb-2 justify-content-end  '>
+              <Link href="/" className="  text-white  me-3">
+                <i className="bi bi-facebook fs-5"></i>
+              </Link>
+
+              <Link href="/" className="text-white me-3">
+                <i className="bi bi-x fs-5"></i>
+              </Link>
+              <Link href="/" className="text-white me-3">
+                <i className="bi bi-instagram fs-5"></i>
+              </Link>
+              </div>
+
+
+<div>
+
               <p className="mb-0">
                 © Copyright 2007-2022, HISOC America. All Rights Reserved.
                 <br />
                 Designed by United Design Group |{" "}
-                <a href="#!" className="text-decoration-none text-white">
+                <a href="#!" className=" text-white">
                   Legal
                 </a>{" "}
                 |{" "}
-                <a href="#!" className="text-decoration-none text-white">
+                <a href="#!" className=" text-white">
                   Privacy
                 </a>
               </p>
-            </div>
-            {/* Right section with social icons and donate button */}
-            <div className="socialicon d-flex align-items-center">
-              <Link href="/" className="  text-white  me-3">
-                <i className="bi bi-facebook"></i>
-              </Link>
-
-              <Link href="/" className="text-white me-3">
-                <i className="bi bi-x"></i>
-              </Link>
-              <Link href="/" className="text-white me-3">
-                <i className="bi bi-instagram"></i>
-              </Link>
+              </div>
             </div>
           </div>
         </footer>
