@@ -363,13 +363,13 @@ function Givedonation() {
                       alt={`${member.name}`}
                       style={{ height: "300px", objectFit: "cover" }}
                     />
-                    <div className="card-body">
+                    <div className="">
                       <div className=" gap-2 d-flex">
-                      <p className=" "> HIS OC’s</p>
-                      <div>
-                      <h5 className="card-title">{member.name}</h5>
-                      <p className="card-text text-muted mb-0">{member.title}</p>
-                      <p className="card-text text-muted">{member.title2}</p>
+                      <p className="hisocp px-3"> HIS OC’s</p>
+                      <div className="mt-3">
+                      <h5 className="card-title text-start">{member.name}</h5>
+                      <p className="card-text text-start text-muted mb-0">{member.title}</p>
+                      <p className="card-text text-muted text-start">{member.title2}</p>
                       </div>
                       </div>
 
