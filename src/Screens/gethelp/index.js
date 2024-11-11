@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa"; // Font Awesome phone icon (React Icons)
 import { FaStar } from "react-icons/fa";
 import helpstar from "../../Assets/images/helpstar.svg";
+import Leadership from '../../components/Leadership/index'
 import hopeunderline from "../../Assets/images/hopeunderline.png";
 import HeroSection from "../../components/herosection";
 import drivingchangecard1 from "../../Assets/images/drivingchangecard1.png";
@@ -19,8 +20,8 @@ import Contact from "../../components/contact";
 import Sponsor from "../../components/sponsor";
 
 import gethelpbg from "../../Assets/images/gethelpbg.png";
-import program1 from "../../Assets/images/program1.svg.png";
-import program2 from "../../Assets/images/program2.png";
+// import program1 from "../../Assets/images/program1.svg.png";
+// import program2 from "../../Assets/images/program2.png";
 
 import ourworkbg from "../../Assets/images/ourworkbg.png";
 function GetHelp() {
@@ -160,7 +161,7 @@ function GetHelp() {
 
         <section className="services-section  py-5">
           <div className="container">
-            <div className="row justify-content-center">
+            <div className="row justify-content-center text-center">
               {services.map((service, index) => (
                 <div key={index} className="col-12 col-md-6 col-lg-3 mb-4">
                   <div
@@ -171,7 +172,7 @@ function GetHelp() {
                     }}
                   >
                     <FaPhoneAlt size={30} color="#348F99" />
-                    <p className="para mt-3 mb-2 text-muted">
+                    <p className="para mt-3 mb-2 text-muted text-center">
                       {service.description.split(" ").map((word, i) =>
                         word === service.linkText ? (
                           <a
@@ -186,7 +187,7 @@ function GetHelp() {
                         )
                       )}
                     </p>
-                    <p className="extension font-weight-bold">
+                    <p className="extension font-weight-bold text-center">
                       Extension {service.extension}
                     </p>
                   </div>
@@ -201,10 +202,10 @@ function GetHelp() {
             <div className="row align-items-center">
               {/* Left Section with Hashtag, 211 Text, and Star */}
               <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-                <h5 className="hashtag text-uppercase mb-3">#HELPSTARTSHERE</h5>
+ 
                 <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
                   <h1 className="display-1 text-warning mb-0">
-                    <img src={helpstar} />
+                    <img src={helpstar} className="starimg" />
                   </h1>
                   <FaStar className="text-warning star-icon" />
                   <span className="oc-text">oc</span>
@@ -233,47 +234,7 @@ function GetHelp() {
           </div>
         </section>
 
-        <section className="dedicatd-leadership">
-          <div className="container my-5">
-            <div className="d-flex gap-5 mb-5">
-              <h2 className="title text-start mb-4">
-                HIS-OC’S Mission Is A Dedicated{" "}
-                <span className="dedication  position-relative">
-                  Leadership{" "}
-                  <img
-                    className="dedicationunderline"
-                    src={dedicationunderline}
-                  />
-                </span>
-                Team
-              </h2>
-              <p className="para text-start text-muted mb-5">
-                Our Program Director oversees the strategic direction of all
-                services at HIS-OC, ensuring that every initiative is designed
-                to provide long-term solutions to homelessness. With years of
-                experience in social services, the Program Director.
-              </p>
-            </div>
-            <Slider {...settings}>
-              {teamMembers.map((member, index) => (
-                <div key={index} className="p-2">
-                  <div className="card border-0 shadow-sm text-center">
-                    <img
-                      src={member.imgSrc}
-                      className="card-img-top"
-                      alt={`${member.name}`}
-                      style={{ height: "300px", objectFit: "cover" }}
-                    />
-                    <div className="card-body">
-                      <h5 className="card-title">{member.name}</h5>
-                      <p className="card-text text-muted">{member.title}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </section>
+      <Leadership />
         <Contact />
         <Sponsor />
       </Layout>

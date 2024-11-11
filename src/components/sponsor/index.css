@@ -14,6 +14,10 @@
   position: relative;
 }
 
+
+
+
+
 .sponsor-text::after {
   content: "";
   display: block;
@@ -28,9 +32,29 @@
 }
 
 .sponsor-texttitle {
-  font-size: 55px;
+  font-size: 55px; /* Default size for larger screens */
 }
 
+/* For tablets and smaller devices */
+@media (max-width: 1024px) {
+  .sponsor-texttitle {
+    font-size: 45px; /* Adjust font size for medium screens */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .sponsor-texttitle {
+    font-size: 35px;  
+  }
+}
+
+ 
+@media (max-width: 480px) {
+  .sponsor-texttitle {
+    font-size: 25px;  
+  }
+}
 
 
 .sponsorunderline{

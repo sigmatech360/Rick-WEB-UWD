@@ -38,7 +38,7 @@ function Header() {
             {/* First logo: visible only in responsive mode */}
             <Link
               className="navbar-brand d-flex align-items-center d-lg-none"
-              href="/"
+              to="/"
             >
               <img src={logo} alt="Logo" style={{ height: "40px" }} />
             </Link>
@@ -171,7 +171,7 @@ function Header() {
 
               {/* Second logo: visible only in full-screen mode */}
               <div className="d-none d-lg-block">
-                <Link className="navbar-brand" href="/">
+                <Link className="navbar-brand" to="/">
                   <img src={logo} alt="Logo" style={{ height: "40px" }} />
                 </Link>
               </div>

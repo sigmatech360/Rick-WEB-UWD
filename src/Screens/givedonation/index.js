@@ -1,15 +1,11 @@
 import "./index.css";
 
 import Layout from "../../components/layout";
-
+import Leadership from "../../components/Leadership";
 import React, { useState } from "react";
 import createdunderline from "../../Assets/images/createdunderline.png";
 import HeroSection from "../../components/herosection";
-import drivingchangecard1 from "../../Assets/images/drivingchangecard1.png";
-import drivingchangecard2 from "../../Assets/images/drivingchangecard2.png";
-import dedicationunderline from "../../Assets/images/dedicationunderline.png";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
+  import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Contact from "../../components/contact";
 import Sponsor from "../../components/sponsor";
@@ -21,7 +17,11 @@ import donatecard3 from "../../Assets/images/donatecard3.svg";
 import programlegacy from "../../Assets/images/programlegacy.png";
 import applyemployeebg from "../../Assets/images/applyemployeebg.png";
 import donatebg from "../../Assets/images/donatebg.png";
-import machinggiftunderline from "../../Assets/images/missionunderline.png";
+ 
+import dedleadimg1 from "../../Assets/images/dedleadimg1.png";
+import dedleadimg2 from "../../Assets/images/dedleadimg2.png";
+import dedleadimg3 from "../../Assets/images/dedleadimg3.png";
+import dedleadimg4 from "../../Assets/images/dedleadimg4.png";
 function Givedonation() {
   const PrevArrow = (props) => {
     const { onClick } = props;
@@ -78,6 +78,12 @@ function Givedonation() {
       {
         breakpoint: 768, // Small screens
         settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576, // Extra-small screens (below 768px)
+        settings: {
           slidesToShow: 1,
         },
       },
@@ -88,26 +94,26 @@ function Givedonation() {
     {
       name: "Executive Director: Christine Stellino",
       title: "christine@his-oc.org",
-   
-      imgSrc: drivingchangecard1, // replace with actual image paths
+
+      imgSrc: dedleadimg1, // replace with actual image paths
     },
     {
       name: "Program Director: Alfa Hernandez",
       title: "alfa@his-oc.org",
       title2: "(714) 582-7981",
-      imgSrc: drivingchangecard2,
+      imgSrc: dedleadimg2,
     },
     {
       name: "Program Manager: Anthony Trejo",
       title: "cuca@his-oc.org",
       title2: "(714) 465-5062",
-       imgSrc: drivingchangecard1,
+      imgSrc: dedleadimg3,
     },
     {
       name: "TAY Program: Cuca Trejo",
       title: "cuca@his-oc.org",
       title2: "(714) 465-5062",
-      imgSrc: drivingchangecard2,
+      imgSrc: dedleadimg4,
     },
   ];
 
@@ -149,7 +155,7 @@ function Givedonation() {
                 <img className="availabletagline" src={donateunderline} />
               </span>
             </h2>
-            <p className="para w-50 text-center mx-auto">
+            <p className="para   text-center mx-auto">
               {" "}
               Your generous gift will help provide hope and a place to call home
               for homeless individuals and families.
@@ -162,15 +168,14 @@ function Givedonation() {
             <div className="row justify-content-center">
               <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div
-                  className="service-card p-3 text-start  py-4 h-100"
+                  className="service-card p-3    py-4 h-100"
                   style={{
                     backgroundColor: "#F3EFFF",
                     borderRadius: "12px",
                   }}
                 >
                   <img className="creadetimg" src={donatecard1} />
-                  {/* <FaPhoneAlt size={30} color="#348F99" /> */}
-                  <p className="extension font-weight-bold  mb-0 text-start">
+                  <p className="extension font-weight-bold  mb-0  ">
                     Give Now by{" "}
                     <spna className="credit position-relative">
                       Credit{" "}
@@ -181,7 +186,7 @@ function Givedonation() {
                     </spna>{" "}
                     Card
                   </p>
-                  <p className="para   mb-2 text-muted text-start">
+                  <p className="para   mb-2 text-muted  ">
                     It's easy to give a small donation, right now! Please give
                     generously and support our goal of helping find homes for
                     people in need.
@@ -192,7 +197,7 @@ function Givedonation() {
 
               <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div
-                  className="service-card p-3 text-start h-100  py-4"
+                  className="service-card p-3   h-100  py-4"
                   style={{
                     backgroundColor: "#ebfeee",
                     borderRadius: "12px",
@@ -200,7 +205,7 @@ function Givedonation() {
                 >
                   <img className="creadetimg" src={donatecard2} />
                   {/* <FaPhoneAlt size={30} color="#EBFEEE" /> */}
-                  <p className="extension font-weight-bold  mb-0 text-start">
+                  <p className="extension font-weight-bold  mb-0  ">
                     Give Now by{" "}
                     <spna className="credit position-relative">
                       Credit{" "}
@@ -211,7 +216,7 @@ function Givedonation() {
                     </spna>{" "}
                     Card
                   </p>
-                  <p className="para   mb-2 text-muted text-start">
+                  <p className="para   mb-2 text-muted  ">
                     Please make checks payable to HIS-OC and mail to P.O. Box
                     1293, Placentia, CA 92871.
                   </p>
@@ -220,7 +225,7 @@ function Givedonation() {
 
               <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div
-                  className="service-card p-3 text-start  py-4 h-100"
+                  className="service-card p-3    py-4 h-100"
                   style={{
                     backgroundColor: "#FEFBEB",
                     borderRadius: "12px",
@@ -228,7 +233,7 @@ function Givedonation() {
                 >
                   <img className="creadetimg" src={donatecard3} />
                   {/* <FaPhoneAlt size={30} color="#348F99" /> */}
-                  <p className="extension font-weight-bold  mb-0 text-start">
+                  <p className="extension font-weight-bold  mb-0  ">
                     Give Now by{" "}
                     <spna className="credit position-relative">
                       Credit{" "}
@@ -239,7 +244,7 @@ function Givedonation() {
                     </spna>{" "}
                     Card
                   </p>
-                  <p className="para   mb-2 text-muted text-start">
+                  <p className="para   mb-2 text-muted  ">
                     #giftsforall #hisoc #unhoused #underprivileged
                     #trasitionalagedyouth.
                   </p>
@@ -265,7 +270,7 @@ function Givedonation() {
               >
                 <div className="overlay position-absolute top-0 start-0 w-100 h-100"></div>
                 <div className="content">
-                  <h3 className="program-title mb-3 text-start w-30">
+                  <h3 className="program-title mb-3   w-30">
                     Apply For Employee Matching{" "}
                     <span className="position-relative">
                       Gifts{" "}
@@ -275,7 +280,7 @@ function Givedonation() {
                       />{" "}
                     </span>
                   </h3>
-                  <p className="program-description text-start text-white">
+                  <p className="program-description   text-white">
                     Many employers will match a charitable donation to a
                     non-profit organization, which can double, even triple the
                     value of your donation. Ask your employer about its matching
@@ -297,9 +302,9 @@ function Givedonation() {
               >
                 <div className="overlay position-absolute top-0 start-0 w-100 h-100"></div>
                 <div className="content">
-                  <h3 className="program-title mb-3 text-start w-30">
-                  Leave A Legacy{"  "} <br/> 
-                  (Planned {""}
+                  <h3 className="program-title mb-3   w-30">
+                    Leave A Legacy{"  "} <br />
+                    (Planned {""}
                     <span className="position-relative">
                       Giving){" "}
                       <img
@@ -308,7 +313,7 @@ function Givedonation() {
                       />{" "}
                     </span>
                   </h3>
-                  <p className="program-description text-start text-white">
+                  <p className="program-description   text-white">
                     Making a commitment to HIS-OC through your will or other
                     estate planning vehicle is an effective way to ensure that
                     critical services are provided to low-income families and
@@ -326,60 +331,7 @@ function Givedonation() {
           </div>
         </section>
 
-        <section className="dedicatd-leadership">
-          <div className="container my-5">
-            <div className="row     mb-5">
-              <div className="col-md-6">
-              <h2 className="title text-start mb-4">
-                HIS-OC’S Mission Is A Dedicated{" "}
-                <span className="dedication  position-relative">
-                  Leadership{" "}
-                  <img
-                    className="dedicationunderline"
-                    src={dedicationunderline}
-                  />
-                </span>
-                Team
-              </h2>
-              </div>
-              <div className="col-md-6">
-
-
-              <p className="para text-start text-muted mb-5">
-                Our Program Director oversees the strategic direction of all
-                services at HIS-OC, ensuring that every initiative is designed
-                to provide long-term solutions to homelessness. With years of
-                experience in social services, the Program Director.
-              </p>
-              </div>
-            </div>
-            <Slider {...settings}>
-              {teamMembers.map((member, index) => (
-                  <div key={index} className="p-2">
-                  <div className="card  p-4 border-0 shadow-sm text-center">
-                    <img
-                      src={member.imgSrc}
-                      className="card-img-top"
-                      alt={`${member.name}`}
-                      style={{ height: "300px", objectFit: "cover" }}
-                    />
-                    <div className="">
-                      <div className=" gap-2 d-flex">
-                      <p className="hisocp px-3"> HIS OC’s</p>
-                      <div className="mt-3">
-                      <h5 className="card-title text-start">{member.name}</h5>
-                      <p className="card-text text-start text-muted mb-0">{member.title}</p>
-                      <p className="card-text text-muted text-start">{member.title2}</p>
-                      </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </section>
+        <Leadership />
         <Contact />
         <Sponsor />
       </Layout>

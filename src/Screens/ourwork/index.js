@@ -4,6 +4,13 @@ import Layout from "../../components/layout";
 import ourmission from "../../Assets/images/ourmission.png";
 import missionunderline from "../../Assets/images/missionunderline.png";
 import React, { useState } from "react";
+import aboutherounderline from '../../Assets/images/aboutherounderline.png'
+import housedefaultimg from '../../Assets/images/housedefaultimg.png'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Leadership from '../../components/Leadership'
+import houseprogramunderline from '../../Assets/images/houseprogramunderline.png'
 
 import hopeunderline from "../../Assets/images/hopeunderline.png";
 import HeroSection from "../../components/herosection";
@@ -15,10 +22,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Contact from "../../components/contact";
 import Sponsor from "../../components/sponsor";
-import program1 from "../../Assets/images/program1.svg.png";
-import program2 from "../../Assets/images/program2.png";
-
+import houseimg from '../../Assets/images/houseimg.png'
+import youth from '../../Assets/images/youth.png'
+import Oc from '../../Assets/images/Oc.png'
+import Closet from '../../Assets/images/closet.png'
 import ourworkbg from "../../Assets/images/ourworkbg.png";
+// import { FaArrowRight } from "react-icons/fa";
 function OurWork() {
   const PrevArrow = (props) => {
     const { onClick } = props;
@@ -106,37 +115,45 @@ function OurWork() {
 
   const programs = [
     {
-      title: "Transitional Housing Program",
+      title: "Transitional    ",
+      title2: "Program",
+      highlightedWords: "Housing",
       description: "Providing Shelter and Reunification for Families",
-      highlightedWords: ["Housing"], // Word to style differently on hover
-      imgSrc: "path_to_image/transitional_housing.jpg",
+      imgSrc: houseimg,
     },
     {
-      title: "Transitional Aged Youth Shelter",
+      title: "Transitional Aged  ",
+      title2: "Shelter",
+      highlightedWords: "Youth",
       description: "Supporting Transitional Age Youth",
-      highlightedWords: ["Youth"], // Word to style differently on hover
-      imgSrc: "path_to_image/youth_shelter.jpg",
+
+      imgSrc: youth,
     },
     {
-      title: "Home Share OC",
+      title: "Home Share  ",
+
+      highlightedWords: "OC",
       description: "Helping College Students Transition",
-      highlightedWords: [],
-      imgSrc: "path_to_image/home_share.jpg",
+
+      imgSrc: Oc,
     },
     {
-      title: "Housing & Resource Connection",
+      title: "Housing & Resource  ",
+
       description: "Guiding To Services And Support",
-      highlightedWords: ["Housing"],
-      imgSrc: "path_to_image/housing_resource.jpg",
+      highlightedWords: "Connection",
+      imgSrc: Oc,
     },
     {
       title: "Charity’s Closet",
       description: "Our Trusted Partner",
-      highlightedWords: [],
-      imgSrc: "path_to_image/charity_closet.jpg",
+      highlightedWords: " ",
+      imgSrc: Closet,
+
     },
   ];
   const [hoveredProgram, setHoveredProgram] = useState(null);
+
 
   return (
     <>
@@ -163,58 +180,59 @@ function OurWork() {
           </div>
         </section>
 
-        <section className="programs-section container my-5">
-          <div className="row">
-            {/* Program List Section */}
-            <div className="col-lg-6">
-              {programs.map((program, index) => (
-                <div
-                  key={index}
-                  className={`program-item p-3 my-2 d-flex justify-content-between align-items-center ${
-                    program.highlighted ? "highlighted" : ""
-                  }`}
-                  onMouseEnter={() => setHoveredProgram(program)}
-                  onMouseLeave={() => setHoveredProgram(null)}
-                >
-                  <div>
-                    <h5 className="mb-1">
-                      {program.title.split(" ").map((word, i) => (
-                        <span
-                          key={i}
-                          className={
-                            hoveredProgram === program &&
-                            program.highlightedWords.includes(word)
-                              ? "highlighted-word"
-                              : ""
-                          }
-                        >
-                          {word}{" "}
-                        </span>
-                      ))}
-                    </h5>
-                    <p className="mb-0 text-muted">{program.description}</p>
-                  </div>
-                  <div className="arrow-icon">
-                    <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <section className="programs-section ">
+          <div className="container my-5">
+            <div className="row">
+              {/* Program List Section */}
+              <div className="programs-section-left col-lg-6">
+                <div className="bordertop mb-0">
+                  {programs.map((program, index) => (
+                    <div
+                      key={index}
+                      className={`program-item p-3   d-flex justify-content-between mb-0 align-items-center ${program.highlighted ? "highlighted" : ""
+                        }`} onMouseEnter={() => setHoveredProgram(program)}
+                      onMouseLeave={() => setHoveredProgram(null)}
+                    >
+                      <div>
+                        <h5 className="mb-1">
+                          {program?.title}
+                          <span className="highlighted-word position-relative" >
+                            {program?.highlightedWords} {""}
+                            <img src={aboutherounderline} className="programunderlines" />
+                          </span>
+                          {program?.title2}
+                        </h5>
+                        <p className="mb-0 text-muted">{program.description}</p>
+                      </div>
+                      <div className="arrow-con">
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </div>
 
-            {/* Image Section */}
-            <div className="col-lg-6 d-none d-lg-block">
-              <div className="image-container position-relative">
-                <img
-                  src={
-                    hoveredProgram
-                      ? hoveredProgram.imgSrc
-                      : "path_to_image/default_image.jpg"
-                  }
-                  alt="Hovered Program"
-                  className="img-fluid"
-                  style={{ objectFit: "cover", width: "100%" }}
-                />
-                <div className="overlay"></div>
+                    </div>
+                  ))}
+                </div>
+
+
+                <div>
+                  <h5 className="title font-bold">Homless <span> Intervention  </span> services Of Orange  Country <span className=" position-relative">( HIS-OC) <img src={houseprogramunderline} className="houseprogramunderline" /></span>  </h5>
+                </div>
+              </div>
+
+              {/* Image Section */}
+              <div className="col-lg-6 d-none d-lg-block">
+                <div className="image-container position-relative">
+                  <img
+                    src={
+                      hoveredProgram
+                        ? hoveredProgram.imgSrc
+                        : housedefaultimg
+                    }
+                    alt="Hovered Program"
+                    className="img-fluid"
+                    style={{ objectFit: "cover", width: "100%" }}
+                  />
+                  <div className="overlay"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -222,67 +240,7 @@ function OurWork() {
 
         <Contact />
 
-        <section className="dedicatd-leadership">
-          <div className="container my-5">
-            <div className="row  mb-5">
-              <div className="col-md-6">
-                <h2 className="title text-start mb-4">
-                  HIS-OC’S Mission Is A Dedicated{" "}
-                  <span className="dedication  position-relative">
-                    Leadership{" "}
-                    <img
-                      className="dedicationunderline"
-                      src={dedicationunderline}
-                    />
-                  </span>
-                  Team
-                </h2>
-              </div>
-              <div className="col-md-6">
-                <p className="para text-start text-muted mb-5">
-                  Our Program Director oversees the strategic direction of all
-                  services at HIS-OC, ensuring that every initiative is designed
-                  to provide long-term solutions to homelessness. With years of
-                  experience in social services, the Program Director.
-                </p>
-              </div>
-            </div>
-            <Slider {...settings}>
-              {teamMembers.map((member, index) => (
-                <div className="container d-flex justify-content-center my-4">
-                  <div className="card contact-card shadow-sm  align-items-center">
-                    {/* Image Section */}
-                    <div className="image-container">
-                      <img
-                         src={member.imgSrc}
-                        alt="Anthony Trejo"
-                        className="img-fluid profile-image"
-                      />
-                    </div>
-
-                    {/* Info Section */}
-                    <div className="info-container d-flex flex-row flex-md-column align-items-start p-3">
-                      {/* HIS OC's label */}
-                      <div className="label bg-warning text-dark text-center fw-bold p-2">
-                        HIS OC’s
-                      </div>
-
-                      {/* Contact Details */}
-                      <div className="ms-3 ms-md-0">
-                        <p className="fw-bold mb-1">
-                          Program Manager: Anthony Trejo
-                        </p>
-                        <p className="mb-1 text-muted">anthony@his-oc.org</p>
-                        <p className="mb-0 text-primary">(714) 266-6163</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </section>
-
+   <Leadership/>
         <Sponsor />
       </Layout>
     </>

@@ -131,61 +131,55 @@ function Footer() {
         </footer>
 
         <footer className="footer-bottom bg-dark text-white py-3">
-          <div className="container d-flex flex-wrap justify-content-between align-items-center">
-            {/* Left section with logos */}
-            <div className="d-flex align-items-center    ">
-              <img
-                src={bottomfooterlogo1}
-                alt="501(c)(3)"
-                className="footer-logo me-3"
-              />
-              <img
-                src={bottomfooterlogo2}
-                alt="Nonprofit Central"
-                className="footer-logo1 me-3"
-              />
-              <img
-                src={bottomfooterlogo3}
-                alt="Gold Transparency 2024"
-                className="footer-logo3"
-              />
-            </div>
-            {/* Center section for copyright text */}
-            
-            {/* Right section with social icons and donate button */}
-            <div className="socialicon   text-end align-items-end">
-              <div className='d-flex mb-2 justify-content-end  '>
-              <Link href="/" className="  text-white  me-3">
-                <i className="bi bi-facebook fs-5"></i>
-              </Link>
+  <div className="container d-flex flex-wrap justify-content-between align-items-center">
+    {/* Left section with logos */}
+    <div className="d-flex align-items-center flex-wrap justify-content-center mb-3 mb-md-0">
+      <img
+        src={bottomfooterlogo1}
+        alt="501(c)(3)"
+        className="footer-logo me-3"
+      />
+      <img
+        src={bottomfooterlogo2}
+        alt="Nonprofit Central"
+        className="footer-logo1 me-3"
+      />
+      <img
+        src={bottomfooterlogo3}
+        alt="Gold Transparency 2024"
+        className="footer-logo3"
+      />
+    </div>
+    
+    {/* Center section for copyright text */}
+    <div className="text-center text-md-end socialicon">
+      <div className="d-flex mb-2 justify-content-center justify-content-md-end">
+        <Link href="/" className="text-white me-3">
+          <i className="bi bi-facebook fs-5"></i>
+        </Link>
+        <Link href="/" className="text-white me-3">
+          <i className="bi bi-x fs-5"></i>
+        </Link>
+        <Link href="/" className="text-white me-3">
+          <i className="bi bi-instagram fs-5"></i>
+        </Link>
+      </div>
+      <p className="mb-0">
+        © Copyright 2007-2022, HISOC America. All Rights Reserved.
+        <br />
+        Designed by United Design Group |{" "}
+        <a href="#!" className="text-white">
+          Legal
+        </a>{" "}
+        |{" "}
+        <a href="#!" className="text-white">
+          Privacy
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
 
-              <Link href="/" className="text-white me-3">
-                <i className="bi bi-x fs-5"></i>
-              </Link>
-              <Link href="/" className="text-white me-3">
-                <i className="bi bi-instagram fs-5"></i>
-              </Link>
-              </div>
-
-
-<div>
-
-              <p className="mb-0">
-                © Copyright 2007-2022, HISOC America. All Rights Reserved.
-                <br />
-                Designed by United Design Group |{" "}
-                <a href="#!" className=" text-white">
-                  Legal
-                </a>{" "}
-                |{" "}
-                <a href="#!" className=" text-white">
-                  Privacy
-                </a>
-              </p>
-              </div>
-            </div>
-          </div>
-        </footer>
       </section>
         </>
 

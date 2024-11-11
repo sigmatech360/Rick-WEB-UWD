@@ -50,28 +50,7 @@
   font-family: text;
   font-style: italic;
 }
-
-/* Left section background */
-.left-section {
-  background-image: url("../../Assets/images/wedobg.png");
-  background-size: cover;
-  background-position: center;
-  color: #333333;
-  padding: 83px;
-  min-height: 400px; /* Adjust height as needed */
-
-  background-color: #fdfbf8;
-}
-
-/* Right section background */
-.right-section {
-  background-image: url("../../Assets/images/ourmission.png");
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  min-height: 400px; /* Adjust height as needed */
-}
-
+ 
 /* Custom text styling */
 .highlight-text {
   color: #0056b3; /* Example color, adjust as needed */
@@ -148,28 +127,7 @@
   font-family: text;
   font-style: italic;
 }
-
-/* Left section background */
-.left-section {
-  background-image: url("../../Assets/images/wedobg.png");
-  background-size: cover;
-  background-position: center;
-  color: #333333;
-  padding: 83px;
-  min-height: 400px; /* Adjust height as needed */
-
-  background-color: #fdfbf8;
-}
-
-/* Right section background */
-.legacy .right-section {
-  background-image: url("../../Assets/images/legacybg.png");
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  min-height: 400px; /* Adjust height as needed */
-}
-
+ 
 /* Custom text styling */
 .highlight-text {
   color: #0056b3; /* Example color, adjust as needed */
@@ -234,9 +192,9 @@
   color: black; /* Customize arrow color */
 }
 
-.card {
+/* .dedicatd-leadership .card {
   border-radius: 10px;
-}
+} */
 
 .dedicatd-leadership .slick-next {
   justify-content: center;
@@ -372,98 +330,7 @@
 }
 
 /* info-section */
-
-.info-section {
-  /* background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
-    ), url('../../Assets/images/multiprogrambg.png');  */
-  background-image: url("../../Assets/images/multiprogrambg.png");
-  background-size: cover;
-  background-color: #fdfbf8;
-  background-position: center;
-  color: #333333;
-}
-
-.info-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333333;
-  max-width: 800px;
-  margin: 0 auto;
-  opacity: 1;
-}
-
-/* Responsive font adjustments */
-@media (min-width: 1200px) {
-  .info-text {
-    font-size: 1.25rem;
-    line-height: 1.8;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .info-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-}
-
-@media (max-width: 768px) {
-  .info-text {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-}
-
-.program-item {
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.program-item:hover {
-  background-color: #e9ecef;
-}
-
-.program-item .arrow-icon {
-  color: #ffcc00;
-  font-size: 1.5rem;
-}
-
-.program-item.highlighted {
-  background-color: #ffeaa7;
-  font-weight: bold;
-}
-
-/* Style for highlighted word on hover */
-.highlighted-word {
-  color: #348f99; /* Change color */
-  font-style: italic; /* Change font style */
-  font-weight: bold;
-}
-
-.image-container {
-  position: relative;
-}
-
-.image-container img {
-  border-radius: 8px;
-  transition: opacity 0.3s ease;
-}
-
-.image-container .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
-  filter: blur(10px);
-  border-radius: 8px;
-}
-
+ 
 /* innovation services */
 
 .services-section {
@@ -584,14 +451,97 @@ max-width: 100%;
   letter-spacing: 1px;
 }
 
-.display-1 {
+/* .display-1 {
   font-weight: bold;
-  font-size: 5rem; /* Large font size for "211" */
+  font-size: 5rem;  
 }
 
 .star-icon {
   font-size: 2rem;
   margin-left: 10px;
+} */
+
+
+
+
+
+
+
+
+/* Default styles */
+.display-1 {
+  font-size: 3.5rem; /* Large font for larger screens */
+}
+
+.star-icon {
+  font-size: 2rem; /* Icon size */
+}
+
+.oc-text {
+  font-size: 1.5rem; /* Text size */
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .display-1 {
+    font-size: 3rem;  /* Adjust the heading size */
+  }
+
+  .star-icon {
+    font-size: 1.8rem;  /* Smaller icon size */
+  }
+
+  .oc-text {
+    font-size: 1.3rem;  /* Slightly smaller text size */
+  }
+}
+
+@media (max-width: 992px) {
+  .display-1 {
+    font-size: 2.5rem;  /* Further adjust the heading size */
+  }
+
+  .star-icon {
+    font-size: 1.6rem;  /* Further reduce icon size */
+  }
+
+  .oc-text {
+    font-size: 1.2rem;  /* Even smaller text size */
+  }
+}
+
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 2rem;  /* Make the heading much smaller for smaller screens */
+  }
+
+  .star-icon {
+    font-size: 1.4rem;  /* Smaller icon size */
+  }
+
+  .oc-text {
+    font-size: 1.1rem;  /* Smaller text size */
+  }
+}
+
+@media (max-width: 576px) {
+  .starimg{
+    width: 265px;
+  
+}
+
+  .display-1 {
+    font-size: 1.75rem;  /* Further reduce heading size */
+  }
+
+  .star-icon {
+    font-size: 1.3rem;  /* Icon size reduced */
+  }
+
+  .oc-text {
+    font-size: 1rem;  /* Smallest text size for mobile */
+  }
 }
 
 .oc-text {
@@ -601,8 +551,8 @@ max-width: 100%;
   margin-left: 10px;
 }
 
-.description {
-  color: #d1d1d1; /* Light gray color for description text */
+/* .description {
+  color: #d1d1d1; 
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -615,6 +565,76 @@ max-width: 100%;
   text-decoration: none;
   border-radius: 50px;
   transition: all 0.3s ease;
+} */
+
+
+
+
+
+
+
+
+
+/* Default styles */
+.description {
+  font-size: 1.25rem; /* Default font size */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Default text color */
+}
+
+.btn-link {
+  font-size: 1.1rem; /* Slightly bigger link font */
+  color: #fdd22e; /* You can adjust the color as needed */
+  text-decoration: underline; /* Highlight the link */
+}
+
+/* Media queries for responsiveness */
+
+/* Large screens (lg and above) */
+@media (max-width: 1200px) {
+  .description {
+    font-size: 1.1rem;  /* Slightly smaller text for medium screens */
+  }
+
+  .btn-link {
+    font-size: 1rem;  /* Slightly smaller link font */
+  }
+}
+
+/* Medium screens (md and below) */
+@media (max-width: 992px) {
+  .description {
+    font-size: 1rem;  /* Reduce text size for smaller screens */
+  }
+
+  .btn-link {
+    font-size: 0.9rem;  /* Smaller link font for mobile */
+  }
+}
+
+/* Small screens (sm and below) */
+@media (max-width: 768px) {
+  .description {
+    font-size: 0.9rem;  /* Even smaller text for mobile */
+    line-height: 1.5;  /* Adjust line-height for better readability */
+  }
+
+  .btn-link {
+    font-size: 0.85rem;  /* Smaller link font */
+    width: 90%; 
+  }
+}
+
+/* Extra small screens (xs and below) */
+@media (max-width: 576px) {
+  .description {
+    font-size: 0.85rem;  /* Make the text smaller for extra small devices */
+  }
+
+  .btn-link {
+    font-size: 0.8rem;  /* Even smaller link font */
+    width: 100%;  
+  }
 }
 
 .btn-link:hover {
