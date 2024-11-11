@@ -1,0 +1,26 @@
+.hero-section .overlay {
+    /* background-color: rgba(0, 0, 0, 0.5);   */
+  }
+  
+  .breadcrumb {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+
+
+  .aboutherounderline{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(5px);
+  }
+
+
+
+
+  .hero-section .title{
+    margin-bottom: 126px !important;
+  }
