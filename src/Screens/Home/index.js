@@ -398,19 +398,7 @@ function Home() {
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 

@@ -1,6 +1,5 @@
-import logo from "../../Assets/images/logo.png";
-import donateicon from "../../Assets/images/donateicon.png";
-import { Link } from "react-router-dom";
+ import donateicon from "../../Assets/images/donateicon.png";
+// import { Link } from "react-router-dom";
 import sponsorunderline from '../../Assets/images/sponsorunderline.svg'
 import contantunderline from '../../Assets/images/contantunderline.png'
 import './index.css'
