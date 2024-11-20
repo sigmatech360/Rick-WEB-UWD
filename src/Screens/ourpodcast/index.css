@@ -1,0 +1,80 @@
+body {
+  font-family: "Inter";
+}
+
+.Ourpodcastsecbg {
+  background-image: url("../../Assets/images/volunteerbg.png");
+  background-size: cover;
+  background-color: #fdfbf8;
+  background-position: center;
+  color: #333333;
+}
+
+.volunteers {
+  background-color: #fcfaf7;
+}
+
+.info-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333333;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+/* Responsive font adjustments */
+@media (min-width: 1200px) {
+  .Ourpodcast .info-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .info-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.volunteerbtn {
+  background: #fdd22e;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 26px;
+  margin-top: 14px;
+}
+
+.Ourpodcast .title {
+  font-size: 52px;
+  color: #333333;
+  max-width: 62%;
+}
+
+.Ourpodcast .title span {
+  font-style: italic;
+  color: #348f99;
+  font-family: test;
+}
+
+.Ourpodcast .houseprogramunderline {
+  vertical-align: middle;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(5px);
+}
+
+/* General styling for the video card */
+ 

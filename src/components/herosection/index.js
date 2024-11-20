@@ -17,10 +17,15 @@ function HeroSection(props) {
       {props?.pagetitle} {" "}
       <span className="text-warning position-relative">
         {props?.title2} 
-        <img className="aboutherounderline" src={aboutherounderline} alt="underline decoration" />
+        {/* <img className="aboutherounderline" src={aboutherounderline} alt="underline decoration" /> */}
+        <img className={props?.programpojectaboutherounderline} src={aboutherounderline} alt="underline decoration" />
+         
       </span>
     </h1>
-    <p className="breadcrumb text-light">
+    {/* <p className="breadcrumb text-light">
+      Home &gt; {props?.pagename}
+    </p> */}
+     <p className={`${props?.programprojectsubttle} text-light`}>
       Home &gt; {props?.pagename}
     </p>
   </div>

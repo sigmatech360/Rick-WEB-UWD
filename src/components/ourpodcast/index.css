@@ -1,0 +1,32 @@
+
+/* General container for podcasts */
+.podcasts {
+    padding: 20px 0;
+    background-color: #fdfbf8;
+  }
+  /* Podcast card body styling */
+  .podcastcardbody {
+    padding: 20px 4px;
+    /* background: #fff; */
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Image styling */
+  .card-img-top {
+    height: 280px;
+    object-fit: cover;
+    border-radius: 19px;
+    height: auto;
+    max-width: 396px;
+  }
+  
+  .video-meta {
+    display: flex;
+    font-family: "Inter";
+    gap: 17px;
+    color: #6e6e6f;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  
