@@ -1,6 +1,9 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaFacebookF, FaInstagram, FaLink } from "react-icons/fa";
+  import VolunteerModal from '../../components/modal';
+  import React,{useState} from "react";
+import { Button } from "react-bootstrap";
+
 import announcementunderline from '../../Assets/images/announcementunderline.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import contantunderline from '../../Assets/images/contantunderline.png'
+ 
 
 import donateicon from "../../Assets/images/donateicon.png";
 import availabletagline from '../../Assets/images/availabletagline.png'
@@ -22,47 +25,31 @@ import tagline from "../../Assets/images/tagline.png";
 import programunderline from '../../Assets/images/programunderline.svg'
 import announcement1 from "../../Assets/images/announcement1.png";
 import announcement2 from "../../Assets/images/announcement2.png";
-import eventunderline from '../../Assets/images/eventunderlines.svg'
-import eventcard1 from "../../Assets/images/eventcard1.png";
+ 
 import changeworld from '../../Assets/images/changeworld.png'
 
 import wedotagline from '../../Assets/images/wedotagline.png'
-import eventcard2 from "../../Assets/images/eventcard2.png";
 
-import eventcard3 from "../../Assets/images/eventcard3.png";
-// import  {  Autoplay } from 'swiper';
+  
 import housingcard1 from "../../Assets/images/housingcard1.png";
 import Layout from "../../components/layout";
 import Contact from "../../components/contact";
 import Sponsor from "../../components/sponsor";
+import Ourpodcasts from "../../components/ourpodcast";
+import Events from "../../components/events";
 function Home() {
-  const eventsData = [
-    {
-      id: 1,
-      title: "August Events - Gomez Center",
-      date: "July 2024",
-      location: "1701 Atwood, Placentia, CA 92870",
-      image: eventcard1, // Replace with the actual image path
-    },
-    {
-      id: 2,
-      title: "August Events - Whitten Center",
-      date: "July 2024",
-      location: "900 S Melrose St. Placentia, CA 92870",
-      image: eventcard2, // Replace with the actual image path
-    },
-    {
-      id: 3,
-      title:
-        "Cruzin' Back to School\" HIS-OC 2nd Annual Classic Car Show and Fundraiser",
-      date: "July 2024",
-      description:
-        "Join us in sending our shelter residents and surrounding community youth back to school in style!",
-      image: eventcard3, // Replace with the actual image path
-    },
-    // Add more events as needed
-  ];
+ 
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
+
+
   const PrevArrow = (props) => {
+
+
+    
     const { onClick } = props;
     return (
       <button type="button" className="slick-arrow slick-prev mb-2 " onClick={onClick}>
@@ -242,6 +229,15 @@ function Home() {
           </Swiper>
         </section>
 
+
+        <div>
+      <Button variant="primary" onClick={handleShow}>
+        Open Modal
+      </Button>
+      <VolunteerModal show={showModal} handleClose={handleClose} />
+    </div>
+
+
         <section className="homeless-intervention ">
           <div className="container-fluid">
             <div className="row">
@@ -401,46 +397,9 @@ function Home() {
  
 
 
+<Events/>
 
-        <section className="events-section py-5">
-          <div className="container">
-            {/* <h2 className="event text-center position-relative fw-bold mb-5">
-  Events
-  <img className="event-underline" src={eventunderline} alt="Underline Decoration" />
-</h2> */}
-            <div className="event-container text-center">
-              <h2 className="event fw-bold">
-                Events
-                <img className="event-underline" src={eventunderline} alt="Underline Decoration" />
-              </h2>
-            </div>
-            <div className="row">
-              {eventsData.map((event) => (
-                <div key={event.id} className="col-md-4 mb-4">
-                  <div className=" bg-white shadow-sm rounded ">
-                    <img
-                      src={event.image}
-                      alt={event.title}
-                      className="img-fluid rounded  "
-                    />
-                    <div className="event-details p-3">
-                      <p className="text-muted mb-1">{event.date}</p>
-                      <h5 className="fw-bold mb-2">{event.title}</h5>
-                      {event.location && (
-                        <p className="eventlocation mb-1 ">{event.location}</p>
-                      )}
-                      {event.description && (
-                        <p className="small mb-0">{event.description}</p>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-
+<Ourpodcasts/>
 
 
         {/* Announcement section */}

@@ -698,10 +698,10 @@
 
 
 
-.houseprogramunderline{
+.houseprogramunderlineourwork{
   vertical-align: middle;
     position: absolute;
-    bottom: -7px;
+    bottom: -3px;
     left: 0;
     width: 100%;
     height: auto;
@@ -764,4 +764,16 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+  }
+
+
+
+
+  @media (max-width: 480px) {
+    .programs-section .title {
+      font-size: 30px!important;
+      font-weight: 600!important;
+      /* text-align: center; */
+      margin-top: 14px!important;
+  }
   }

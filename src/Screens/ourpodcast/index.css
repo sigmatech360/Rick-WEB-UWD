@@ -66,15 +66,15 @@ body {
   font-family: test;
 }
 
-.Ourpodcast .houseprogramunderline {
-  vertical-align: middle;
+ 
+
+
+
+ .ourpodcastrounderline {
   position: absolute;
-  bottom: -2px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   height: auto;
   transform: translateY(5px);
 }
-
-/* General styling for the video card */
- 

@@ -1,7 +1,7 @@
 import "./index.css";
 
 import Layout from "../../components/layout";
-import sponsorunderline from '../../Assets/images/sponsorunderline.svg'
+import sponsorunderline from "../../Assets/images/sponsorunderline.svg";
 import React, { useState } from "react";
 import createdunderline from "../../Assets/images/createdunderline.png";
 import HeroSection from "../../components/herosection";
@@ -11,7 +11,7 @@ import dedicationunderline from "../../Assets/images/dedicationunderline.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import mapimg from '../../Assets/images/mapimg.png'
+import mapimg from "../../Assets/images/mapimg.png";
 import Contact from "../../components/contact";
 import Sponsor from "../../components/sponsor";
 import matchinggiftunderline from "../../Assets/images/matchinggiftunderline.png";
@@ -23,7 +23,7 @@ import programlegacy from "../../Assets/images/programlegacy.png";
 import applyemployeebg from "../../Assets/images/applyemployeebg.png";
 import donatebg from "../../Assets/images/donatebg.png";
 import machinggiftunderline from "../../Assets/images/missionunderline.png";
-import contectbf from '../../Assets/images/contactbg.png'
+import contectbf from "../../Assets/images/contactbg.png";
 function Contactus() {
   const PrevArrow = (props) => {
     const { onClick } = props;
@@ -136,74 +136,103 @@ function Contactus() {
           pagetitle="Contact  "
           pagename="  Contact Us"
           title2="  Us"
+          programpojectaboutherounderline="programpojectaboutherounderlinemain"
+          programprojectsubttle="programprojectsubttlecontact"
         />
-<section className="map-form"> 
-  <div className="container-fluid">
-    <div className="row gx-0 mb-5">
-      
-      {/* Left side with form and text */}
-      <div className="contactformleft col-lg-6 p-4 p-md-5">
-        <h1 className="display-5 fw-bold mb-2">
-          Want To Talk? Let’s <span className="do-it">Do It! <img className="donateunderline" src={donateunderline}/></span>
-        </h1>
-        <p className="text-muted mb-3 w-50">
-          If you have any questions about <span className="his-oc">HIS-OC</span>, please do not hesitate to contact.
-        </p>
+        <section className="map-form">
+          <div className="container-fluid">
+            <div className="row gx-0 mb-5">
+              {/* Left side with form and text */}
+              <div className="contactformleft col-lg-6 p-4 p-md-5">
+                <h1 className="display-5 fw-bold mb-2">
+                  Want To Talk? Let’s{" "}
+                  <span className="do-it">
+                    Do It!{" "}
+                    <img className="donateunderline" src={donateunderline} />
+                  </span>
+                </h1>
+                <p className="text-muted mb-3 w-50">
+                  If you have any questions about{" "}
+                  <span className="his-oc">HIS-OC</span>, please do not hesitate
+                  to contact.
+                </p>
 
-        <form>
-          <div className="row g-2 mb-3">
-            <div className="col-md-6">
+                <form>
+                  <div className="row g-2 mb-3">
+                    <div className="col-md-6">
+                      <label className="mb-2"> Name</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <label className="mb-2"> Email</label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="Your email"
+                      />
+                    </div>
+                  </div>
 
+                  <div className="row g-2 mb-3">
+                    <div className="col-md-6">
+                      <label className="mb-2"> Number</label>
+                      <input
+                        type="tel"
+                        className="form-control"
+                        placeholder="Your phone"
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <label className="mb-2"> General Information</label>
+                      <select className="form-select">
+                        <option selected>General Information</option>
+                        <option value="1">Support</option>
+                        <option value="2">Sales</option>
+                        <option value="3">Other</option>
+                      </select>
+                    </div>
+                  </div>
 
-              <label className="mb-2"> Name</label>
-              <input type="text" className="form-control" placeholder="Name" />
-            </div>
-            <div className="col-md-6">
-            <label className="mb-2"> Email</label>
-              <input type="email" className="form-control" placeholder="Your email" />
+                  <div className="mb-3">
+                    <label className="mb-2"> Message</label>
+                    <textarea
+                      className="form-control"
+                      rows="3"
+                      placeholder="Type your message"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className=" submit btn btn-warning text-white fw-bold"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+
+              {/* Right side with map image */}
+              <div className="col-lg-6 d-none d-lg-block">
+                <img src={mapimg} alt="Map" className="img-fluid map-image" />
+              </div>
             </div>
           </div>
-          
-          <div className="row g-2 mb-3">
-            <div className="col-md-6">
-            <label className="mb-2"> Number</label>
-              <input type="tel" className="form-control" placeholder="Your phone" />
-            </div>
-            <div className="col-md-6">
-            <label className="mb-2"> General Information</label>
-              <select className="form-select">
-                <option selected>General Information</option>
-                <option value="1">Support</option>
-                <option value="2">Sales</option>
-                <option value="3">Other</option>
-              </select>
-            </div>
-          </div>
+        </section>
 
-          <div className="mb-3">
-          <label className="mb-2">   Message</label>
-            <textarea className="form-control" rows="3" placeholder="Type your message"></textarea>
-          </div>
-          
-          <button type="submit" className=" submit btn btn-warning text-white fw-bold">Send Message</button>
-        </form>
-      </div>
-      
-      {/* Right side with map image */}
-      <div className="col-lg-6 d-none d-lg-block">
-        <img src={mapimg} alt="Map" className="img-fluid map-image" />
-      </div>
-    </div>
-  </div>
-</section>
-
-   
-<section className="inquiries-call d-flex justify-content-center align-items-center">
-        <h2 className=" inquiries-calltitle fw-bold text-white">
-        For Any Inquiries Call The Hotline:  <span className="    position-relative"> +1 123 1234 567 <img className="sponsorunderline" src={sponsorunderline}/></span>
-        </h2>
-      </section>
-
+        <section className="inquiries-call d-flex justify-content-center align-items-center">
+          <h2 className=" inquiries-calltitle fw-bold text-white">
+            For Any Inquiries Call The Hotline:{" "}
+            <span className="    position-relative">
+              {" "}
+              +1 123 1234 567{" "}
+              <img className="sponsorunderline" src={sponsorunderline} />
+            </span>
+          </h2>
+        </section>
       </Layout>
     </>
   );

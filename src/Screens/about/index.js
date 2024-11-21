@@ -94,6 +94,11 @@ function About() {
           pagetitle="About"
           pagename="About"
           title2="HIS-OC"
+          programpojectaboutherounderline="programpojectaboutherounderlinemain"
+
+
+                    programprojectsubttle="givedonationsubtitle"
+ 
         />
 
 

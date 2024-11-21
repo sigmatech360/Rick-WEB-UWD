@@ -11,21 +11,10 @@ import dedicationunderline from "../../Assets/images/dedicationunderline.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import mapimg from "../../Assets/images/mapimg.png";
-import Contact from "../../components/contact";
-
-import spansershipbg from "../../Assets/images/Sponsorshipbg.png";
-import Sponsor from "../../components/sponsor";
-import matchinggiftunderline from "../../Assets/images/matchinggiftunderline.png";
-import donateunderline from "../../Assets/images/donateunderline.svg";
-import donatecard1 from "../../Assets/images/donatecard1.svg";
-import donatecard2 from "../../Assets/images/donatecard2.svg";
-import donatecard3 from "../../Assets/images/donatecard3.svg";
-import programlegacy from "../../Assets/images/programlegacy.png";
+ import donateunderline from "../../Assets/images/donateunderline.svg";
+ import programlegacy from "../../Assets/images/programlegacy.png";
 import applyemployeebg from "../../Assets/images/applyemployeebg.png";
-import donatebg from "../../Assets/images/donatebg.png";
-import machinggiftunderline from "../../Assets/images/missionunderline.png";
-import contectbf from "../../Assets/images/contactbg.png";
+ import contectbf from "../../Assets/images/contactbg.png";
 import partnerimg from "../../Assets/images/partnerimg.svg";
 function Contactus() {
   const PrevArrow = (props) => {
@@ -138,6 +127,9 @@ function Contactus() {
           heroimg={contectbf}
           pagetitle="Sponsorship  "
           pagename="  Sponsorship"
+          programprojectsubttle="givedonationsubtitle"
+ 
+          programpojectaboutherounderline="hopeunderline"
         />
         <section className="Partner">
           <div className="container-fluid">

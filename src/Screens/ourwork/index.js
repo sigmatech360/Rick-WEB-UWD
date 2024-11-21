@@ -27,6 +27,7 @@ import youth from '../../Assets/images/youth.png'
 import Oc from '../../Assets/images/Oc.png'
 import Closet from '../../Assets/images/closet.png'
 import ourworkbg from "../../Assets/images/ourworkbg.png";
+import BuildingFutures from "../../components/BuildingFutures";
 // import { FaArrowRight } from "react-icons/fa";
 function OurWork() {
   const PrevArrow = (props) => {
@@ -154,7 +155,7 @@ function OurWork() {
   ];
   const [hoveredProgram, setHoveredProgram] = useState(null);
 
-
+// modal give responsive code in react using react-bootstrap  
   return (
     <>
       <Layout>
@@ -163,6 +164,8 @@ function OurWork() {
           pagetitle="Our"
           pagename="Our Work"
           title2="Work"
+          programpojectaboutherounderline="houseprogramunderlineourwork"
+                              programprojectsubttle="givedonationsubtitle"
         />
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">
@@ -184,7 +187,7 @@ function OurWork() {
           <div className="container my-5">
             <div className="row">
               {/* Program List Section */}
-              <div className="programs-section-left col-lg-6">
+              <div className="programs-section-left mb-2 col-lg-6">
                 <div className="bordertop mb-0">
                   {programs.map((program, index) => (
                     <div
@@ -219,7 +222,7 @@ function OurWork() {
               </div>
 
               {/* Image Section */}
-              <div className="col-lg-6 d-none d-lg-block">
+              <div className="col-lg-6   d-lg-block">
                 <div className="image-container position-relative">
                   <img
                     src={
@@ -237,7 +240,8 @@ function OurWork() {
             </div>
           </div>
         </section>
-
+<BuildingFutures/>
+  {/* BuildingFutures */}
         <Contact />
 
    <Leadership/>

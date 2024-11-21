@@ -788,3 +788,11 @@ max-width: 100%;
     text-align: center;
   }
 }
+
+
+.givedonationsubtitle{
+  
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 1px;
+}

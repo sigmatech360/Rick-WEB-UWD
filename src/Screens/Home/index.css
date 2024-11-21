@@ -3,9 +3,8 @@
     max-width: 1640px!important;
   }
 }
+  
  
-/* Herostart */
-
 
 @media (min-width: 768px) {
   .heros-text {
@@ -598,81 +597,13 @@
 }
   */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 
 
  
-
-/* Event section */
-
-
-.events-section {
-  background-color: #f9f9f9; /* Light background color */
-  background-image: url("../../Assets/images/eventbg.png"); /* Replace with your background pattern */
-  background-size: cover;
-  background-position: center;
-}
-
-.event-card {
-  border-radius: 10px;
-  transition: transform 0.2s;
-}
-
-.event-card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-}
-
-.event-card img {
-  max-height: 200px; /* Ensure images are uniform */
-  object-fit: cover; /* Maintain aspect ratio */
-}
-
-.event-details h5 {
-  color: #333;
-}
-
-.event-details .text-primary {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .event-card img {
-    max-height: 150px; /* Smaller image height for mobile */
-  }
-}
-
-
-
 
 
 /* Announcement */

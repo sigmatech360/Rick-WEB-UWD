@@ -144,6 +144,10 @@ function GetHelp() {
           pagetitle="Get  "
           pagename="Get Help"
           title2="Help"
+          programprojectsubttle="givedonationsubtitle"
+ 
+
+          programpojectaboutherounderline="hopeunderline"
         />
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">

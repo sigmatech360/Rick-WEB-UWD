@@ -5,7 +5,7 @@ import Leadership from "../../components/Leadership";
 import React, { useState } from "react";
 import createdunderline from "../../Assets/images/createdunderline.png";
 import HeroSection from "../../components/herosection";
-  import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Contact from "../../components/contact";
 import Sponsor from "../../components/sponsor";
@@ -17,7 +17,7 @@ import donatecard3 from "../../Assets/images/donatecard3.svg";
 import programlegacy from "../../Assets/images/programlegacy.png";
 import applyemployeebg from "../../Assets/images/applyemployeebg.png";
 import donatebg from "../../Assets/images/donatebg.png";
- 
+
 import dedleadimg1 from "../../Assets/images/dedleadimg1.png";
 import dedleadimg2 from "../../Assets/images/dedleadimg2.png";
 import dedleadimg3 from "../../Assets/images/dedleadimg3.png";
@@ -144,6 +144,8 @@ function Givedonation() {
           pagetitle="Give  "
           pagename="  Donate"
           title2="  Donation"
+          programprojectsubttle="givedonationsubtitle"
+          programpojectaboutherounderline="   legacyunderline"
         />
 
         <section className="donate-section d-flex justify-content-center align-items-center py-5">

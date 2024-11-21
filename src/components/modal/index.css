@@ -1,0 +1,189 @@
+/* General Modal Styling */
+.modal-header {
+    border: none;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+ 
+  
+  .modal-body p {
+    font-style: italic;
+    color: #6c757d; /* Light gray for subtitle */
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Input Fields */
+  .form-control {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 1rem;
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group .border {
+    border-radius: 8px;
+    border: 1px solid #dcdcdc; /* Light gray border */
+    width: 100%;
+  }
+  
+  .form-group .border:focus-within {
+    border-color: #128c7e; /* Green highlight on focus */
+  }
+  
+  /* Checkbox Styling */
+  .form-check-label {
+    font-size: 0.875rem;
+    color: #6c757d; /* Light gray */
+  }
+  
+  .form-check-input:checked {
+    accent-color: #128c7e; /* Green checkbox */
+  }
+  
+
+.becomeavalbtn{
+    border: none;
+    background-color: #348F99;
+    border: none;
+    font-weight: 300;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+}
+
+.becomeavalbtn :hover{
+    background-color: #348F99;
+}
+
+
+.modal-content {
+    position: relative;
+    display: flex
+;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+    padding: 20px;
+}
+
+
+
+
+
+ .loginmodalbtn{
+    font-size: 1.25em;
+    color: #6E6E6F;
+    font-weight: 400;
+}
+
+
+.btn-close{
+    border: 4px solid black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    color: black !important;
+}
+
+
+.modalfields {border: 1px solid #348F99 !important;
+color: #348F99;
+font-family: 'Inter';
+font-weight: unset;}
+
+
+
+
+
+.modaltitle{
+    font-size: 27px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Inter';
+} 
+
+
+
+.modaltitle span{
+ 
+    font-style: italic;
+    font-weight: bold;
+    color: #348f99;
+    font-style: italic;
+    font-weight: bold;
+    font-family: test Signifier;
+    position: relative;
+}
+
+  /* Submit Button */
+  /* button[type="submit"] {
+    background-color: #128c7e;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  } */
+  
+  /* button[type="submit"]:hover {
+    background-color: #348F99;
+  } */
+  
+  /* Login Link */
+  .text-center small a {
+    color: #348F99;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+  
+  .text-center small a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 576px) {
+    .modal-body {
+      padding: 1.5rem;
+    }
+  
+    .modal-title {
+      font-size: 1.25rem;
+    }
+  
+    .form-control {
+      font-size: 0.875rem;
+    }
+  
+    button[type="submit"] {
+      font-size: 0.875rem;
+      padding: 0.5rem;
+    }
+  
+    .text-center small {
+      font-size: 0.75rem;
+    }
+  }
+  

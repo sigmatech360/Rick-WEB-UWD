@@ -7,40 +7,13 @@ import React, { useState } from "react";
 import HeroSection from "../../components/herosection";
 
 import Sponsor from "../../components/sponsor";
-import ourworkbg from "../../Assets/images/ourworkbg.png";
+
 import partnerunderline from "../../Assets/images/programunderline.svg";
 
-import Volunteerman1 from "../../Assets/images/Volunteerman1.png";
 import ourpodcastbg from "../../Assets/images/ourpodcastbg.png";
 
-import podcastimg1 from "../../Assets/images/podcastimg1.png";
-import podcastimg2 from "../../Assets/images/podcastimg2.png";
-import podcastimg3 from "../../Assets/images/podcastimg3.png";
 import Ourpodcasts from "../../components/ourpodcast";
 function Ourpodcast() {
-  const volunteers = [
-    {
-      name: "Oğuz Yağız Kara",
-      description:
-        "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
-    },
-
-    {
-      name: "Oğuz Yağız Kara",
-      description:
-        "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
-    },
-
-    {
-      name: "Oğuz Yağız Kara",
-      description:
-        "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
-    },
-  ];
-
   return (
     <>
       <Layout>
@@ -50,7 +23,7 @@ function Ourpodcast() {
           pagename="  Our Podcast"
           title2="    Podcast"
           programprojectsubttle="programprojectsubttle"
-          programpojectaboutherounderline="programpojectaboutherounderline"
+          programpojectaboutherounderline="ourpodcastrounderline"
         />
 
         <section className="Ourpodcast   ">
@@ -85,7 +58,7 @@ function Ourpodcast() {
             </div>
           </div>
 
-    <Ourpodcasts/>
+          <Ourpodcasts />
         </section>
 
         <Sponsor />
