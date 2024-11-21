@@ -236,13 +236,7 @@ function Home() {
           </Swiper>
         </section>
 
-        <div>
-          <Button variant="primary" onClick={handleShow}>
-            Open Modal
-          </Button>
-          <VolunteerModal show={showModal} handleClose={handleClose} />
-        </div>
-
+    
         <section className="homeless-intervention ">
           <div className="container-fluid">
             <div className="row">
