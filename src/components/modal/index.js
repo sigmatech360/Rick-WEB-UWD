@@ -270,9 +270,9 @@ export function VolunteerModalforget2({
             {/* Email Field */}
             <Form.Group className="mt-3" controlId="email">
               <div className=" modalfields d-flex align-items-center border rounded p-2">
-                <i className="bi bi-envelope"></i>
+                {/* <i className="bi bi-envelope"></i> */}
                 <Form.Control
-                  type="number"
+                  type="text"
                   placeholder="Code"
                   className="border-0"
                   style={{ boxShadow: "none" }}
