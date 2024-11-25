@@ -157,6 +157,23 @@ font-weight: unset;}
     text-decoration: none;
     font-weight: 600;
 }
+
+ .forget{
+  font-size: 12px!important;
+    display: flex!important;
+    justify-content: space-between !important;
+    margin: auto!important;
+    margin-top: 10px !important ;
+}
+
+
+.VolunteerModal .form-control, .form-select {
+  border: 1px solid #6E6E6F;
+  border-radius: 20px;
+  padding: 0.75rem;
+  background: transparent !important;
+  background-color: #ffffff !important;
+}
  
   
   .text-center small a:hover {

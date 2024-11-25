@@ -4,13 +4,13 @@ import Layout from "../../components/layout";
 import ourmission from "../../Assets/images/ourmission.png";
 import missionunderline from "../../Assets/images/missionunderline.png";
 import React, { useState } from "react";
-import aboutherounderline from '../../Assets/images/aboutherounderline.png'
-import housedefaultimg from '../../Assets/images/housedefaultimg.png'
+import aboutherounderline from "../../Assets/images/aboutherounderline.png";
+import housedefaultimg from "../../Assets/images/housedefaultimg.png";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Leadership from '../../components/Leadership'
-import houseprogramunderline from '../../Assets/images/houseprogramunderline.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Leadership from "../../components/Leadership";
+import houseprogramunderline from "../../Assets/images/houseprogramunderline.png";
 
 import hopeunderline from "../../Assets/images/hopeunderline.png";
 import HeroSection from "../../components/herosection";
@@ -22,12 +22,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Contact from "../../components/contact";
 import Sponsor from "../../components/sponsor";
-import houseimg from '../../Assets/images/houseimg.png'
-import youth from '../../Assets/images/youth.png'
-import Oc from '../../Assets/images/Oc.png'
-import Closet from '../../Assets/images/closet.png'
+import houseimg from "../../Assets/images/houseimg.png";
+import youth from "../../Assets/images/youth.png";
+import Oc from "../../Assets/images/Oc.png";
+import Closet from "../../Assets/images/closet.png";
 import ourworkbg from "../../Assets/images/ourworkbg.png";
 import BuildingFutures from "../../components/BuildingFutures";
+import tradhousingprogramunderline from "../../Assets/images/tradhousingprogramunderline.svg";
 // import { FaArrowRight } from "react-icons/fa";
 function OurWork() {
   const PrevArrow = (props) => {
@@ -150,12 +151,11 @@ function OurWork() {
       description: "Our Trusted Partner",
       highlightedWords: " ",
       imgSrc: Closet,
-
     },
   ];
   const [hoveredProgram, setHoveredProgram] = useState(null);
 
-// modal give responsive code in react using react-bootstrap  
+  // modal give responsive code in react using react-bootstrap
   return (
     <>
       <Layout>
@@ -165,7 +165,7 @@ function OurWork() {
           pagename="Our Work"
           title2="Work"
           programpojectaboutherounderline="houseprogramunderlineourwork"
-                              programprojectsubttle="givedonationsubtitle"
+          programprojectsubttle="givedonationsubtitle"
         />
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">
@@ -192,16 +192,21 @@ function OurWork() {
                   {programs.map((program, index) => (
                     <div
                       key={index}
-                      className={`program-item p-3   d-flex justify-content-between mb-0 align-items-center ${program.highlighted ? "highlighted" : ""
-                        }`} onMouseEnter={() => setHoveredProgram(program)}
+                      className={`program-item p-3   d-flex justify-content-between mb-0 align-items-center ${
+                        program.highlighted ? "highlighted" : ""
+                      }`}
+                      onMouseEnter={() => setHoveredProgram(program)}
                       onMouseLeave={() => setHoveredProgram(null)}
                     >
                       <div>
                         <h5 className="mb-1">
                           {program?.title}
-                          <span className="highlighted-word position-relative" >
+                          <span className="highlighted-word position-relative">
                             {program?.highlightedWords} {""}
-                            <img src={aboutherounderline} className="programunderlines" />
+                            <img
+                              src={tradhousingprogramunderline}
+                              className="programunderlines"
+                            />
                           </span>
                           {program?.title2}
                         </h5>
@@ -210,14 +215,22 @@ function OurWork() {
                       <div className="arrow-con">
                         <FontAwesomeIcon icon={faArrowRight} />
                       </div>
-
                     </div>
                   ))}
                 </div>
 
-
                 <div>
-                  <h5 className="title font-bold">Homless <span> Intervention  </span> services Of Orange  Country <span className=" position-relative">( HIS-OC) <img src={houseprogramunderline} className="houseprogramunderline" /></span>  </h5>
+                  <h5 className="title font-bold">
+                    Homless <span> Intervention </span> services Of Orange
+                    Country{" "}
+                    <span className=" position-relative">
+                      ( HIS-OC){" "}
+                      <img
+                        src={houseprogramunderline}
+                        className="houseprogramunderline"
+                      />
+                    </span>{" "}
+                  </h5>
                 </div>
               </div>
 
@@ -226,9 +239,7 @@ function OurWork() {
                 <div className="image-container position-relative">
                   <img
                     src={
-                      hoveredProgram
-                        ? hoveredProgram.imgSrc
-                        : housedefaultimg
+                      hoveredProgram ? hoveredProgram.imgSrc : housedefaultimg
                     }
                     alt="Hovered Program"
                     className="img-fluid"
@@ -240,11 +251,11 @@ function OurWork() {
             </div>
           </div>
         </section>
-<BuildingFutures/>
-  {/* BuildingFutures */}
+        <BuildingFutures />
+        {/* BuildingFutures */}
         <Contact />
 
-   <Leadership/>
+        <Leadership />
         <Sponsor />
       </Layout>
     </>

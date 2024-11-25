@@ -1,6 +1,11 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import VolunteerModal from "../../components/modal";
+import {
+  VolunteerModalsignup,
+  VolunteerModalforget,
+  VolunteerModallogin,
+  VolunteerModalforget2,
+} from "../../components/modal";
 import React, { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 
@@ -34,15 +39,7 @@ import Contact from "../../components/contact";
 import Sponsor from "../../components/sponsor";
 import Ourpodcasts from "../../components/ourpodcast";
 import Events from "../../components/events";
-function Home() {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
-  useEffect(() => {
-    handleShow();
-  }, []);
-
+function Home() { 
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -236,7 +233,6 @@ function Home() {
           </Swiper>
         </section>
 
-    
         <section className="homeless-intervention ">
           <div className="container-fluid">
             <div className="row">
@@ -490,6 +486,7 @@ function Home() {
 
         <Sponsor />
       </Layout>
+     
     </>
   );
 }
