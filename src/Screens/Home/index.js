@@ -332,10 +332,10 @@ function Home() {
           </div>
 
           <div className="  mt-5">
-            <div className="row">
+            <div className="row gap-5">
               {/* Left Card */}
               <div className="transitionalbg  col-md-12 col-lg-5 mb-4 mb-md-0">
-                <div className=" p-4    ">
+                <div className=" p4    ">
                   <p className="para1 text-uppercase mb-2 px-4  text-white ">
                     Providing Shelter and Reunification for Families
                   </p>

@@ -131,6 +131,16 @@
   .contact-us-section title{
     font-size: 43px!important;
   }
+
+
+  .contact-form-panel {
+    background-color: #ffffff;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    filter: opacity(0.5)!important;
+    border-radius: 15px!important;
+  }
 }
 
 .contact-us-section {
@@ -178,9 +188,10 @@
 @media (max-width: 768px) {
   .contact-info-panel {
      background-color: #348F99;
-     border-top-left-radius: 15px;
-     border-bottom-left-radius: 15px;
+     /* border-top-left-radius: 15px; */
+     /* border-bottom-left-radius: 15px; */
      margin-bottom: 44px!important;
+     border-radius:15px!important ;
  }
 }
 

@@ -201,7 +201,7 @@
   }
 }
 /* Right section background */
-.right-section {
+.homeless-intervention .right-section {
   background-image: url("../../Assets/images/changewishbg.png");
   background-size: cover;
   background-position: center;
@@ -557,14 +557,28 @@
   font-weight: bold;
 }
 
-.transitionalbg {
+/* .transitionalbg {
   background-image: url("../../Assets/images/housingprogrambg.png");
   background-size: cover;
   background-position: center;
   color: #333333;
   padding: 83px;
   min-height: 400px;
+} */
+
+.transitionalbg {
+  background-image: url("../../Assets/images/housingprogrambg.png");
+  background-size: cover;
+  background-position: center;
+  color: #333333;
+  padding: 80px 59px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
 }
+
+
+
 @media (max-width: 1024px) {
   .transitionalbg {
       padding: 60px;
@@ -632,8 +646,8 @@
 }
 
 .text-content {
-  max-width: 350px;
-  margin: 0 auto;
+  max-width: 444px;
+    margin: 0 auto;
 }
 
 .title {

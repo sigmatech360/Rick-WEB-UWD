@@ -22,7 +22,7 @@
   background-position: center;
   color: #333333;
 
-  padding: 97px 128px;
+  padding: 97px 70px;
   min-height: 400px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -169,7 +169,7 @@
 @media (max-width: 576px) {
  .homeless-intervention .right-section-text {
     font-size: 1.5rem;  /* Smallest font size for very small screens */
-    margin-left: 5px;  /* Minimized margin for very small screens */
+    /* margin-left: 5px;    */
   }
 }
 
