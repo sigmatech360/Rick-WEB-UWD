@@ -1,8 +1,9 @@
 import "./index.css";
 
+import AOS from "aos";
 import Layout from "../../components/layout";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import HeroSection from "../../components/herosection";
 
@@ -12,8 +13,12 @@ import partnerunderline from "../../Assets/images/programunderline.svg";
 
 import Volunteerman1 from "../../Assets/images/Volunteerman1.png";
 function TopVolunteer() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const volunteers = [
     {
+      animation: "fade-right",
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
@@ -21,6 +26,7 @@ function TopVolunteer() {
     },
 
     {
+      animation: "fade-left",
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
@@ -28,26 +34,14 @@ function TopVolunteer() {
     },
 
     {
+      animation: "fade-right",
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
       imgSrc: Volunteerman1,
     },
     {
-      name: "Oğuz Yağız Kara",
-      description:
-        "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
-    },
-
-    {
-      name: "Oğuz Yağız Kara",
-      description:
-        "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
-    },
-
-    {
+      animation: "fade-left",
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
@@ -55,6 +49,7 @@ function TopVolunteer() {
     },
 
     {
+      animation: "fade-right",
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
@@ -62,6 +57,23 @@ function TopVolunteer() {
     },
 
     {
+      animation: "fade-left",
+      name: "Oğuz Yağız Kara",
+      description:
+        "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
+      imgSrc: Volunteerman1,
+    },
+
+    {
+      animation: "fade-right",
+      name: "Oğuz Yağız Kara",
+      description:
+        "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
+      imgSrc: Volunteerman1,
+    },
+
+    {
+      animation: "fade-left",
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
@@ -85,7 +97,12 @@ function TopVolunteer() {
           <div className="Volunteerinfosecbg  py-5">
             <div className="container">
               <div className="   row">
-                <div className="col-md-6">
+                <div
+                  className="col-md-6"
+                  data-aos="fade-right"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   <h2 className="title">
                     Make A{" "}
                     <span className="position-relative">
@@ -99,7 +116,12 @@ function TopVolunteer() {
                     Today
                   </h2>
                 </div>
-                <div className="col-md-6">
+                <div
+                  className="col-md-6"
+                  data-aos="fade-left"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   <p className="info-text text-start">
                     Volunteers are the heart of HIS-OC, helping families rebuild
                     their lives with hope and dignity. Whether it’s providing
@@ -116,7 +138,13 @@ function TopVolunteer() {
             <div className="container py-4">
               <div className="row">
                 {volunteers.map((volunteer, index) => (
-                  <div className="col-lg-6 col-md-12 mb-4" key={index}>
+                  <div
+                    className="col-lg-6 col-md-12 mb-4"
+                    key={index}
+                    data-aos={volunteer?.animation}
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     <div
                       className={`card card-${
                         index % 2 === 0 ? "blue" : "purple"

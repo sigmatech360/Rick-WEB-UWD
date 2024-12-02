@@ -1,16 +1,22 @@
 import logo from "../../Assets/images/logo.png";
 import donateicon from "../../Assets/images/donateicon.png";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import contantunderline from "../../Assets/images/contantunderline.png";
 import "./index.css";
 
+import AOS from "aos";
+
 import { Modal, Button, Form } from "react-bootstrap";
 function Contact() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [donatenotify, setDonatenotiy] = useState(false);
 
   console.log("donatenotify", donatenotify);
-  const handleClose = () => {
+  const handleClose = (event) => {
+    event.preventDefault()
     setDonatenotiy(false);
   };
 
@@ -19,16 +25,21 @@ function Contact() {
     setDonatenotiy(true);
   };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
- 
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
     setDonatenotiy(true);
   };
   return (
     <>
       <section className="contact-us-section py-5">
         <div className="container text-center text-md-start">
-          <h2 className="title fw-bold   text-center">
+          <h2
+            className="title fw-bold   text-center"
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
             We'd{" "}
             <span className=" position-relative text-warning">
               Love To Hear
@@ -36,7 +47,12 @@ function Contact() {
             </span>{" "}
             From You
           </h2>
-          <p className="subtitle w-lg-50 w-xl-50  mx-auto text-center mb-4">
+          <p
+            className="subtitle w-lg-50 w-xl-50  mx-auto text-center mb-4"
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
             If you would like to contact HISOC, please fill out the contact form
             below and one of our team members will be sure to follow up with
             you.
@@ -48,7 +64,7 @@ function Contact() {
                 <div className="contact-grid">
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Executive Director <span> Christine</span> Stellino
+                      Executive Director : <br/> <span> Christine</span> Stellino
                     </p>
                     <a
                       href="mailto:christine@his-oc.org"
@@ -59,7 +75,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Program Director <span> Alfa Hern</span>andez
+                      Program Director : <br/><span> Alfa Hern</span>andez
                     </p>
                     <a href="mailto:alfa@his-oc.org" className="text-muted">
                       alfa@his-oc.org
@@ -67,7 +83,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Program Manager <span>Anthony</span> Trejo
+                      Program Manager : <br/> <span>Anthony</span> Trejo
                     </p>
                     <a href="mailto:anthony@his-oc.org" className="text-muted">
                       anthony@his-oc.org
@@ -75,7 +91,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      TAY Program <span> Cuca Tre</span>jo
+                      TAY Program : <br/> <span> Cuca Tre</span>jo
                     </p>
                     <a href="mailto:cuca@his-oc.org" className="text-muted">
                       cuca@his-oc.org
@@ -83,7 +99,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Housing Connection <span> Cuca Tre</span>jo
+                      Housing Connection : <br/> <span> Cuca Tre</span>jo
                     </p>
                     <a href="mailto:cuca@his-oc.org" className="text-muted">
                       cuca@his-oc.org
@@ -91,7 +107,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      HomeShare OC <span>Melinda </span>Garcia
+                      HomeShare OC  : <br/><span>Melinda </span>Garcia
                     </p>
                     <a href="mailto:melinda@his-oc.org" className="text-muted">
                       melinda@his-oc.org
@@ -99,7 +115,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Transitional Housing <span> Information</span>
+                      Transitional Housing   <span> Information :</span>
                     </p>
                     <a href="mailto:info@his-oc.org" className="text-muted">
                       info@his-oc.org
@@ -107,7 +123,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Communications <span>Rick Pon</span> ce
+                      Communications : <br/> <span>Rick Pon</span> ce
                     </p>
                     <a href="mailto:rick@his-oc.org" className="text-muted">
                       rick@his-oc.org
@@ -123,7 +139,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Intake Coordinator (CalAim) Madeline <span>Domingo</span>
+                      Intake Coordinator (CalAim): <br/> Madeline  <span>Domingo</span>
                     </p>
                     <a href="mailto:madeline@his-oc.org" className="text-muted">
                       madeline@his-oc.org
@@ -188,7 +204,7 @@ function Contact() {
 
       <section className="VolunteerModal">
         <Modal size="md" show={donatenotify} onHide={handleClose} centered>
-          <Modal.Header  >
+          <Modal.Header>
             <Modal.Title>
               {/* <h4 className="modaltitle text-center">Unite With Us To Rewrite</h4> */}
             </Modal.Title>
@@ -200,17 +216,20 @@ function Contact() {
             {/* <h4 className="modaltitle  ">Unite With Us To Rewrite</h4> */}
             <h4 className="modaltitle">
               {" "}
-              <span className="d-flex text-center mx-auto justify-content-center"> Your message has been sent successfully. We will get back to you soon </span>
+              <span className="d-flex text-center mx-auto justify-content-center">
+                {" "}
+                Your message has been sent successfully. We will get back to you
+                soon{" "}
+              </span>
             </h4>
             <Form>
               {/* Email Field */}
-              
 
               {/* Password Field */}
 
               {/* Submit Button */}
               <Button
- onClick={handleClose}
+                onClick={handleClose}
                 variant="success"
                 type="submit"
                 className="mt-4 w-100 becomeavalbtn"

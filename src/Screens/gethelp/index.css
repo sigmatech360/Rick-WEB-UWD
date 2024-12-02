@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+.services-section{
+  overflow: hidden!important;
+  background-color: rgb(253 251 248)!important;
+  box-shadow: 4px 12px 8px rgba(0, 0, 0, 0.2) !important;
+  transition: box-shadow 0.3s cubic-bezier(0.65, -0.33, 0.26, 1.05) !important;
+}
+
 .wedopara {
   color: #4d4d4f;
   letter-spacing: 0px;
@@ -635,8 +642,8 @@ max-width: 100%;
   }
 }
 
-.btn-link:hover {
+/* .btn-link:hover {
   background-color: #ffffff;
   color: #333333;
   text-decoration: none;
-}
+} */

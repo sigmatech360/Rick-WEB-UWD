@@ -16,56 +16,75 @@
   font-size: 14px;
 }
 
+.nav-link:hover,
+.nav-link.active {
+  color: #3e949e;
+}
+.bi-facebook::before {
+  content: "\f344";
+  font-size: 20px;
+}
+.bi-x::before {
+  content: "\f62a";
+  font-size: 24px;
+}
 
+.bi-instagram:hover {
+  content: "\f437";
+  color: #16becf;
+}
 
+.bi-instagram::before {
+  content: "\f437";
+  font-size: 20px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #3e949e !important;
+}
 
-
-
-
+a:hover {
+  color: #3e949e !important;
+  text-decoration: underline;
+}
 
 .navbar-nav {
-  --bs-nav-link-padding-x: none!important;
+  --bs-nav-link-padding-x: none !important;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
-  display: flex
-;
+  display: flex;
   flex-direction: column;
   padding-left: 0;
   /* margin-bottom: 0; */
   list-style: none;
 }
 
-
-
-
-
-
 .mainheaderimg {
-  height: 40px;  /* Default height for larger screens */
-  width: auto;   /* Maintain the aspect ratio */
+  height: 40px; /* Default height for larger screens */
+  width: auto; /* Maintain the aspect ratio */
 }
 
 /* For medium screens (max-width: 1200px) */
 @media (max-width: 1200px) {
   .mainheaderimg {
-    height: 35px;  /* Slightly smaller image for medium screens */
+    height: 35px; /* Slightly smaller image for medium screens */
   }
 }
 
 /* For tablets and smaller screens (max-width: 992px) */
 @media (max-width: 992px) {
   .mainheaderimg {
-    height: 30px;  /* Further reduce size for tablets */
+    height: 30px; /* Further reduce size for tablets */
   }
 }
 
 /* For mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
   .mainheaderimg {
-    height: 25px;  /* Smaller image for mobile screens */
+    height: 25px; /* Smaller image for mobile screens */
   }
 }
 

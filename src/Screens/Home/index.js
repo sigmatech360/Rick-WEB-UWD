@@ -1,7 +1,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
+import AOS from "aos";
 
 import { Modal, Button, Form } from "react-bootstrap";
 import { FaUser, FaEnvelope, FaPhoneAlt, FaLock } from "react-icons/fa";
@@ -11,7 +11,6 @@ import { FiSmartphone } from "react-icons/fi";
 import { RiLockPasswordLine } from "react-icons/ri";
 
 import React, { useEffect, useState } from "react";
- 
 
 import announcementunderline from "../../Assets/images/announcementunderline.svg";
 import Slider from "react-slick";
@@ -44,7 +43,11 @@ import Sponsor from "../../components/sponsor";
 import Ourpodcasts from "../../components/ourpodcast";
 import Events from "../../components/events";
 import { useNavigate } from "react-router-dom";
-function Home() { 
+function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -102,6 +105,7 @@ function Home() {
   const newsData = [
     {
       id: 1,
+      animation:"fade-right",
       title:
         "Cruzin' Back to School\" HIS-OC 2nd Annual Classic Car Show and Fundraiser",
       date: "February 9, 2024",
@@ -111,6 +115,7 @@ function Home() {
     },
     {
       id: 2,
+      animation:"fade-left",
       title: "Excellence in Placentia Nominees 2024",
       date: "February 9, 2024",
       description:
@@ -120,29 +125,25 @@ function Home() {
     // Add more news items as needed
   ];
 
+  const navigate = useNavigate();
 
+  const handleclick = () => {
+    navigate("/gethelp");
+  };
 
+  const [donatenotify, setDonatenotiy] = useState(false);
 
-const navigate = useNavigate()
+  const handleClose = () => {
+    setDonatenotiy(false);
+  };
 
-  const handleclick = () =>{
-    navigate("/gethelp")
-  }
+  const handlenotifydonate = () => {
+    setDonatenotiy(true);
+  };
 
+  // const handlenavigatemodal = () =>{
 
-  const [donatenotify , setDonatenotiy] = useState(false)
-
-
-const handleClose = ()=>{
-  setDonatenotiy(false)
-}  
-
-  const handlenotifydonate = () =>{
-    setDonatenotiy(true)
-  }
-
-
-  const handlenavigatemodal = ()
+  // }
   return (
     <>
       <Layout>
@@ -158,16 +159,31 @@ const handleClose = ()=>{
                 <div className="container slide-content d-flex flex-column justify-content-center align-items-start text-white h-100">
                   <div className="row">
                     <div className="col-md-7 heros-text text-center text-md-start">
-                      <h5 className="text-info mb-2">
+                      <h5
+                        className="text-info mb-2"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         Helping Them Home For Good
                       </h5>
                       {/* <h1 className="display-4 fw-bold mb-3">
                       We Transition People out of{" "}
                       <span className="text-warning">Homelessness <img src={tagline}/></span>
                     </h1> */}
-                      <h1 className="display-4 fw-bold mb-3">
+                      <h1
+                        className="display-4 fw-bold mb-3"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         We Transition People out of{" "}
-                        <span className="highlighted-text">
+                        <span
+                          className="highlighted-text"
+                          data-aos="fade-right"
+                          data-aos-offset="0"
+                          data-aos-duration="1000"
+                        >
                           Homelessness
                           <img
                             src={tagline}
@@ -177,7 +193,12 @@ const handleClose = ()=>{
                         </span>
                       </h1>
 
-                      <p className="mb-4">
+                      <p
+                        className="mb-4"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         Our shelters and supportive service programs assist
                         people who are homeless or at risk of being homeless.
                       </p>
@@ -185,11 +206,22 @@ const handleClose = ()=>{
                         {/* <button className="btn btn-warning text-dark me-3">
                         Give Help
                       </button> */}
-                        <button className="nav-donate btn btn-warning text-dark">
+                        <button
+                          className="nav-donate btn btn-warning text-dark"
+                          data-aos="fade-up"
+                          data-aos-offset="0"
+                          data-aos-duration="1000"
+                        >
                           {" "}
                           <img src={donateicon} /> Give Donation
                         </button>
-                        <button className="gethelp btn btn-outline-light me-3 " onClick={handleclick}>
+                        <button
+                          className="gethelp btn btn-outline-light me-3 "
+                          data-aos="fade-up"
+                          data-aos-offset="0"
+                          data-aos-duration="1000"
+                          onClick={handleclick}
+                        >
                           Get Help
                         </button>
                       </div>
@@ -204,14 +236,29 @@ const handleClose = ()=>{
                 <div className="container slide-content d-flex flex-column justify-content-center align-items-start text-white h-100">
                   <div className="row">
                     <div className="col-md-7 heros-text text-center text-md-start">
-                      <h5 className="text-info mb-2">
+                      <h5
+                        className="text-info mb-2 "
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         Helping Them Home For Good
                       </h5>
-                      <h1 className="display-4 fw-bold mb-3">
+                      <h1
+                        className="display-4 fw-bold mb-3"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         We Transition People out of{" "}
                         <span className="text-warning">Homelessness</span>
                       </h1>
-                      <p className="mb-4">
+                      <p
+                        className="mb-4"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         Our shelters and supportive service programs assist
                         people who are homeless or at risk of being homeless.
                       </p>
@@ -234,18 +281,38 @@ const handleClose = ()=>{
                 <div className="container slide-content d-flex flex-column justify-content-center align-items-start text-white h-100">
                   <div className="row">
                     <div className="col-md-7 heros-text text-center text-md-start">
-                      <h5 className="text-info mb-2">
+                      <h5
+                        className="text-info mb-2"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         Helping Them Home For Good
                       </h5>
-                      <h1 className="display-4 fw-bold mb-3">
+                      <h1
+                        className="display-4 fw-bold mb-3"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         We Transition People out of{" "}
                         <span className="text-warning">Homelessness</span>
                       </h1>
-                      <p className="mb-4">
+                      <p
+                        className="mb-4"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         Our shelters and supportive service programs assist
                         people who are homeless or at risk of being homeless.
                       </p>
-                      <div className="d-flex">
+                      <div
+                        className="d-flex"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         <button className="btn btn-warning text-dark me-3">
                           Give Help
                         </button>
@@ -267,14 +334,24 @@ const handleClose = ()=>{
               {/* Left Section */}
               <div className="lft col-lg-8 py-5 col-md-12   d-flex flex-column justify-content-center ">
                 <div className=" content   left-section">
-                  <h2 className="how-we-do   mb-3">
+                  <h2
+                    className="how-we-do   mb-3"
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     How{" "}
                     <span className="highlight-text">
                       We Do <img src={wedotagline} className="wedotagline" />{" "}
                     </span>
                     It
                   </h2>
-                  <p className="wedopara">
+                  <p
+                    className="wedopara"
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Homeless Intervention Services of Orange County (HIS-OC)
                     currently runs four programs that assist people who are
                     homeless or at risk of being homeless. Our shelters and
@@ -289,8 +366,13 @@ const handleClose = ()=>{
               </div>
 
               {/* Right Section */}
-              <div className="col-lg-4 col-md-12 right-section d-flex flex-column justify-content-center p-5 text-center text-md-start">
-                <h2 className="right-section-text">
+              <div className="col-lg-4 col-md-12 right-section d-flex flex-column justify-content-center   text-center text-md-start">
+                <h2
+                  className="right-section-text"
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   You Must Be The <br />
                   <span className="text-warning">Change</span> You Wish To{" "}
                   <br />
@@ -306,13 +388,23 @@ const handleClose = ()=>{
 
         <section className="what-sets-us-apart text-white py-5">
           <div className="container text-center">
-            <h2 className="setus  fw-bold mb-3">
+            <h2
+              className="setus  fw-bold mb-2"
+              data-aos="fade-down"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               What Sets Us{" "}
               <span className="text-warning  position-relative">
                 Apart <img className="apartunderline" src={apartunderline} />
               </span>
             </h2>
-            <p className="mb-0">
+            <p
+              className="mb-0"
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               We are different from an emergency shelter or single program
               shelter because we provide a longer-term guided process to achieve
               self-sufficiency. Our programs require a commitment on the part of
@@ -327,30 +419,45 @@ const handleClose = ()=>{
 
         <section className="help-available py-5">
           <div className="container text-center mb-4">
-            <h2 className="helptagline fw-bold mb-3">
+            <h2
+              className="helptagline fw-bold mb-3"
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               Help is{" "}
               <span className="text-success position-relative">
                 Available{" "}
                 <img className="availabletagline" src={availabletagline} />
               </span>
             </h2>
-            <p className=" mb-4">
+            <p
+              className=" mb-4"
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               We've been helping people find their way home since 1989.
             </p>
-            <div className="row">
-              <div className="col-md-4 mb-3 mb-md-0">
+            <div
+              className="row "
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
+              <div className="heplcard  col-md-4 mb-3 mb-md-0">
                 <div className="stat-card bg-light-green py-4 px-3 shadow-sm rounded">
                   <h3 className="helped fw-bold text-success">&gt;5,000</h3>
                   <p className="mb-0">Helped Out of Homelessness</p>
                 </div>
               </div>
-              <div className="col-md-4 mb-3 mb-md-0">
+              <div className=" heplcard col-md-4 mb-3 mb-md-0">
                 <div className="stat-card bg-light-purple py-4 px-3 shadow-sm rounded">
                   <h3 className="helped fw-bold text-primary">1,127</h3>
                   <p className="mb-0">Individuals Helped Last Year</p>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="heplcard col-md-4">
                 <div className="stat-card bg-light-yellow py-4 px-3 shadow-sm rounded">
                   <h3 className="helped fw-bold text-warning">85%</h3>
                   <p className="mb-0">Guided to Housing</p>
@@ -364,12 +471,27 @@ const handleClose = ()=>{
               {/* Left Card */}
               <div className="transitionalbg  col-md-12 col-lg-5 mb-4 mb-md-0">
                 <div className=" p4    ">
-                  <p className="para1 text-uppercase mb-2 px-4  text-white ">
+                  <p
+                    className="para1 text-uppercase mb-2 px-4  text-white "
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Providing Shelter and Reunification for Families
                   </p>
-                  <h2 className="fw-bold text-white  px-4 ">
+                  <h2
+                    className="fw-bold text-white  px-4 "
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Transitional Housing{" "}
-                    <span className="text-warning position-relative">
+                    <span
+                      className="text-warning position-relative"
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
                       Program{" "}
                       <img
                         className="programunderline"
@@ -377,7 +499,12 @@ const handleClose = ()=>{
                       />
                     </span>
                   </h2>
-                  <p className="para px-4 ">
+                  <p
+                    className="para px-4 "
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     We have 54 beds in 3 shelters that provide a safe place to
                     stay for families. Residents can stay for 4 to 6 months, in
                     a home-like environment, while they establish themselves in
@@ -386,7 +513,14 @@ const handleClose = ()=>{
                     each year in a spirit of dignity and love through our three
                     residences.
                   </p>
-                  <button className="parabtn  btn   px-4 ">Learn More</button>
+                  <button
+                    className="parabtn  btn px-4 "
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Learn More
+                  </button>
                 </div>
               </div>
 
@@ -452,7 +586,12 @@ const handleClose = ()=>{
               {/* Left Static Card */}
               <div className="col-md-12 col-lg-5 newsleftsection d-flex flex-column justify-content-center">
                 <div className="text-content">
-                  <h3 className="title fw-bold mb-4  ">
+                  <h3
+                    className="title fw-bold mb-4  "
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     News &{" "}
                     <span className="text-warning position-relative">
                       Announcements
@@ -463,13 +602,23 @@ const handleClose = ()=>{
                       />
                     </span>
                   </h3>
-                  <p className="para ">
+                  <p
+                    className="para "
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Last year we helped over 1000 people with our programs and
                     guided 85% of those in our resident programs to permanent
                     housing. Since 1989, we have guided over 5000 people out of
                     homelessness and back into productive and fulfilling lives.
                   </p>
-                  <button onClick={handlenavigatemodal} className="allannouncementbtn btn btn-outline-light mt-3">
+                  <button
+                    className="allannouncementbtn btn btn-outline-light mt-3"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     View all Announcements
                   </button>
                 </div>
@@ -483,7 +632,13 @@ const handleClose = ()=>{
                 <div className="mt-5">
                   <Slider {...settings}>
                     {newsData.map((news) => (
-                      <div key={news.id} className="p-4 mt-4">
+                      <div
+                        key={news.id}
+                        className="p-4 mt-4"
+                        data-aos={news?.animation}
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
                         <div className="news-card bg-white shadow-sm rounded">
                           <img
                             src={news.image}
@@ -514,83 +669,52 @@ const handleClose = ()=>{
 
         <Sponsor />
       </Layout>
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <section className="VolunteerModal">
-      <Modal size="md" show={donatenotify} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>
-            {/* <h4 className="modaltitle text-center">Unite With Us To Rewrite</h4> */}
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {/* <p className="text-center text-muted" style={{ fontStyle: 'italic' }}>
+        <Modal size="md" show={donatenotify} onHide={handleClose} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>
+              {/* <h4 className="modaltitle text-center">Unite With Us To Rewrite</h4> */}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            {/* <p className="text-center text-muted" style={{ fontStyle: 'italic' }}>
           Life Stories.
         </p> */}
-          <h4 className="modaltitle  ">Unite With Us To Rewrite</h4>
-          <h4 className="modaltitle">
-            {" "}
-            <span> Life Stories. </span>
-          </h4>
-          <Form>
-            {/* Email Field */}
-            <Form.Group className="mt-3" controlId="email">
-              <div className=" modalfields d-flex align-items-center border rounded p-2">
-                {/* <i className="bi bi-envelope"></i> */}
-                <Form.Control
-                  type="text"
-                  placeholder="Code"
-                  className="border-0"
-                  style={{ boxShadow: "none" }}
-                />
-              </div>
-            </Form.Group>
+            <h4 className="modaltitle  ">Unite With Us To Rewrite</h4>
+            <h4 className="modaltitle">
+              {" "}
+              <span> Life Stories. </span>
+            </h4>
+            <Form>
+              {/* Email Field */}
+              <Form.Group className="mt-3" controlId="email">
+                <div className=" modalfields d-flex align-items-center border rounded p-2">
+                  {/* <i className="bi bi-envelope"></i> */}
+                  <Form.Control
+                    type="text"
+                    placeholder="Code"
+                    className="border-0"
+                    style={{ boxShadow: "none" }}
+                  />
+                </div>
+              </Form.Group>
 
-            {/* Password Field */}
+              {/* Password Field */}
 
-            {/* Submit Button */}
-            <Button
-              // onClick={handleShowforget2}
-              variant="success"
-              type="submit"
-              className="mt-4 w-100 becomeavalbtn"
-            >
-              forgot
-            </Button>
-          </Form>
-        </Modal.Body>
-      </Modal>
-    </section>
+              {/* Submit Button */}
+              <Button
+                // onClick={handleShowforget2}
+                variant="success"
+                type="submit"
+                className="mt-4 w-100 becomeavalbtn"
+              >
+                forgot
+              </Button>
+            </Form>
+          </Modal.Body>
+        </Modal>
+      </section>
     </>
   );
 }

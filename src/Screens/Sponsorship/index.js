@@ -1,8 +1,10 @@
 import "./index.css";
-
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import { Modal, Button, Form } from "react-bootstrap";
 import Layout from "../../components/layout";
 import sponsorunderline from "../../Assets/images/sponsorunderline.svg";
-import React, { useState } from "react";
+
 import createdunderline from "../../Assets/images/createdunderline.png";
 import HeroSection from "../../components/herosection";
 import drivingchangecard1 from "../../Assets/images/drivingchangecard1.png";
@@ -11,12 +13,15 @@ import dedicationunderline from "../../Assets/images/dedicationunderline.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
- import donateunderline from "../../Assets/images/donateunderline.svg";
- import programlegacy from "../../Assets/images/programlegacy.png";
+import donateunderline from "../../Assets/images/donateunderline.svg";
+import programlegacy from "../../Assets/images/programlegacy.png";
 import applyemployeebg from "../../Assets/images/applyemployeebg.png";
- import contectbf from "../../Assets/images/contactbg.png";
+import contectbf from "../../Assets/images/contactbg.png";
 import partnerimg from "../../Assets/images/partnerimg.svg";
 function Contactus() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -120,6 +125,25 @@ function Contactus() {
 
   const [hoveredProgram, setHoveredProgram] = useState(null);
 
+  const [donatenotify, setDonatenotiy] = useState(false);
+
+  console.log("donatenotify", donatenotify);
+  const handleClose = (event) => {
+    event.preventDefault();
+    setDonatenotiy(false);
+  };
+
+  const handlenotifymessage = (event) => {
+    event.preventDefault();
+    setDonatenotiy(true);
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    setDonatenotiy(true);
+  };
+
   return (
     <>
       <Layout>
@@ -128,7 +152,6 @@ function Contactus() {
           pagetitle="Sponsorship  "
           pagename="  Sponsorship"
           programprojectsubttle="givedonationsubtitle"
- 
           programpojectaboutherounderline="hopeunderline"
         />
         <section className="Partner">
@@ -136,7 +159,12 @@ function Contactus() {
             <div className="row gx-0 ">
               {/* Left side with form and text */}
               <div className="contactformleft col-lg-6 p-4 p-md-5">
-                <h3 className="display-5 fw-bold mb-2">
+                <h3
+                  className="display-5 fw-bold mb-2"
+                  data-aos="fade-right"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   Partner With{" "}
                   <span className="do-it">
                     HIS-OC{" "}
@@ -144,12 +172,17 @@ function Contactus() {
                   </span>
                   To Create Lasting Impact
                 </h3>
-                <p className="para mb-3 ">
+                <p
+                  className="para mb-3 "
+                  data-aos="fade-right"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   Sponsorship opportunities allow you to make a significant
                   difference by supporting our programs.
                 </p>
 
-                <form>
+                <form onSubmit={handleFormSubmit}>
                   <div className="row">
                     {/* Name Input */}
                     <div className="col-md-6 mb-3">
@@ -234,7 +267,13 @@ function Contactus() {
 
                   {/* Submit Button */}
                   <div className="text-center">
-                    <button type="submit" className="btn becomeexponser">
+                    <button
+                      type="submit"
+                      className="btn becomeexponser"
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
                       Become a Sponsor
                     </button>
                   </div>
@@ -266,6 +305,45 @@ function Contactus() {
           </h2>
         </section>
       </Layout>
+
+      <section className="VolunteerModal">
+        <Modal size="md" show={donatenotify} onHide={handleClose} centered>
+          <Modal.Header>
+            <Modal.Title>
+              {/* <h4 className="modaltitle text-center">Unite With Us To Rewrite</h4> */}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            {/* <p className="text-center text-muted" style={{ fontStyle: 'italic' }}>
+          Life Stories.
+        </p> */}
+            {/* <h4 className="modaltitle  ">Unite With Us To Rewrite</h4> */}
+            <h4 className="modaltitle">
+              {" "}
+              <span className="d-flex text-center mx-auto justify-content-center">
+                {" "}
+                Your message has been sent successfully. We will get back to you
+                soon{" "}
+              </span>
+            </h4>
+            <Form>
+              {/* Email Field */}
+
+              {/* Password Field */}
+
+              {/* Submit Button */}
+              <Button
+                onClick={handleClose}
+                variant="success"
+                type="submit"
+                className="mt-4 w-100 becomeavalbtn"
+              >
+                Close
+              </Button>
+            </Form>
+          </Modal.Body>
+        </Modal>
+      </section>
     </>
   );
 }

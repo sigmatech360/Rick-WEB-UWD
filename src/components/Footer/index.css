@@ -1,142 +1,103 @@
+.contant-title {
+  font-size: 47px;
+}
 
-.contant-title{
-    font-size: 47px;
-  
-  }
-  
-  .socialicon {
-    color: white;
-  }
-  
-  .footer-bottom {
-    font-size: 0.8rem;
-    border-top: 1px solid #4e4e4e;
-  }
-  
-  .footer-logo {
-    /* width: 81px; */
-    height: 81px; /* Adjust height as needed */
-  }
-  
-  .footer-icon {
-    color: #fff;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  .footer-icon:hover {
-    color: #ccc; /* Change color on hover */
-  }
-  
-  .donate-badge {
-    height: 50px; /* Adjust size as needed */
-  }
-  
-  .donate-button img {
-    border-radius: 50%; /* Round badge */
-  }
-  
-  .footer-logo1 {
-    height: 43px;
-  }
-  .footer-logo3 {
-    height: 58px;
-  }
-  /* .title  .hiscolint{
+.footer a:hover {
+  color: #fdd22e !important;
+}
+.socialicon {
+  color: white;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  border-top: 1px solid #4e4e4e;
+}
+
+.footer-logo {
+  /* width: 81px; */
+  height: 81px; /* Adjust height as needed */
+}
+
+.footer-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  color: #ccc; /* Change color on hover */
+}
+
+.donate-badge {
+  height: 50px; /* Adjust size as needed */
+}
+
+.donate-button img {
+  border-radius: 50%; /* Round badge */
+}
+
+.footer-logo1 {
+  height: 43px;
+}
+.footer-logo3 {
+  height: 58px;
+}
+/* .title  .hiscolint{
       text-decoration: none !important;
       color: #348f99 !important;
   } */
-  .footer a {
-    color: #6c757d !important;
-  }
-  
+.footer a {
+  color: #6c757d !important;
+}
+
+.footer .title {
+  font-size: 26px; /* Default size for larger screens */
+  font-family: "Inter", sans-serif;
+  line-height: 31px; /* Default line-height */
+}
+
+/* For medium screens (max-width: 1200px) */
+@media (max-width: 1200px) {
   .footer .title {
-    font-size: 26px;  /* Default size for larger screens */
-    font-family: "Inter", sans-serif;
-    line-height: 31px; /* Default line-height */
+    font-size: 24px; /* Slightly smaller font size for medium screens */
+    line-height: 28px; /* Adjust line-height for better spacing */
   }
-  
-  /* For medium screens (max-width: 1200px) */
-  @media (max-width: 1200px) {
-    .footer .title {
-      font-size: 24px;  /* Slightly smaller font size for medium screens */
-      line-height: 28px;  /* Adjust line-height for better spacing */
-    }
+}
+
+/* For tablets and smaller screens (max-width: 992px) */
+@media (max-width: 992px) {
+  .footer .title {
+    font-size: 22px; /* Further reduce font size for tablets */
+    line-height: 26px; /* Adjust line-height for spacing */
   }
-  
-  /* For tablets and smaller screens (max-width: 992px) */
-  @media (max-width: 992px) {
-    .footer .title {
-      font-size: 22px;  /* Further reduce font size for tablets */
-      line-height: 26px;  /* Adjust line-height for spacing */
-    }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer .title {
+    font-size: 20px; /* Smaller font size for mobile devices */
+    line-height: 24px; /* Adjust line-height for readability */
   }
-  
-  /* For mobile screens (max-width: 768px) */
-  @media (max-width: 768px) {
-    .footer .title {
-      font-size: 20px;  /* Smaller font size for mobile devices */
-      line-height: 24px;  /* Adjust line-height for readability */
-    }
+}
+
+/* For very small screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .footer .title {
+    font-size: 18px; /* Smallest font size for very small screens */
+    line-height: 22px; /* Maintain appropriate line-height */
   }
-  
-  /* For very small screens (max-width: 576px) */
-  @media (max-width: 576px) {
-    .footer .title {
-      font-size: 18px;  /* Smallest font size for very small screens */
-      line-height: 22px;  /* Maintain appropriate line-height */
-    }
-  }
-  
-  
-  .footer .title span {
-    font-family: italic normal bold 48px / 59px Test Signifier;
-    font-family: -webkit-body;
-    font-style: italic;
-    color: #348f99 !important;
-    opacity: 1;
-    width: 1920px;
-  }
-  
+}
 
+.footer .title span {
+  font-family: italic normal bold 48px / 59px Test Signifier;
+  font-family: -webkit-body;
+  font-style: italic;
+  color: #348f99 !important;
+  opacity: 1;
+  width: 1920px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 /* Footer */
 /* General footer styling */
 .footer {
@@ -158,43 +119,42 @@
 }
 
 .footerlogo {
-  width: 207px;  /* Default width for larger screens */
-  height: 51px;  /* Default height */
-  object-fit: contain;  /* Ensures the logo scales without distortion */
+  width: 207px; /* Default width for larger screens */
+  height: 51px; /* Default height */
+  object-fit: contain; /* Ensures the logo scales without distortion */
 }
 
 /* For medium screens (max-width: 1200px) */
 @media (max-width: 1200px) {
   .footerlogo {
-    width: 180px;  /* Reduce width for medium screens */
-    height: auto;  /* Adjust height automatically to maintain aspect ratio */
+    width: 180px; /* Reduce width for medium screens */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
   }
 }
 
 /* For tablets and smaller screens (max-width: 992px) */
 @media (max-width: 992px) {
   .footerlogo {
-    width: 150px;  /* Further reduce width for tablets */
-    height: auto;  /* Automatically adjust height */
+    width: 150px; /* Further reduce width for tablets */
+    height: auto; /* Automatically adjust height */
   }
 }
 
 /* For mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
   .footerlogo {
-    width: 120px;  /* Smaller width for mobile devices */
-    height: auto;  /* Maintain aspect ratio */
+    width: 120px; /* Smaller width for mobile devices */
+    height: auto; /* Maintain aspect ratio */
   }
 }
 
 /* For very small screens (max-width: 576px) */
 @media (max-width: 576px) {
   .footerlogo {
-    width: 100px;  /* Smallest size for tiny screens */
-    height: auto;  /* Maintain aspect ratio */
+    width: 100px; /* Smallest size for tiny screens */
+    height: auto; /* Maintain aspect ratio */
   }
 }
-
 
 .socialicon a {
   color: white !important;

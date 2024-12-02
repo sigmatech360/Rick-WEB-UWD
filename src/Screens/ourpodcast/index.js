@@ -1,8 +1,10 @@
 import "./index.css";
 
+import AOS from "aos";
+
 import Layout from "../../components/layout";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import HeroSection from "../../components/herosection";
 
@@ -14,6 +16,9 @@ import ourpodcastbg from "../../Assets/images/ourpodcastbg.png";
 
 import Ourpodcasts from "../../components/ourpodcast";
 function Ourpodcast() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Layout>
@@ -31,7 +36,12 @@ function Ourpodcast() {
             <div className="container">
               <div className="   row">
                 <div className="col-md-6">
-                  <h2 className="title">
+                  <h2
+                    className="title"
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Stories Of{" "}
                     <span className="position-relative">
                       {" "}
@@ -44,7 +54,12 @@ function Ourpodcast() {
                   </h2>
                 </div>
                 <div className="col-md-6">
-                  <p className="info-text text-start">
+                  <p
+                    className="info-text text-start"
+                    data-aos="fade-left"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Step into the world of HIS-OC with our podcast, where real
                     stories of hope and transformation come to life. Each
                     episode highlights the journeys of families overcoming
@@ -52,7 +67,14 @@ function Ourpodcast() {
                     impact of our community partnerships.
                   </p>
 
-                  <button className="volunteerbtn">Tune In Now!</button>
+                  <button
+                    className="volunteerbtn"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Tune In Now!
+                  </button>
                 </div>
               </div>
             </div>

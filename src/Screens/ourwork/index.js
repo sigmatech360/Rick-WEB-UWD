@@ -3,7 +3,7 @@ import heropage2 from "../../Assets/images/heropage2.png";
 import Layout from "../../components/layout";
 import ourmission from "../../Assets/images/ourmission.png";
 import missionunderline from "../../Assets/images/missionunderline.png";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import aboutherounderline from "../../Assets/images/aboutherounderline.png";
 import housedefaultimg from "../../Assets/images/housedefaultimg.png";
 
@@ -30,7 +30,13 @@ import ourworkbg from "../../Assets/images/ourworkbg.png";
 import BuildingFutures from "../../components/BuildingFutures";
 import tradhousingprogramunderline from "../../Assets/images/tradhousingprogramunderline.svg";
 // import { FaArrowRight } from "react-icons/fa";
+
+import AOS from "aos";
+
 function OurWork() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -170,7 +176,12 @@ function OurWork() {
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">
           <div className="container">
-            <p className="info-text text-start">
+            <p
+              className="info-text text-start"
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               We have multiple programs that assist people who are homeless or
               at risk of being homeless. Our shelters and supportive service
               programs provide assistance to our community’s most vulnerable
@@ -187,7 +198,12 @@ function OurWork() {
           <div className="container my-5">
             <div className="row">
               {/* Program List Section */}
-              <div className="programs-section-left mb-2 col-lg-6">
+              <div
+                className="programs-section-left mb-2 col-lg-6"
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
                 <div className="bordertop mb-0">
                   {programs.map((program, index) => (
                     <div
@@ -219,7 +235,10 @@ function OurWork() {
                   ))}
                 </div>
 
-                <div>
+                <div   data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+>
                   <h5 className="title font-bold">
                     Homless <span> Intervention </span> services Of Orange
                     Country{" "}

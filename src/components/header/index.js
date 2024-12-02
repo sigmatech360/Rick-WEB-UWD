@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import logo from "../../Assets/images/logo.png";
 import donateicon from "../../Assets/images/donateicon.png";
 import { Link } from "react-router-dom";
@@ -51,23 +52,23 @@ function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleDropdownToggle = () => {
-    setShowDropdown((prev) => !prev);  
+    setShowDropdown((prev) => !prev);
   };
 
+  //   const [isOpen, setIsOpen] = useState(false);
 
-//   const [isOpen, setIsOpen] = useState(false);
+  // const handleclick = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
-// const handleclick = () => {
-//   setIsOpen(!isOpen);
-// };
+  const [isNavbarOpen, setNavbarOpen] = useState(false);
 
-const [isNavbarOpen, setNavbarOpen] = useState(false);
+  const handleclicks = () => {
+    setNavbarOpen(!isNavbarOpen);
+  };
 
-const handleclicks = () => {
-  setNavbarOpen(!isNavbarOpen);
-};
+  const location = useLocation();
 
- 
   return (
     <>
       <section className="header-section">
@@ -96,14 +97,12 @@ const handleclicks = () => {
         </div>
       </section>
 
-
-
       <section>
         {/* <nav className="navbar navbar-expand-lg navbar-light bg-light px-3"> */}
         <nav className="navbar navbar-expand-lg   ">
           <div className="container">
             <Link
-              className="navbar-brand d-flex align-items-center d-lg-none"
+              className="navbar-brand d-flex align-items-center d-lg-none" 
               to="/"
             >
               <img src={logo} alt="Logo" className="mainheaderimg" />
@@ -131,17 +130,17 @@ const handleclicks = () => {
               <div>
                 <ul className="navbar-nav d-flex align-items-center meauto mb2 mb-lg-0">
                   <li className="nav-item dropdown">
-                    <Link className="nav-link " to="/about">
+                    <Link className={`nav-link ${location.pathname.includes('/about') ? 'active' : ''}`}  to="/about">
                       About
                     </Link>
                   </li>
                   <li className="nav-item dropdown">
-                    <Link className="nav-link  " to="/ourwork">
+                    <Link className={`nav-link ${location.pathname.includes('/ourwork') ? 'active' : ''}`} to="/ourwork">
                       Our Works
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/gethelp">
+                    <Link className={`nav-link ${location.pathname.includes('/gethelp') ? 'active' : ''}`}  to="/gethelp">
                       Get Help
                     </Link>
                   </li>
@@ -163,7 +162,7 @@ const handleclicks = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/programsprojects">
+                        <Link className={`dropdown-item ${location.pathname.includes('/programsprojects') ? 'active' : ''}`} to="/programsprojects">
                           Programs projects
                         </Link>
                       </li>
@@ -171,12 +170,12 @@ const handleclicks = () => {
                         <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/topvolunteer">
+                        <Link className={`dropdown-item ${location.pathname.includes('/topvolunteer') ? 'active' : ''}`} to="/topvolunteer">
                           Top Volunteer
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/ourpodcast">
+                        <Link className={`dropdown-item ${location.pathname.includes('/ourpodcast') ? 'active' : ''}`} to="/ourpodcast">
                           Our Podcast
                         </Link>
                       </li>
@@ -184,12 +183,12 @@ const handleclicks = () => {
                   </li>
 
                   <li className="nav-item dropdown">
-                    <Link className="nav-link  " to="/givedonation">
+                    <Link className={`nav-link ${location.pathname.includes('/givedonation') ? 'active' : ''}`} to="/givedonation">
                       Donate
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/contactus">
+                    <Link className={`nav-link ${location.pathname.includes('/contactus') ? 'active' : ''}`} to="/contactus">
                       Contact Us
                     </Link>
                   </li>
@@ -292,10 +291,9 @@ const handleclicks = () => {
             <div className="dropdown_menu_divider"></div>
             <li class="main-navbar-list">
               <Link
-                type="button" 
+                type="button"
                 // onClick={handleDropdownToggle}
                 // class="new_main-navbar-list"
-
 
                 className="nav-link dropdown-toggle mb-2"
                 // to="/about"
@@ -303,7 +301,7 @@ const handleclicks = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-               Programs
+                Programs
               </Link>
 
               {/* <ul className="dropdown-menu">
@@ -334,31 +332,31 @@ const handleclicks = () => {
 
               {/* Dropdown Menu */}
               {/* {showDropdown && ( */}
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link to="/sponsorship" className="dropdown-item">
-                      Sponsorship
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/programsprojects" className="dropdown-item">
-                      Programs Projects
-                    </Link>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <Link to="/topvolunteer" className="dropdown-item">
-                      Top Volunteer
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/ourpodcast" className="dropdown-item">
-                      Our Podcast
-                    </Link>
-                  </li>
-                </ul>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link to="/sponsorship" className="dropdown-item">
+                    Sponsorship
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/programsprojects" className="dropdown-item">
+                    Programs Projects
+                  </Link>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <Link to="/topvolunteer" className="dropdown-item">
+                    Top Volunteer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/ourpodcast" className="dropdown-item">
+                    Our Podcast
+                  </Link>
+                </li>
+              </ul>
               {/* )} */}
             </li>
             <div className="dropdown_menu_divider"></div>

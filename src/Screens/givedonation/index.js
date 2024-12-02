@@ -1,8 +1,11 @@
 import "./index.css";
 
+import AOS from "aos";
+
+import React, { useEffect, useState } from "react";
 import Layout from "../../components/layout";
 import Leadership from "../../components/Leadership";
-import React, { useState } from "react";
+
 import createdunderline from "../../Assets/images/createdunderline.png";
 import HeroSection from "../../components/herosection";
 import "slick-carousel/slick/slick.css";
@@ -23,6 +26,9 @@ import dedleadimg2 from "../../Assets/images/dedleadimg2.png";
 import dedleadimg3 from "../../Assets/images/dedleadimg3.png";
 import dedleadimg4 from "../../Assets/images/dedleadimg4.png";
 function Givedonation() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -150,14 +156,24 @@ function Givedonation() {
 
         <section className="donate-section d-flex justify-content-center align-items-center py-5">
           <div className="container">
-            <h2 className="helptagline fw-bold mb-2 text-center">
+            <h2
+              className="helptagline fw-bold mb-2 text-center"
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               Ways To{" "}
               <span className="text-success position-relative">
                 Donate{" "}
                 <img className="availabletagline" src={donateunderline} />
               </span>
             </h2>
-            <p className="para   text-center mx-auto">
+            <p
+              className="para   text-center mx-auto"
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               {" "}
               Your generous gift will help provide hope and a place to call home
               for homeless individuals and families.
@@ -168,9 +184,14 @@ function Givedonation() {
         <section className="services-section  py-5">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-12 col-md-6 col-lg-3 mb-4">
+              <div
+                className="donatecard col-12 col-md-6 col-lg-3 mb-4"
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
                 <div
-                  className="service-card p-3    py-4 h-100"
+                  className=" service-card p-3    py-4 h-100"
                   style={{
                     backgroundColor: "#F3EFFF",
                     borderRadius: "12px",
@@ -197,7 +218,12 @@ function Givedonation() {
                 </div>
               </div>
 
-              <div className="col-12 col-md-6 col-lg-3 mb-4">
+              <div
+                className="  col-12 col-md-6 col-lg-3 mb-4"
+                data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
                 <div
                   className="service-card p-3   h-100  py-4"
                   style={{
@@ -225,7 +251,12 @@ function Givedonation() {
                 </div>
               </div>
 
-              <div className="col-12 col-md-6 col-lg-3 mb-4">
+              <div
+                className="   col-12 col-md-6 col-lg-3 mb-4"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
                 <div
                   className="service-card p-3    py-4 h-100"
                   style={{
@@ -272,7 +303,12 @@ function Givedonation() {
               >
                 <div className="overlay position-absolute top-0 start-0 w-100 h-100"></div>
                 <div className="content">
-                  <h3 className="program-title mb-3   w-30">
+                  <h3
+                    className="program-title mb-3   w-30"
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Apply For Employee Matching{" "}
                     <span className="position-relative">
                       Gifts{" "}
@@ -282,7 +318,12 @@ function Givedonation() {
                       />{" "}
                     </span>
                   </h3>
-                  <p className="program-description   text-white">
+                  <p
+                    className="program-description   text-white"
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Many employers will match a charitable donation to a
                     non-profit organization, which can double, even triple the
                     value of your donation. Ask your employer about its matching
@@ -304,7 +345,12 @@ function Givedonation() {
               >
                 <div className="overlay position-absolute top-0 start-0 w-100 h-100"></div>
                 <div className="content">
-                  <h3 className="program-title mb-3   w-30">
+                  <h3
+                    className="program-title mb-3   w-30"
+                    data-aos="fade-left"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Leave A Legacy{"  "} <br />
                     (Planned {""}
                     <span className="position-relative">
@@ -315,7 +361,12 @@ function Givedonation() {
                       />{" "}
                     </span>
                   </h3>
-                  <p className="program-description   text-white">
+                  <p
+                    className="program-description   text-white"
+                    data-aos="fade-left"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Making a commitment to HIS-OC through your will or other
                     estate planning vehicle is an effective way to ensure that
                     critical services are provided to low-income families and

@@ -1,5 +1,7 @@
 /* innovation services */
-
+.BuildingFutures{
+  overflow: hidden;
+}
 .BuildingFutures {
   background-color: #fdfbf8;
 }
@@ -82,10 +84,10 @@
   font-weight: 400;
 }
 
-.BuildingFutures . {
+/* .BuildingFutures . {
   max-width: 100%;
   width: 76px;
-}
+} */
 
 .BuildingFutures .credit {
   font-family: test;

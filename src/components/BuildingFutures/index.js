@@ -1,18 +1,26 @@
-import React from "react";
+import React , {useEffect} from "react";
 import "./index.css";
 import createdunderline from "../../Assets/images/createdunderline.png";
 import buildfeatureicon1 from "../../Assets/images/buildfeatureicon1.svg";
 import buildfeatureicon12 from "../../Assets/images/buildfeatureicon2.svg";
 import buildfeatureicon13 from "../../Assets/images/buildfeatureicon3.svg";
-import donateicons from '../../Assets/images/donateicons.svg'
+import donateicons from "../../Assets/images/donateicons.svg";
+
+import AOS from "aos";
+
 const BuildingFutures = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <section className="BuildingFutures  py-5">
         <div className="container">
           <div className="row justify-content-center mb-4">
             <div className="col-lg-6 col-12">
-              <h2 className="empowelive">
+              <h2 className="empowelive"     data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000">
                 Empowering Lives Building{" "}
                 <span className="position-relative">
                   {" "}
@@ -23,13 +31,26 @@ const BuildingFutures = () => {
             </div>
 
             <div className="col-lg-6 col-12">
-              <p className="joinuspara">Join us in making a difference.</p>
-              <button className="donateiconbg d-flex justify-content-center align-items-center"><img src={donateicons} /> Donate Today!</button>
+              <p
+                className="joinuspara"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
+                Join us in making a difference.
+              </p>
+              <button className="donateiconbg d-flex justify-content-center align-items-center"     data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000">
+                <img src={donateicons} /> Donate Today!
+              </button>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-12 col-md-6 col-lg-4 mb-4">
-              <div
+            <div className="col-12 col-md-6 col-lg-4 mb-4"     data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000">
+              <div 
                 className="service-card p-3    py-4 h-100"
                 style={{
                   backgroundColor: "#FEFBEB",
@@ -50,7 +71,9 @@ const BuildingFutures = () => {
               </div>
             </div>
 
-            <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="col-12 col-md-6 col-lg-4 mb-4"     data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000">
               <div
                 className="service-card p-3   h-100  py-4"
                 style={{
@@ -73,7 +96,9 @@ const BuildingFutures = () => {
               </div>
             </div>
 
-            <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="col-12 col-md-6 col-lg-4 mb-4"     data-aos="fade-left"
+                        data-aos-offset="0"
+                        data-aos-duration="1000">
               <div
                 className="service-card p-3    py-4 h-100"
                 style={{

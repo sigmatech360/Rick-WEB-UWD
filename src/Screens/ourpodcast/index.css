@@ -2,6 +2,11 @@ body {
   font-family: "Inter";
 }
 
+
+
+.Ourpodcast{
+  overflow: hidden;
+}
 .Ourpodcastsecbg {
   background-image: url("../../Assets/images/volunteerbg.png");
   background-size: cover;

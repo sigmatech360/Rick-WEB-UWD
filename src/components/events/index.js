@@ -1,40 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
 import "./index.css";
 import eventunderline from "../../Assets/images/eventunderlines.svg";
 import eventcard1 from "../../Assets/images/eventcard1.png";
 import eventcard2 from "../../Assets/images/eventcard2.png";
 
 import eventcard3 from "../../Assets/images/eventcard3.png";
-
+import 'aos/dist/aos.css';
 const Events = () => {
-  const eventsData = [
-    {
-      id: 1,
-      title: "August Events - Gomez Center",
-      date: "July 2024",
-      location: "1701 Atwood, Placentia, CA 92870",
-      image: eventcard1, // Replace with the actual image path
-    },
-    {
-      id: 2,
-      title: "August Events - Whitten Center",
-      date: "July 2024",
-      location: "900 S Melrose St. Placentia, CA 92870",
-      image: eventcard2, // Replace with the actual image path
-    },
-    {
-      id: 3,
-      title:
-        "Cruzin' Back to School\" HIS-OC 2nd Annual Classic Car Show and Fundraiser",
-      date: "July 2024",
-      description:
-        "Join us in sending our shelter residents and surrounding community youth back to school in style!",
-      image: eventcard3, // Replace with the actual image path
-    },
-  ];
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const events = [
     {
+      animation: "fade-right",
       title: "Community Outreach Day",
       date: "June 15th, 2024",
       time: "10:00 AM - 2:00 PM",
@@ -42,6 +23,7 @@ const Events = () => {
       bgImage: eventcard1,
     },
     {
+      animation: "fade-up",
       title: "Homeless Awareness",
       date: "October 9th, 2024",
       time: "9:00 AM - 12:00 PM",
@@ -49,6 +31,7 @@ const Events = () => {
       bgImage: eventcard2,
     },
     {
+      animation: "fade-left",
       title: "Volunteer Orientation",
       date: "November 2nd, 2024",
       time: "9:00 AM - 12:00 PM",
@@ -65,7 +48,12 @@ Events
 <img className="event-underline" src={eventunderline} alt="Underline Decoration" />
 </h2> */}
         <div className="event-container text-center">
-          <h2 className="event fw-bold">
+          <h2
+            className="event fw-bold"
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
             Events
             <img
               className="event-underline"
@@ -99,8 +87,11 @@ Events
         </div> */}
         <div className="row g-4">
           {events.map((event, index) => (
-            <div key={index} className="col-md-4 mb-4">
+            <div key={index} className="evemtcard col-md-4 mb-4">
               <div
+                data-aos={event?.animation}
+                data-aos-offset="0"
+                data-aos-duration="1000"
                 className="event-card text-black shadow-sm"
                 style={{ backgroundImage: `url(${event.bgImage})` }}
               >

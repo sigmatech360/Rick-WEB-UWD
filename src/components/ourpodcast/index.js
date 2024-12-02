@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 
+import AOS from "aos";
 import podcastimg1 from "../../Assets/images/podcastimg1.png";
 import podcastimg2 from "../../Assets/images/podcastimg2.png";
 import podcastimg3 from "../../Assets/images/podcastimg3.png";
 import partnerunderline from "../../Assets/images/programunderline.svg";
 const Ourpodcasts = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="podcasts">
       <div className="container mt-5">
         <div className="row">
-          <h3 className="titles mb-4 d-flex justify-content-center">
+          <h3
+            className="titles mb-4 d-flex justify-content-center"
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
             Brows Our{" "}
             <span className="position-relative">
               {" "}
@@ -18,7 +27,10 @@ const Ourpodcasts = () => {
               <img src={partnerunderline} className="underline" />
             </span>
           </h3>
-          <div className="col-md-4 mb-4">
+          <div className="Podcastcard col-md-4 mb-4"  data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+>
             <div className="podcast-card">
               <img
                 src={podcastimg1}
@@ -44,7 +56,10 @@ const Ourpodcasts = () => {
             </div>
           </div>
 
-          <div className="col-md-4 mb-4">
+          <div className=" Podcastcard col-md-4 mb-4"  data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+>
             <div className="podcast-card">
               <img
                 src={podcastimg2}
@@ -69,7 +84,10 @@ const Ourpodcasts = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className=" Podcastcard col-md-4 mb-4"  data-aos="fade-left"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+>
             <div className="podcast-card">
               <img
                 src={podcastimg3}
@@ -95,7 +113,10 @@ const Ourpodcasts = () => {
             </div>
           </div>
 
-          <div className="col-md-4 mb-4">
+          <div className=" Podcastcard col-md-4 mb-4"  data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+>
             <div className="podcast-card">
               <img
                 src={podcastimg1}
@@ -121,7 +142,10 @@ const Ourpodcasts = () => {
             </div>
           </div>
 
-          <div className="col-md-4 mb-4">
+          <div className=" Podcastcard col-md-4 mb-4"  data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+>
             <div className="podcast-card">
               <img
                 src={podcastimg2}
@@ -146,7 +170,10 @@ const Ourpodcasts = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className=" Podcastcard col-md-4 mb-4"  data-aos="fade-lef"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+> 
             <div className="podcast-card">
               <img
                 src={podcastimg3}

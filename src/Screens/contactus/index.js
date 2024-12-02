@@ -2,29 +2,25 @@ import "./index.css";
 
 import Layout from "../../components/layout";
 import sponsorunderline from "../../Assets/images/sponsorunderline.svg";
-import React, { useState } from "react";
-import createdunderline from "../../Assets/images/createdunderline.png";
+import React, { useState, useEffect } from "react";
+
+import AOS from "aos";
+
 import HeroSection from "../../components/herosection";
 import drivingchangecard1 from "../../Assets/images/drivingchangecard1.png";
 import drivingchangecard2 from "../../Assets/images/drivingchangecard2.png";
-import dedicationunderline from "../../Assets/images/dedicationunderline.png";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import mapimg from "../../Assets/images/mapimg.png";
-import Contact from "../../components/contact";
-import Sponsor from "../../components/sponsor";
-import matchinggiftunderline from "../../Assets/images/matchinggiftunderline.png";
 import donateunderline from "../../Assets/images/donateunderline.svg";
-import donatecard1 from "../../Assets/images/donatecard1.svg";
-import donatecard2 from "../../Assets/images/donatecard2.svg";
-import donatecard3 from "../../Assets/images/donatecard3.svg";
 import programlegacy from "../../Assets/images/programlegacy.png";
 import applyemployeebg from "../../Assets/images/applyemployeebg.png";
-import donatebg from "../../Assets/images/donatebg.png";
-import machinggiftunderline from "../../Assets/images/missionunderline.png";
+
 import contectbf from "../../Assets/images/contactbg.png";
 function Contactus() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -144,14 +140,24 @@ function Contactus() {
             <div className="row gx-0 mb-5">
               {/* Left side with form and text */}
               <div className="contactformleft col-lg-6 p-4 p-md-5">
-                <h1 className="display-5 fw-bold mb-2">
+                <h1
+                  className="display-5 fw-bold mb-2"
+                  data-aos="fade-right"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   Want To Talk? Let’s{" "}
                   <span className="do-it">
                     Do It!{" "}
                     <img className="donateunderline" src={donateunderline} />
                   </span>
                 </h1>
-                <p className="text-muted mb-3 w-50">
+                <p
+                  className="text-muted mb-3 w-50"
+                  data-aos="fade-right"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   If you have any questions about{" "}
                   <span className="his-oc">HIS-OC</span>, please do not hesitate
                   to contact.
@@ -207,6 +213,9 @@ function Contactus() {
                   </div>
 
                   <button
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
                     type="submit"
                     className="contactussubmit btn  text-white fw-bold"
                   >
@@ -234,34 +243,6 @@ function Contactus() {
           </h2>
         </section>
       </Layout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
     </>
   );
 }

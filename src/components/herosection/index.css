@@ -8,6 +8,10 @@
   }
   
 
+ .hero-section{
+height: 50vh!important;
+  }
+
 
   .aboutherounderline{
     position: absolute;
@@ -21,9 +25,9 @@
 
 
 
-  .hero-section .title{
+  /* .hero-section .title{
     margin-bottom: 126px !important;
-  }
+  } */
 
 
 

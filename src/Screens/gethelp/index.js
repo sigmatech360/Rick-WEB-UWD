@@ -1,19 +1,16 @@
 import "./index.css";
-import heropage2 from "../../Assets/images/heropage2.png";
+
 import Layout from "../../components/layout";
-import ourmission from "../../Assets/images/ourmission.png";
-import missionunderline from "../../Assets/images/missionunderline.png";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaPhoneAlt } from "react-icons/fa"; // Font Awesome phone icon (React Icons)
 import { FaStar } from "react-icons/fa";
 import helpstar from "../../Assets/images/helpstar.svg";
-import Leadership from '../../components/Leadership/index'
-import hopeunderline from "../../Assets/images/hopeunderline.png";
+import Leadership from "../../components/Leadership/index";
+
 import HeroSection from "../../components/herosection";
 import drivingchangecard1 from "../../Assets/images/drivingchangecard1.png";
 import drivingchangecard2 from "../../Assets/images/drivingchangecard2.png";
-import dedicationunderline from "../../Assets/images/dedicationunderline.png";
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Contact from "../../components/contact";
@@ -24,7 +21,13 @@ import gethelpbg from "../../Assets/images/gethelpbg.png";
 // import program2 from "../../Assets/images/program2.png";
 
 import ourworkbg from "../../Assets/images/ourworkbg.png";
+
+import AOS from "aos";
+
 function GetHelp() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -111,16 +114,19 @@ function GetHelp() {
 
   const services = [
     {
+      animation: "fade-right",
       description: "Transitional Housing Program for families",
       extension: "1009",
       bgColor: "#E9E5FC", // Light purple background
     },
     {
+      animation: "fade-up",
       description: "Young Adults Ages 18-24 yr old men",
       extension: "1007",
       bgColor: "#D7FBE8", // Light green background
     },
     {
+      animation: "fade-down",
       description:
         "HomeShare OC If you are a college student, fill out the Student Interest Form to get started.",
       extension: "1005",
@@ -129,6 +135,7 @@ function GetHelp() {
       linkHref: "#", // Placeholder for link URL
     },
     {
+      animation: "fade-left",
       description: "Housing Connection Program for anyone",
       extension: "1019",
       bgColor: "#FFF8D5", // Light yellow background
@@ -145,14 +152,17 @@ function GetHelp() {
           pagename="Get Help"
           title2="Help"
           programprojectsubttle="givedonationsubtitle"
- 
-
           programpojectaboutherounderline="hopeunderline"
         />
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">
           <div className="container">
-            <p className="info-text text-start">
+            <p
+              className="info-text text-start"
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               Homeless Intervention Services of Orange County (HIS-OC) is here
               to support families and individuals facing the hardships of
               homelessness and housing insecurity. If you or a loved one is in
@@ -167,11 +177,17 @@ function GetHelp() {
           <div className="container">
             <div className="row justify-content-center text-center">
               {services.map((service, index) => (
-                <div key={index} className="col-12 col-md-6 col-lg-3 mb-4">
+                <div
+                  key={index}
+                  className="col-12 col-md-6 col-lg-3 mb-4"
+                  data-aos={service?.animation}
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   <div
                     className="service-card p-3 text-center h-100"
                     style={{
-                      backgroundColor: service.bgColor,
+                      // backgroundColor: service.bgColor,
                       borderRadius: "12px",
                     }}
                   >
@@ -206,9 +222,13 @@ function GetHelp() {
             <div className="row align-items-center">
               {/* Left Section with Hashtag, 211 Text, and Star */}
               <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
- 
                 <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
-                  <h1 className="display-1 text-warning mb-0">
+                  <h1
+                    className="display-1 text-warning mb-0"
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     <img src={helpstar} className="starimg" />
                   </h1>
                   <FaStar className="text-warning star-icon" />
@@ -218,16 +238,22 @@ function GetHelp() {
 
               {/* Right Section with Description and Button */}
               <div className="col-lg-6">
-                <p className="description mb-4">
+                <p className="description mb-4" data-aos="fade-left"
+                        data-aos-offset="0"
+                        data-aos-duration="1000">
                   You can also dial 211 to get information and referrals to free
                   local health and human services programs in Orange County.
                 </p>
-                <p className="description mb-4">
+                <p className="description mb-4" data-aos="fade-left"
+                        data-aos-offset="0"
+                        data-aos-duration="1000">
                   The hotline is available 24 hours a day. 2-1-1 is a central
                   point for public information, including times of disaster to
                   help those affected find recovery assistance.
                 </p>
-                <a
+                <a data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
                   href="https://www.211oc.org"
                   className="btn btn-outline-light btn-link"
                 >
@@ -238,7 +264,7 @@ function GetHelp() {
           </div>
         </section>
 
-      <Leadership />
+        <Leadership />
         <Contact />
         <Sponsor />
       </Layout>
