@@ -52,6 +52,21 @@
   font-style: italic;
 }
 
+
+
+
+
+  .arrow-icon {
+  content: "←"!important; /* Use a left arrow icon */
+ 
+}
+
+ .slick-next .arrow-icon {
+  content: "→"!important; /* Use a right arrow icon */
+
+}
+
+
 /* Left section background */
 /* .left-section {
   background-image: url("../../Assets/images/wedobg.png");

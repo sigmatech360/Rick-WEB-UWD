@@ -168,7 +168,7 @@
 
 @media (max-width: 576px) {
  .homeless-intervention .right-section-text {
-    font-size: 1.5rem;  /* Smallest font size for very small screens */
+  font-size: 2.1rem;;  /* Smallest font size for very small screens */
     /* margin-left: 5px;    */
   }
 }
@@ -573,6 +573,52 @@ padding: 97px 128px;
 
 
 
+
+
+  .driving-dedication  .slick-prev:hover, .slick-prev:focus {
+    position: absolute;
+    top: 50% !important;
+    width: 40px;
+    height: 40px;
+    background-color: #6e6e6f;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+.driving-dedication .slick-next:hover , .slick-next:focus {
+  position: absolute;
+  top: 50%!important;
+  transform: translateY(-50%);
+  background-color: #FDD22E;
+  border-radius: 50%;
+  color: black;
+  width: 40px;
+  height: 40px;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+
   
   .driving-dedication .slick-prev {
     left: -20px;
@@ -617,6 +663,47 @@ padding: 97px 128px;
   
     .driving-dedication .slick-next {
       right: -10px;
+    
     }
+
+
+
+    .how-we-do {
+      left: 0px;
+      /* width: 175px; */
+      /* height: 93px; */
+      color: #333333;
+      text-align: left;
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 33px!important;
+      line-height: 87px;
+      letter-spacing: 0px;
+  }
+
+
+
+  .contact-us-section .subtitle {
+    /* width: 100%; */
+    /* max-width: 56%; */
+    margin: 0 auto;
+    padding: 0 0px!important;
+    text-align: center;
+}
+
+
+
+
+
+.legacy .left-section {
+ 
+  background-color: #ffffff;
+  background-position: center;
+  color: #333333;
+  padding: 0px 0px!important;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
   }
   

@@ -28,6 +28,8 @@ import youth from "../../Assets/images/youth.png";
 import Oc from "../../Assets/images/Oc.png";
 import Closet from "../../Assets/images/closet.png";
 import ourworkbg from "../../Assets/images/ourworkbg.png";
+import { FaArrowRight } from "react-icons/fa";
+
 // import { FaArrowRight } from "react-icons/fa";
 function ProgramsProjects() {
   useEffect(() => {
@@ -42,8 +44,9 @@ function ProgramsProjects() {
         onClick={onClick}
       >
         <span className="arrow-icon">
-          {" "}
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <FaArrowRight />
+
+      
         </span>
       </button>
     );

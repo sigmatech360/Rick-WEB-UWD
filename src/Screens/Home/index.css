@@ -305,17 +305,9 @@
   transition: transform 0.5s ease !important;
 }
 
-
-
 .heplcard:hover {
-
-
-
-  transform: translateY(-15px) !important; 
+  transform: translateY(-15px) !important;
 }
-
-
-
 
 .stat-card:hover {
   transition: transform 0.5s ease;
@@ -429,14 +421,14 @@
 /* For small devices (phones, tablets) */
 @media (max-width: 768px) {
   .event {
-    font-size: 32px; /* Adjust font size for tablets and small screens */
+    font-size: 32px !important; /* Adjust font size for tablets and small screens */
   }
 }
 
 /* For very small devices (smaller phones) */
 @media (max-width: 480px) {
   .event {
-    font-size: 24px; /* Adjust font size for small phones */
+    font-size: 24px !important; /* Adjust font size for small phones */
   }
 }
 
@@ -542,30 +534,24 @@
 }
 
 .stat-card {
-  background-color: #ffffff!important; /* Default color to override */
+  background-color: #f6f5f5!important; /* Default color to override */
   border-radius: 14px !important;
   box-shadow: 0 2px 8px 0 #4b494933 !important;
 }
 
-
-
 .stat-card:hover {
-  background-color: #ffffff!important; /* Default color to override */
+  background-color: #f6f5f5!important; /* Default color to override */
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2) !important;
-    transition: box-shadow 0.3s cubic-bezier(0.65, -0.33, 0.26, 1.05) !important;
+  transition: box-shadow 0.3s cubic-bezier(0.65, -0.33, 0.26, 1.05) !important;
 
+  /* background-color: #007bff!important; */
+  color: white !important;
+  border: none !important;
+  border-radius: 5px !important;
 
-
-    /* background-color: #007bff!important; */
-    color: white!important;
-    border: none!important;
-    border-radius: 5px!important;
- 
-    transition: box-shadow 0.3s ease!important
+  transition: box-shadow 0.3s ease !important
     ;
 }
-
-
 
 .bg-light-green {
   background-color: #e8f5e9; /* Light green background */
@@ -788,9 +774,9 @@
 /* Slick Arrow Styling */
 
 /* Positioning and styling of the slick slider arrows */
-.slick-prev {
+.slick-prevannounce {
   position: absolute;
-  top: 10px;
+  top: -11px;
   width: 40px;
   height: 40px;
   background-color: #6e6e6f;
@@ -807,7 +793,7 @@
 
 /* Responsive adjustments for medium screens */
 @media (max-width: 1200px) {
-  .slick-prev {
+  .slick-prevannounce {
     width: 35px; /* Slightly smaller for medium-sized screens */
     height: 35px;
     top: 8px; /* Slight adjustment in position */
@@ -816,7 +802,7 @@
 
 /* For tablets and smaller screens */
 @media (max-width: 992px) {
-  .slick-prev {
+  .slick-prevannounce {
     width: 30px; /* Further reduce size on tablets */
     height: 30px;
     top: 5px; /* Adjust position */
@@ -825,7 +811,7 @@
 
 /* For mobile screens (768px and below) */
 @media (max-width: 768px) {
-  .slick-prev {
+  .slick-prevannounce {
     width: 28px; /* Smaller size for mobile */
     height: 28px;
     top: 5px; /* Keep button position consistent */
@@ -835,17 +821,17 @@
 
 /* For very small screens (600px and below) */
 @media (max-width: 576px) {
-  .slick-prev {
+  .slick-prevannounce {
     width: 24px; /* Smallest size for tiny mobile screens */
     height: 24px;
     top: 5px; /* Maintain consistent positioning */
   }
 }
 
-.slick-next {
+.slick-nextannounce {
   position: absolute;
   justify-content: center;
-  top: 10px;
+  top: -11px;
   width: 40px; /* Default size for larger screens */
   height: 40px;
   background-color: #fdd22e;
@@ -862,7 +848,7 @@
 
 /* Responsive adjustments for medium screens (max-width: 1200px) */
 @media (max-width: 1200px) {
-  .slick-next {
+  .slick-nextannounce {
     width: 35px; /* Slightly smaller for medium screens */
     height: 35px;
     top: 8px; /* Adjust position slightly */
@@ -871,7 +857,7 @@
 
 /* For tablets and smaller screens (max-width: 992px) */
 @media (max-width: 992px) {
-  .slick-next {
+  .slick-nextannounce {
     width: 30px; /* Further reduce the size for tablets */
     height: 30px;
     top: 6px; /* Adjust top position */
@@ -880,7 +866,7 @@
 
 /* For mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
-  .slick-next {
+  .slick-nextannounce {
     width: 28px; /* Smaller size for mobile */
     height: 28px;
     top: 5px; /* Keep consistent vertical positioning */
@@ -890,46 +876,27 @@
 
 /* For very small screens (max-width: 576px) */
 @media (max-width: 576px) {
-  .slick-next {
+  .slick-nextannounce {
     width: 24px; /* Smallest size for very small screens */
     height: 24px;
     top: 5px; /* Maintain consistent top positioning */
   }
 }
-
-/* Position the left arrow to the left and the right arrow to the right */
-.slick-prev {
+ 
+.slick-prevannounce {
   left: auto; /* Remove default positioning */
   right: 60px; /* Adjust as needed */
 }
 
-.slick-next {
+.slick-nextannounce {
   right: 10px; /* Adjust as needed to be close to the right side */
 }
+ 
 
-/* Hover effect for the arrows */
-.slick-next:hover {
+.news-section .slick-prevannounce:hover,
+.slick-prevannounce:focus {
   position: absolute;
-  justify-content: center;
-
-  top: 10px;
-  width: 40px;
-  height: 40px;
-  background-color: #fdd22e; /* Yellow background */
-  border-radius: 50%; /* Makes the button circular */
-  border: none; /* Remove default border */
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1; /* Ensures buttons are on top of carousel content */
-  color: #6e6e6f; /* White arrow icon */
-  margin-bottom: 4px;
-}
-
-.slick-prev:hover {
-  position: absolute;
-  top: 10px; /* Adjust as needed to place near the top right */
+  top: -11px!important; 
   width: 40px;
   height: 40px;
   background-color: #6e6e6f; /* Yellow background */
@@ -944,28 +911,10 @@
   margin-bottom: 4px;
 }
 
-.slick-prev:hover,
-.slick-prev:focus {
+.news-section .slick-nextannounce:hover,
+.slick-nextannounce:focus {
   position: absolute;
-  top: 10px; /* Adjust as needed to place near the top right */
-  width: 40px;
-  height: 40px;
-  background-color: #6e6e6f; /* Yellow background */
-  border-radius: 50%; /* Makes the button circular */
-  border: none; /* Remove default border */
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1; /* Ensures buttons are on top of carousel content */
-  color: #fff; /* White arrow icon */
-  margin-bottom: 4px;
-}
-
-.slick-next:hover,
-.slick-next:focus {
-  position: absolute;
-  top: 10px; /* Adjust as needed to place near the top right */
+  top: -11px  !important;
   width: 40px;
   height: 40px;
   background-color: #fdd22e; /* Yellow background */
@@ -980,52 +929,52 @@
   margin-bottom: 4px;
 }
 
-.slick-prev {
+.slick-prevannounce {
   right: 80px;
 }
 
 /* Arrow Icon */
-.slick-prev:before,
-.slick-next:before {
+.slick-prevannounce:before,
+.slick-nextannounce:before {
   font-size: 1.5rem;
   /* color: #fff;  */
   content: "";
 }
 
 /* Custom icon with background image */
-.slick-prev .arrow-icon,
-.slick-next .arrow-icon {
+.slick-prevannounce .arrow-icon,
+.slick-nextannounce .arrow-icon {
   font-size: 1.7rem; /* Default size for larger screens */
   color: #fff; /* Assuming you want the arrow to remain white */
 }
 
 /* For medium screens (max-width: 1200px) */
 @media (max-width: 1200px) {
-  .slick-prev .arrow-icon,
-  .slick-next .arrow-icon {
+  .slick-prevannounce .arrow-icon,
+  .slick-nextannounce .arrow-icon {
     font-size: 1.5rem; /* Slightly smaller for medium screens like large tablets */
   }
 }
 
 /* For tablets and smaller screens (max-width: 992px) */
 @media (max-width: 992px) {
-  .slick-prev .arrow-icon,
-  .slick-next .arrow-icon {
+  .slick-prevannounce .arrow-icon,
+  .slick-nextannounce .arrow-icon {
     font-size: 1.3rem; /* Further reduce size for tablets */
   }
 }
 
 /* For mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
-  .slick-prev .arrow-icon,
-  .slick-next .arrow-icon {
+  .slick-prevannounce .arrow-icon,
+  .slick-nextannounce .arrow-icon {
     font-size: 1.1rem; /* Smaller size for mobile devices */
   }
 
-  .slick-prev:hover,
-  .slick-prev:focus {
+  .slick-prevannounce:hover,
+  .slick-prevannounce:focus {
     position: absolute;
-    /* top: 10px;   */
+    top: -11px!important;  
     width: 30px;
     height: 30px;
     background-color: #6e6e6f; /* Yellow background */
@@ -1040,10 +989,29 @@
     margin-bottom: 4px;
   }
 
-  .slick-next:hover,
-  .slick-next:focus {
+
+
+
+
+
+
+  .slick-prev .arrow-icon::before {
+    content: "←"!important; /* Use a left arrow icon */
+    color: #e8f5e9!important;
+  }
+  
+  .slick-next .arrow-icon::before {
+    content: "→"!important; /* Use a right arrow icon */
+    color: #e8f5e9!important;
+  }
+  
+
+
+
+  .slick-nextannounce:hover,
+  .slick-nextannounce:focus {
     position: absolute;
-    /* top: 10px;  */
+    top: -11px!important; 
     width: 30px;
     height: 30px;
     background-color: #fdd22e; /* Yellow background */
@@ -1059,20 +1027,142 @@
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.news-section .slick-prevannounce, .slick-prevannounce {
+  position: absolute;
+  top: -11px !important;
+  width: 40px;
+  height: 40px;
+  background-color: #6e6e6f!important;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.news-section .slick-nextannounce, .slick-nextannounce {
+  position: absolute;
+  top: -11px  !important;
+  width: 40px;
+  height: 40px;
+  background-color: #fdd22e; /* Yellow background */
+  border-radius: 50%; /* Makes the button circular */
+  border: none; /* Remove default border */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Ensures buttons are on top of carousel content */
+  color: #fff; /* White arrow icon */
+  margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* For very small screens (max-width: 576px) */
 @media (max-width: 576px) {
-  .slick-prev .arrow-icon,
-  .slick-next .arrow-icon {
+  .slick-prevannounce .arrow-icon,
+  .slick-nextannounce .arrow-icon {
     font-size: 1rem; /* Smallest size for very small mobile screens */
   }
+
+
+
+
+
+
+
+  .slick-prevannounce:hover,
+  .slick-prevannounce:focus {
+    position: absolute;
+    top: -11px!important;  
+    width: 30px;
+    height: 30px;
+    background-color: #6e6e6f; /* Yellow background */
+    border-radius: 50%; /* Makes the button circular */
+    border: none; /* Remove default border */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensures buttons are on top of carousel content */
+    color: #fff; /* White arrow icon */
+    margin-bottom: 4px;
+  }
+
+  .slick-nextannounce:hover,
+  .slick-nextannounce:focus {
+    position: absolute;
+    top: -11px!important; 
+    width: 30px;
+    height: 30px;
+    background-color: #fdd22e; /* Yellow background */
+    border-radius: 50%; /* Makes the button circular */
+    border: none; /* Remove default border */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensures buttons are on top of carousel content */
+    color: #fff; /* White arrow icon */
+    margin-bottom: 4px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* Add a custom arrow icon if needed (e.g., Font Awesome or similar) */
-.slick-prev .arrow-icon::before {
+.slick-prevannounce .arrow-icon::before {
   content: "←"; /* Use a left arrow icon */
 }
 
-.slick-next .arrow-icon::before {
+.slick-nextannounce .arrow-icon::before {
   content: "→"; /* Use a right arrow icon */
 }
 
@@ -1094,8 +1184,8 @@
 }
 
 @media (max-width: 576px) {
-  .slick-prev,
-  .slick-next {
+  .slick-prevannounce,
+  .slick-nextannounce {
     width: 30px;
     height: 30px;
   }

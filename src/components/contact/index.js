@@ -16,7 +16,7 @@ function Contact() {
 
   console.log("donatenotify", donatenotify);
   const handleClose = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     setDonatenotiy(false);
   };
 
@@ -64,7 +64,9 @@ function Contact() {
                 <div className="contact-grid">
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Executive Director : <br/> <span> Christine</span> Stellino
+                      <span> Christine Stellino</span>
+                      <br />
+                      Executive Director
                     </p>
                     <a
                       href="mailto:christine@his-oc.org"
@@ -75,7 +77,9 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Program Director : <br/><span> Alfa Hern</span>andez
+                      <span> Alfa Hern andez</span>
+                      <br />
+                      Program Director
                     </p>
                     <a href="mailto:alfa@his-oc.org" className="text-muted">
                       alfa@his-oc.org
@@ -83,7 +87,9 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Program Manager : <br/> <span>Anthony</span> Trejo
+                      <span>Anthony Trejo</span>
+                      <br />
+                      Program Manager
                     </p>
                     <a href="mailto:anthony@his-oc.org" className="text-muted">
                       anthony@his-oc.org
@@ -91,7 +97,9 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      TAY Program : <br/> <span> Cuca Tre</span>jo
+                      <span> Cuca Tre jo</span>
+                      <br />
+                      TAY Program
                     </p>
                     <a href="mailto:cuca@his-oc.org" className="text-muted">
                       cuca@his-oc.org
@@ -99,7 +107,9 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Housing Connection : <br/> <span> Cuca Tre</span>jo
+                      <span> Cuca Tre jo</span>
+                      <br />
+                      Housing Connection
                     </p>
                     <a href="mailto:cuca@his-oc.org" className="text-muted">
                       cuca@his-oc.org
@@ -107,7 +117,9 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      HomeShare OC  : <br/><span>Melinda </span>Garcia
+                      <span>Melinda Garcia</span>
+                      <br />
+                      HomeShare OC
                     </p>
                     <a href="mailto:melinda@his-oc.org" className="text-muted">
                       melinda@his-oc.org
@@ -115,7 +127,7 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Transitional Housing   <span> Information :</span>
+                      Transitional Housing Information
                     </p>
                     <a href="mailto:info@his-oc.org" className="text-muted">
                       info@his-oc.org
@@ -123,7 +135,9 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Communications : <br/> <span>Rick Pon</span> ce
+                      <span>Rick Pon ce</span>
+                      <br />
+                      Communications
                     </p>
                     <a href="mailto:rick@his-oc.org" className="text-muted">
                       rick@his-oc.org
@@ -139,7 +153,9 @@ function Contact() {
                   </div>
                   <div className="contact-item p-3 rounded bg-white">
                     <p className="para mb-0">
-                      Intake Coordinator (CalAim): <br/> Madeline  <span>Domingo</span>
+                      <span> Madeline Domingo</span>
+                      <br />
+                      Intake Coordinator (CalAim)
                     </p>
                     <a href="mailto:madeline@his-oc.org" className="text-muted">
                       madeline@his-oc.org

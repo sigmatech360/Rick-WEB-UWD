@@ -53,7 +53,7 @@ function Home() {
     return (
       <button
         type="button"
-        className="slick-arrow slick-prev mb-2 "
+        className="slick-arrow slick-prevannounce mb-2 "
         onClick={onClick}
       >
         <span className="arrow-icon">
@@ -69,7 +69,7 @@ function Home() {
     return (
       <button
         type="button"
-        className="slick-arrow slick-next mb-2"
+        className="slick-arrow slick-nextannounce mb-2"
         onClick={onClick}
       >
         <span className="arrow-icon">
@@ -446,19 +446,19 @@ function Home() {
               data-aos-duration="1000"
             >
               <div className="heplcard  col-md-4 mb-3 mb-md-0">
-                <div className="stat-card bg-light-green py-4 px-3 shadow-sm rounded">
+                <div className="stat-card   py-4 px-3 shadow-sm rounded">
                   <h3 className="helped fw-bold text-success">&gt;5,000</h3>
                   <p className="mb-0">Helped Out of Homelessness</p>
                 </div>
               </div>
               <div className=" heplcard col-md-4 mb-3 mb-md-0">
-                <div className="stat-card bg-light-purple py-4 px-3 shadow-sm rounded">
+                <div className="stat-card   py-4 px-3 shadow-sm rounded">
                   <h3 className="helped fw-bold text-primary">1,127</h3>
                   <p className="mb-0">Individuals Helped Last Year</p>
                 </div>
               </div>
               <div className="heplcard col-md-4">
-                <div className="stat-card bg-light-yellow py-4 px-3 shadow-sm rounded">
+                <div className="stat-card   py-4 px-3 shadow-sm rounded">
                   <h3 className="helped fw-bold text-warning">85%</h3>
                   <p className="mb-0">Guided to Housing</p>
                 </div>

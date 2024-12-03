@@ -74,18 +74,18 @@
 
 .contact-us-section .contact-item .para {
   margin: 0;
- 
-  margin: 0;
-  font-weight: 600;
-  color: #333;
-  font-size: large;
-  line-height: 21px; 
+    margin: 0;
+    font-weight: 300;
+    color: black;
+    font-size: 0.82rem;
+    line-height: 21px;
 }
 
 
 .contact-us-section .para  span{
   border-bottom: 1px solid #348F99!important;
-  
+  font-weight: 600;
+  font-size: 1.22rem!important;
   color: #333;
 }
 
