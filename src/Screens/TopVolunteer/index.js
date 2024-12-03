@@ -136,10 +136,10 @@ function TopVolunteer() {
           </div>
           <div className="volunteers">
             <div className="container py-4">
-              <div className="row">
+              <div className="row d-flex  gap-4">
                 {volunteers.map((volunteer, index) => (
                   <div
-                    className="col-lg-6 col-md-12 mb-4"
+                    className="col-lg-5 col-md-12   mb-4  "
                     key={index}
                     data-aos={volunteer?.animation}
                     data-aos-offset="0"

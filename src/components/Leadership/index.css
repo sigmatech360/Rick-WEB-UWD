@@ -124,7 +124,7 @@
 .dedicatd-leadership .dedicatd-leadership .slick-next,
 .dedicatd-leadership .slick-prev {
   position: absolute;
-  top: 50%!important;
+   top: 50%!important;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -155,7 +155,7 @@
 
 .dedicatd-leadership .slick-prev:hover , .slick-prev:active {
   position: absolute;
-  top: 50%!important;
+  /* top: 50%!important; */
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -176,7 +176,7 @@
 
 .dedicatd-leadership .slick-next {
   position: absolute;
-  top: 50%;
+  top: 50%!important;
   transform: translateY(-50%);
   background-color: #fdd22e;
   border-radius: 50%;
@@ -194,7 +194,7 @@
 
 .dedicatd-leadership .slick-next:hover , .slick-next:active {
   position: absolute;
-  top: 50%!important;
+  /* top: 50%!important; */
   transform: translateY(-50%);
   background-color: #fdd22e;
   border-radius: 50%;

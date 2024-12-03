@@ -774,9 +774,9 @@
 /* Slick Arrow Styling */
 
 /* Positioning and styling of the slick slider arrows */
-.slick-prevannounce {
+.slick-prev {
   position: absolute;
-  top: -11px;
+  top: 10px;
   width: 40px;
   height: 40px;
   background-color: #6e6e6f;
@@ -793,7 +793,7 @@
 
 /* Responsive adjustments for medium screens */
 @media (max-width: 1200px) {
-  .slick-prevannounce {
+  .slick-prev {
     width: 35px; /* Slightly smaller for medium-sized screens */
     height: 35px;
     top: 8px; /* Slight adjustment in position */
@@ -802,7 +802,7 @@
 
 /* For tablets and smaller screens */
 @media (max-width: 992px) {
-  .slick-prevannounce {
+  .slick-prev {
     width: 30px; /* Further reduce size on tablets */
     height: 30px;
     top: 5px; /* Adjust position */
@@ -811,7 +811,7 @@
 
 /* For mobile screens (768px and below) */
 @media (max-width: 768px) {
-  .slick-prevannounce {
+  .slick-prev {
     width: 28px; /* Smaller size for mobile */
     height: 28px;
     top: 5px; /* Keep button position consistent */
@@ -821,17 +821,17 @@
 
 /* For very small screens (600px and below) */
 @media (max-width: 576px) {
-  .slick-prevannounce {
+  .slick-prev {
     width: 24px; /* Smallest size for tiny mobile screens */
     height: 24px;
     top: 5px; /* Maintain consistent positioning */
   }
 }
 
-.slick-nextannounce {
+.slick-next {
   position: absolute;
   justify-content: center;
-  top: -11px;
+  top: 10px;
   width: 40px; /* Default size for larger screens */
   height: 40px;
   background-color: #fdd22e;
@@ -848,7 +848,7 @@
 
 /* Responsive adjustments for medium screens (max-width: 1200px) */
 @media (max-width: 1200px) {
-  .slick-nextannounce {
+  .slick-next {
     width: 35px; /* Slightly smaller for medium screens */
     height: 35px;
     top: 8px; /* Adjust position slightly */
@@ -857,7 +857,7 @@
 
 /* For tablets and smaller screens (max-width: 992px) */
 @media (max-width: 992px) {
-  .slick-nextannounce {
+  .slick-next {
     width: 30px; /* Further reduce the size for tablets */
     height: 30px;
     top: 6px; /* Adjust top position */
@@ -866,7 +866,7 @@
 
 /* For mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
-  .slick-nextannounce {
+  .slick-next {
     width: 28px; /* Smaller size for mobile */
     height: 28px;
     top: 5px; /* Keep consistent vertical positioning */
@@ -876,27 +876,27 @@
 
 /* For very small screens (max-width: 576px) */
 @media (max-width: 576px) {
-  .slick-nextannounce {
+  .slick-next {
     width: 24px; /* Smallest size for very small screens */
     height: 24px;
     top: 5px; /* Maintain consistent top positioning */
   }
 }
  
-.slick-prevannounce {
+.slick-prev {
   left: auto; /* Remove default positioning */
   right: 60px; /* Adjust as needed */
 }
 
-.slick-nextannounce {
+.slick-next {
   right: 10px; /* Adjust as needed to be close to the right side */
 }
  
 
-.news-section .slick-prevannounce:hover,
-.slick-prevannounce:focus {
+.news-section .slick-prev:hover,
+.slick-prev:focus {
   position: absolute;
-  top: -11px!important; 
+  top: 10px!important; 
   width: 40px;
   height: 40px;
   background-color: #6e6e6f; /* Yellow background */
@@ -911,10 +911,10 @@
   margin-bottom: 4px;
 }
 
-.news-section .slick-nextannounce:hover,
-.slick-nextannounce:focus {
+.news-section .slick-next:hover,
+.slick-next:focus {
   position: absolute;
-  top: -11px  !important;
+  top: 10px  !important;
   width: 40px;
   height: 40px;
   background-color: #fdd22e; /* Yellow background */
@@ -929,52 +929,52 @@
   margin-bottom: 4px;
 }
 
-.slick-prevannounce {
+.slick-prev {
   right: 80px;
 }
 
 /* Arrow Icon */
-.slick-prevannounce:before,
-.slick-nextannounce:before {
+.slick-prev:before,
+.slick-next:before {
   font-size: 1.5rem;
   /* color: #fff;  */
   content: "";
 }
 
 /* Custom icon with background image */
-.slick-prevannounce .arrow-icon,
-.slick-nextannounce .arrow-icon {
+.slick-prev .arrow-icon,
+.slick-next .arrow-icon {
   font-size: 1.7rem; /* Default size for larger screens */
   color: #fff; /* Assuming you want the arrow to remain white */
 }
 
 /* For medium screens (max-width: 1200px) */
 @media (max-width: 1200px) {
-  .slick-prevannounce .arrow-icon,
-  .slick-nextannounce .arrow-icon {
+  .slick-prev .arrow-icon,
+  .slick-next .arrow-icon {
     font-size: 1.5rem; /* Slightly smaller for medium screens like large tablets */
   }
 }
 
 /* For tablets and smaller screens (max-width: 992px) */
 @media (max-width: 992px) {
-  .slick-prevannounce .arrow-icon,
-  .slick-nextannounce .arrow-icon {
+  .slick-prev .arrow-icon,
+  .slick-next .arrow-icon {
     font-size: 1.3rem; /* Further reduce size for tablets */
   }
 }
 
 /* For mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
-  .slick-prevannounce .arrow-icon,
-  .slick-nextannounce .arrow-icon {
+  .slick-prev .arrow-icon,
+  .slick-next .arrow-icon {
     font-size: 1.1rem; /* Smaller size for mobile devices */
   }
 
-  .slick-prevannounce:hover,
-  .slick-prevannounce:focus {
+  .slick-prev:hover,
+  .slick-prev:focus {
     position: absolute;
-    top: -11px!important;  
+    top: 10px!important;  
     width: 30px;
     height: 30px;
     background-color: #6e6e6f; /* Yellow background */
@@ -989,29 +989,10 @@
     margin-bottom: 4px;
   }
 
-
-
-
-
-
-
-  .slick-prev .arrow-icon::before {
-    content: "←"!important; /* Use a left arrow icon */
-    color: #e8f5e9!important;
-  }
-  
-  .slick-next .arrow-icon::before {
-    content: "→"!important; /* Use a right arrow icon */
-    color: #e8f5e9!important;
-  }
-  
-
-
-
-  .slick-nextannounce:hover,
-  .slick-nextannounce:focus {
+  .slick-next:hover,
+  .slick-next:focus {
     position: absolute;
-    top: -11px!important; 
+    top: 10px!important; 
     width: 30px;
     height: 30px;
     background-color: #fdd22e; /* Yellow background */
@@ -1044,9 +1025,9 @@
 
 
 
-.news-section .slick-prevannounce, .slick-prevannounce {
+.news-section .slick-prev, .slick-prev {
   position: absolute;
-  top: -11px !important;
+  top: 10px !important;
   width: 40px;
   height: 40px;
   background-color: #6e6e6f!important;
@@ -1062,9 +1043,9 @@
   margin-bottom: 4px;
 }
 
-.news-section .slick-nextannounce, .slick-nextannounce {
+.news-section .slick-next, .slick-next {
   position: absolute;
-  top: -11px  !important;
+  top: 10px  !important;
   width: 40px;
   height: 40px;
   background-color: #fdd22e; /* Yellow background */
@@ -1090,10 +1071,68 @@
 
 
 
+
+
+
+
+
+
+.news-section .slick-prev, .slick-prev {
+  position: absolute;
+  top: 10px !important;
+  width: 40px;
+  height: 40px;
+  background-color: #6e6e6f!important;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.news-section .slick-next, .slick-next {
+  position: absolute;
+  top: 10px  !important;
+  width: 40px;
+  height: 40px;
+  background-color: #fdd22e; /* Yellow background */
+  border-radius: 50%; /* Makes the button circular */
+  border: none; /* Remove default border */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Ensures buttons are on top of carousel content */
+  color: #fff; /* White arrow icon */
+  margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* For very small screens (max-width: 576px) */
 @media (max-width: 576px) {
-  .slick-prevannounce .arrow-icon,
-  .slick-nextannounce .arrow-icon {
+  .slick-prev .arrow-icon,
+  .slick-next .arrow-icon {
     font-size: 1rem; /* Smallest size for very small mobile screens */
   }
 
@@ -1103,10 +1142,10 @@
 
 
 
-  .slick-prevannounce:hover,
-  .slick-prevannounce:focus {
+  .slick-prev:hover,
+  .slick-prev:focus {
     position: absolute;
-    top: -11px!important;  
+    top: 10px!important;  
     width: 30px;
     height: 30px;
     background-color: #6e6e6f; /* Yellow background */
@@ -1121,10 +1160,10 @@
     margin-bottom: 4px;
   }
 
-  .slick-nextannounce:hover,
-  .slick-nextannounce:focus {
+  .slick-next:hover,
+  .slick-next:focus {
     position: absolute;
-    top: -11px!important; 
+    top: 10px!important; 
     width: 30px;
     height: 30px;
     background-color: #fdd22e; /* Yellow background */
@@ -1158,11 +1197,11 @@
 }
 
 /* Add a custom arrow icon if needed (e.g., Font Awesome or similar) */
-.slick-prevannounce .arrow-icon::before {
+.slick-prev .arrow-icon::before {
   content: "←"; /* Use a left arrow icon */
 }
 
-.slick-nextannounce .arrow-icon::before {
+.slick-next .arrow-icon::before {
   content: "→"; /* Use a right arrow icon */
 }
 
@@ -1184,8 +1223,8 @@
 }
 
 @media (max-width: 576px) {
-  .slick-prevannounce,
-  .slick-nextannounce {
+  .slick-prev,
+  .slick-next {
     width: 30px;
     height: 30px;
   }

@@ -53,7 +53,7 @@ function Home() {
     return (
       <button
         type="button"
-        className="slick-arrow slick-prevannounce mb-2 "
+        className="slick-arrow slick-prev mb-2 "
         onClick={onClick}
       >
         <span className="arrow-icon">
@@ -69,7 +69,7 @@ function Home() {
     return (
       <button
         type="button"
-        className="slick-arrow slick-nextannounce mb-2"
+        className="slick-arrow slick-next mb-2"
         onClick={onClick}
       >
         <span className="arrow-icon">

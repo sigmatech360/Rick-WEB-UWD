@@ -63,7 +63,11 @@
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   gap: 1rem; /* Spacing between items */
 }
-
+.dropdown-item.active, .dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  text-decoration: none;
+  background-color: yellow!important;
+}
 /* Individual Contact Item Styling */
 .contact-us-section .contact-item {
   background-color: #ffffff;

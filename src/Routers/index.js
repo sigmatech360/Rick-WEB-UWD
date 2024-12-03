@@ -14,7 +14,7 @@ import Ourpodcast from "../Screens/ourpodcast";
 
 export default function UserRouter() {
   return (
-    <BrowserRouter basename="/His-oc">
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>} />

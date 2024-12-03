@@ -541,7 +541,7 @@ padding: 97px 128px;
   .driving-dedication .slick-next,
   .driving-dedication .slick-prev {
     position: absolute;
-    top: 50%;
+    top: 50%!important;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
@@ -558,7 +558,7 @@ padding: 97px 128px;
 
   .driving-dedication .slick-next {
     position: absolute;
-    top: 50%;
+    top: 50%!important;
     transform: translateY(-50%);
     background-color: #FDD22E;
     border-radius: 50%;
@@ -577,7 +577,7 @@ padding: 97px 128px;
 
   .driving-dedication  .slick-prev:hover, .slick-prev:focus {
     position: absolute;
-    top: 50% !important;
+    /* top: 50% !important; */
     width: 40px;
     height: 40px;
     background-color: #6e6e6f;
@@ -603,7 +603,7 @@ padding: 97px 128px;
 
 .driving-dedication .slick-next:hover , .slick-next:focus {
   position: absolute;
-  top: 50%!important;
+  /* top: 50%!important; */
   transform: translateY(-50%);
   background-color: #FDD22E;
   border-radius: 50%;

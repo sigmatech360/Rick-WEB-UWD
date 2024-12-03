@@ -10,10 +10,14 @@
   background-color: #fdfbf8;
   background-position: center;
   color: #333333;
+
+
+  overflow: hidden!important;
 }
 
 .volunteers {
   background-color: #fcfaf7;
+  overflow: hidden !important;
 }
 
 .info-text {
